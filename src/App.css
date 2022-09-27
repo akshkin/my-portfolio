@@ -1,0 +1,156 @@
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: primaryFont;
+  src: url(/public/Satista.otf);
+}
+body{
+  text-align: center;
+} 
+a{
+  text-decoration: none;
+  color: #252525;
+}
+a:hover,
+a:focus{
+  color: #A03445;
+}
+.container{
+  padding: 1em;
+  text-align: left;
+}
+
+
+img{
+  max-width: 100%;
+}
+h1, h2, h3{  
+  font-family: 'Cinzel Decorative', cursive;
+}
+h1{
+  margin-top: 0;
+}
+a{
+  text-decoration: none;
+}
+nav{
+  padding: 1.5em;
+}
+.nav-links-container{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+}
+.accent-color{
+  font-weight: bold;
+  color:#A03445;
+}
+.hero{
+  background: url("/public/images/flowers.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.hero-title{
+  margin-top: 0;
+  font-size: 3rem;
+  padding-top: 2em;
+  font-weight: regular;
+}  
+.hero-subtitle{
+  animation: fadeIn 1s 1.8s backwards;
+}
+.hero-title .accent{
+  /* font-family: primaryFont; */
+  display: block;
+  letter-spacing: 3px;
+  font-size: 4.5rem;
+  color: #A03445;
+}
+.about{
+  
+  background-color: #A03445;
+  color: white;
+  padding: 1em;
+}
+.about h2{
+  text-align: center;
+  padding-bottom: 0;
+}
+.inner{
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.education{
+  /* text-align: center; */
+  background-color: #E9786B;
+  color: #252525;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+.projects-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+  grid-auto-rows: 1fr;
+  grid-gap: 1.5em;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.card{
+  padding: 1em;
+  margin: 0 auto;
+  /* height: auto; */
+  /* border: 1px solid brown; */
+  max-width: 300px;
+  /* max-height: 600px; */
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transform: scale(1);
+  overflow:hidden;
+}
+.card:hover{
+  transform: scale(1.02);
+  transition: transform ease-in-out 0.3s;
+}
+.card .img-container{
+  max-height: 250px;
+  max-width: 100%;
+  object-fit: cover;
+  overflow:hidden;
+}
+
+.contact{
+  background-color: #282c34;
+  color: white;
+}
+.btn{
+  background: #282c34;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  padding: 0.5em 1.2em;
+}
+.btn + .btn {
+  margin-left: 1em;
+}
+.btn:hover{
+  background-color: white;
+  color: #252525;
+  border: 1px solid #252525;
+}

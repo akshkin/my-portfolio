@@ -1,0 +1,33 @@
+.contact-container{
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2em;
+}
+form{
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.input{
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 1em;
+}
+textarea.input{
+  height: 150px;
+}
+.submit-btn{
+  display: block;
+  color: white;
+  background-color:#A03445 ;
+  border: 0;
+  padding: 0.5em 1.5em;
+  margin-left: auto; 
+  font-weight: bold; 
+  font-size: 1rem;
+}
+.submit-btn:hover{
+  color: #A03445;
+  background-color: white;
+}
