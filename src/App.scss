@@ -1,4 +1,4 @@
-* {
+*{
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -7,51 +7,50 @@
   font-family: primaryFont;
   src: url("./assets/fonts/Satista.otf");
 }
-body {
+body{
   text-align: center;
-}
-
-a {
+} 
+a{
   text-decoration: none;
   color: #252525;
-}
-a:hover, a:focus {
-  color: #A03445;
+
+  &:hover,
+  &:focus{
+    color: #A03445;
+  }
 }
 
-.container {
+.container{
   padding: 1em;
   text-align: left;
 }
 
-img {
+img{
   max-width: 100%;
 }
-
-h1, h2, h3 {
-  font-family: "Cinzel Decorative", cursive;
+h1, h2, h3{  
+  font-family: 'Cinzel Decorative', cursive;
 }
-
-h1 {
+h1{
   margin-top: 0;
 }
-
-a {
+a{
   text-decoration: none;
 }
 
-.accent-color {
+.accent-color{
   font-weight: bold;
-  color: #A03445;
+  color:#A03445;
 }
 
-.inner {
+
+.inner{
   max-width: 600px;
   margin: 0 auto;
   padding: 2em;
 }
 
-.projects-container {
+.projects-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
   grid-auto-rows: 1fr;
@@ -61,30 +60,29 @@ a {
   padding: 1em;
 }
 
-.contact {
+.contact{
   background-color: #282c34;
   color: white;
 }
-
-.btn {
+.btn{
   background: #282c34;
   text-decoration: none;
   color: white;
   display: inline-block;
   padding: 0.5em 1.2em;
-}
-.btn:hover {
-  background-color: white;
-  color: #252525;
-  border: 1px solid #252525;
-}
 
+  &:hover{
+    background-color: white;
+    color: #252525;
+    border: 1px solid #252525;
+  }
+}
 .btn + .btn {
   margin-left: 1em;
 }
 
 @media (min-width: 600px) {
-  html {
-    font-size: 120%;
-  }
-}/*# sourceMappingURL=App.css.map */
+    html{
+      font-size: 120%;
+    }
+}

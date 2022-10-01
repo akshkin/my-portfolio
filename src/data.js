@@ -39,15 +39,6 @@ export default [
         liveDemo : "https://stellar-gelato-1f1f28.netlify.app/",
         imageUrl: "/images/screenshots/game-of-thrones.png"
     },
-    {
-        title: "Sunnyside agency landing page",
-        Description: "Frontend mentor challenge. The challeneg is to build out this landing page and get it looking as close to the design as possible.",
-        builtWith : "HTML, CSS, JavaScript",
-        sourceCode : "https://github.com/akshkin/sunnyside-landing-page",
-        liveDemo : "https://akshkin.github.io/sunnyside-landing-page/",
-        imageUrl: "/images/screenshots/sunnyside-landing-page_.png"
-    },
-      
       {
         title: "Loopstudios landing page",
         Description: "Frontend mentor challenge. The challenge is to build out this landing page and get it looking as close to the design as possible.",

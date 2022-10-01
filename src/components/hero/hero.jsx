@@ -1,9 +1,35 @@
+import "./hero.style.scss"
+import AnimatedLetters from "../animated-letters/animated-letters.component"
+
 function Hero(){
+  const letterClass = "text-animate"
+  const name = "Akshaya  Kini"
+  const nameArray = name.split('')
+  const jobTitle = "Frontend Developer"
+  const jobTitleArray = jobTitle.split('')
+
+   
   return (
-    <>
-      <h1 className="hero-title">Hi, my name is<span className="accent">Akshaya Kini</span></h1>
-      <p className="hero-subtitle">Frontend Developer</p>
-    </>    
+    <div className="hero" >
+      <h1 className="hero-title">
+        <span className={letterClass}>Hi,  </span> 
+        <span className={`${letterClass} _12`}> my </span> 
+        <span className={`${letterClass} _13`}> name </span>
+        <span className={`${letterClass} _14`}> is </span>
+        <span className="accent">
+          <AnimatedLetters letterClass={letterClass}
+            strArray={nameArray}
+            index={15}
+          />
+        </span>
+      </h1>
+      <p className="hero-subtitle">
+        <AnimatedLetters letterClass={letterClass}
+          strArray={jobTitleArray}
+          index={25}
+        />
+      </p>
+    </div>    
   )
 }
 

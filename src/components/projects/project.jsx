@@ -1,7 +1,10 @@
+import "./project.style.scss"
+import { AnimationOnScroll } from "react-animation-on-scroll"
+
 function Project({project}){
   const {title, imageUrl, Description, builtWith, sourceCode, liveDemo} = project
   return (
-    <div key={title} className="card">
+    <AnimationOnScroll animateIn="animate__fadeInUp" key={title} className="card">
       <div className="img-container">
         <img src={imageUrl} className="card-img" alt={`${project.title} screenshot`} />
       </div>
@@ -12,7 +15,7 @@ function Project({project}){
           <a href={sourceCode} rel="noreferrer" target="_blank" className="btn">Source Code</a>
           <a href={liveDemo} rel="noreferrer" target="_blank" className="btn">Live Demo</a>
        </div>
-  </div>)
+  </AnimationOnScroll>)
 }
 
 export default Project

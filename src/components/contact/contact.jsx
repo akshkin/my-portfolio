@@ -1,9 +1,9 @@
 import { useRef } from "react"
 import emailjs from "@emailjs/browser"
+import { AnimationOnScroll } from "react-animation-on-scroll"
+import "./contact.style.scss"
 
-import "./contact.style.css"
-
-function Contact(){
+function Contact({id}){
   const form = useRef()
 
   function sendEmail(event){
@@ -29,7 +29,7 @@ function Contact(){
 
 
   return (
-    <div className="contact-container">
+    <AnimationOnScroll animateIn="animate__fadeInLeft" className="contact-container">
       <h3>CONTACT ME</h3>
       <p>Sparked your interest ? Please don't hesitate to contact me!</p>
       <p>PHONE:
@@ -43,7 +43,7 @@ function Contact(){
         <button className="submit-btn" type="submit" value="Send">Send</button>
       </form>
 
-    </div>
+    </AnimationOnScroll>
   )
 }
 

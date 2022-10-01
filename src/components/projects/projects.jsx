@@ -3,7 +3,7 @@ import Project from "./project"
 function Projects(){  
     return (
       <>
-        {data.map(project => <Project project={project}/>)}
+        {data.map(project => <Project key={project.title} project={project}/>)}
       </>      
     )
   

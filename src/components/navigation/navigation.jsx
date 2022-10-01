@@ -1,3 +1,5 @@
+import "./navigation.style.scss"
+
 function Navigation(){
   return (
     <nav>

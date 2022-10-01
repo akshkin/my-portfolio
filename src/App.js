@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 import Contact from "./components/contact/contact";
 import About from "./components/about/about";
 import Navigation from "./components/navigation/navigation";
@@ -16,7 +16,7 @@ function App() {
     </header>
         <main>
             <div className="hero container">
-                <Hero />                
+                <Hero/>                
             </div>
             <div className="about container" id="about">                
                 <About />
@@ -39,7 +39,7 @@ function App() {
            
            
            <div className="contact container" id="contact">
-                <Contact/>
+                <Contact />
             </div>
                    
                     
