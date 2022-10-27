@@ -12,8 +12,8 @@ function Hero(){
   return (
     <div className="hero" >
       <h1 className="hero-title">
-        <span className={letterClass}>Hi,  </span> 
-        <span className={`${letterClass} _14`}> I'm </span>
+        <span className={letterClass}>Hi, &nbsp;  </span> 
+        <span className={`${letterClass} _14`}> I'm &nbsp;</span>
         <span className="accent">
           <AnimatedLetters letterClass={letterClass}
             strArray={nameArray}
