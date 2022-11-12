@@ -48,12 +48,12 @@ export default [
         imageUrl: "/images/screenshots/loopstudios-landing-page_.png"
     },
       
-    {
-      title: "Travel Journal(React)",
-      Description: "This is one of Scrimba's solo projects. The challenge is to build out this page using React and polishing it according to the design.",
-      builtWith : "React, CSS",
-      sourceCode : "https://github.com/akshkin/travel-journal-react",
-      liveDemo : "https://akshkin.github.io/travel-journal-react/",
-      imageUrl: "/images/screenshots/travel-journal-react_.png"
-  }
+  //   {
+  //     title: "Travel Journal(React)",
+  //     Description: "This is one of Scrimba's solo projects. The challenge is to build out this page using React and polishing it according to the design.",
+  //     builtWith : "React, CSS",
+  //     sourceCode : "https://github.com/akshkin/travel-journal-react",
+  //     liveDemo : "https://akshkin.github.io/travel-journal-react/",
+  //     imageUrl: "/images/screenshots/travel-journal-react_.png"
+  // }
 ]

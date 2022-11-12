@@ -1,5 +1,5 @@
 .hero{
-  background: url("./../../assets/images/flowers.jpg");
+  background: url("./../../assets/images/Vorderrhein.png");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -7,26 +7,32 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
 
   .hero-title{
     margin-top: 0;
+    margin-bottom: 0;
     font-size: 2.5rem;
-    padding-top: 2em;
+    padding: 1em;
     font-weight: regular;
     word-wrap: no-wrap;
+    background: white;
 
     .accent{
-      /* font-family: primaryFont; */
       display: block;
       letter-spacing: 3px;
       font-size: 4.5rem;
-      color: #A03445;
+      color: #1CBDC5;
     }
   } 
 
   .hero-subtitle{
     animation: fadeIn 1s 1.8s backwards;
+    background: white;
+    padding: 1em;
+    padding-left: 2.5em;
+    margin-top: 0;
   }
 }
  
