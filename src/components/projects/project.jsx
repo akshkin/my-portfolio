@@ -12,8 +12,15 @@ function Project({project}){
           <h3>{title}</h3>
           <p>{Description}</p>
           <p><span className="accent-color">Technologies used:</span> {builtWith}</p>
-          <a href={sourceCode} rel="noreferrer" target="_blank" className="btn">Source Code</a>
-          <a href={liveDemo} rel="noreferrer" target="_blank" className="btn">Live Demo</a>
+          { sourceCode && liveDemo ?
+            (<>
+              <a href={sourceCode} rel="noreferrer" target="_blank" className="btn">Source Code</a>
+              <a href={liveDemo} rel="noreferrer" target="_blank" className="btn">Live Demo</a>
+            </>
+            ) : (
+              <span className="coming-soon" >Coming soon!</span>
+            )
+          }
        </div>
   </AnimationOnScroll>)
 }

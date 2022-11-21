@@ -6,13 +6,16 @@
   border-radius: 5px;
   transform: scale(1);
   overflow:hidden;
-  background-color: white;;
+  background-color: white;
 
   &:hover{
     transform: scale(1.02);
     transition: transform ease-in-out 0.3s;
   }
 
+  .coming-soon{
+    color: #F2D64F;
+  }
   .img-container{
     max-height: 250px;
     max-width: 100%;
