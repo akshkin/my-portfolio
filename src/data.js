@@ -3,8 +3,10 @@ const data = [
     
     title: "Movie & Tv search (React)",
     Description: "A movie and Tv search app where users can search for movie/tv shows and get more info on clicking on the cards which takes them to a new page as well as similar movies/tv shows.",
-    builtWith : "React, React Router, SCSS, TMDB API",      
-    imageUrl: "/images/screenshots/movie&tvsearch.png",      
+    builtWith : "React, Context API, React Router, SCSS, TMDB API",      
+    imageUrl: "/images/screenshots/movie&tvsearch.png",  
+    liveDemo: "https://mymovieandtvsearch.netlify.app/",
+    sourceCode: "https://github.com/akshkin/react-movie-search"    
   },
   {
     title: "Shopzone e-comm site",
