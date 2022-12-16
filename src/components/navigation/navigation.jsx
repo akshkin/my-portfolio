@@ -1,17 +1,35 @@
+import { useState } from "react"
+import NavLinks from "./nav-links.component"
 import "./navigation.style.scss"
 
 function Navigation(){
+  const [isOpen, setIsOpen] = useState(false)
+  const openClass = isOpen ? "open" : ""
+  // const [openClass, setOpenClass] = useState(false)
+
+  function handleToggleBtn(){
+    setIsOpen(prevOpen => !prevOpen)
+    // setOpenClass(prevOpenClass => !prevOpenClass)
+  }
+  // console.log(openNavClass)
+  console.log(openClass)
+
   return (
-    <nav>
-        {/* <button>&#9776;</button> */}
-        <ul className="nav-links-container">
-          <li className='nav-link-item'><a className="nav-link" href="">Home</a></li>
-          <li className='nav-link-item'><a className="nav-link" href="#about">About</a></li>
-          <li className='nav-link-item'><a className="nav-link" href="#education">Skills</a></li>
-          <li className='nav-link-item'><a className="nav-link" href="#projects">Projects</a></li> 
-          <li className='nav-link-item'><a className="nav-link" href="#contact">Contact</a></li>         
-        </ul>
+    <header>
+      <nav className="mobile">
+        <img className="logo" src="/images/logo.png" alt="logo"/>
+        <button className="toggle-btn" onClick={handleToggleBtn}>&#9776;</button>
+        {isOpen && <NavLinks setIsOpen={setIsOpen} openClass={openClass} />}
       </nav>
+
+      <nav className="desktop">
+        <img className="logo" src="/images/logo.png" alt="logo"/>
+        <NavLinks />
+      </nav>
+
+    </header>
+
+        
   )
 }
 

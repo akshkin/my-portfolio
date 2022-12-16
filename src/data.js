@@ -42,7 +42,7 @@ const data = [
   },
   {
     title: "Game of thrones rolodex",
-    Description: "This is a React project where users can search for their favorite characters and can also see a random quote by one of the charcters",
+    Description: "This is a React project where users can search for their favorite characters and can also see a random quote by one of the characters",
     builtWith : "React, CSS and TheThronesAPI",
     sourceCode  : "https://github.com/akshkin/game-of-thrones",
     liveDemo : "https://stellar-gelato-1f1f28.netlify.app/",
