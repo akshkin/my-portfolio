@@ -1,13 +1,12 @@
 import React from 'react'
 
-function NavLinks({ setIsOpen, openClass }) {
+function NavLinks({ setIsOpen, isOpen }) {
   function closeNav(){
-    setIsOpen(false)
+    if(isOpen) setIsOpen(false)
   }
   
-  console.log(openClass)
   return (
-    <ul className={`nav-links-container ${openClass ? "open" : null}`}>
+    <ul className="nav-links-container">
       <li onClick={closeNav} className='nav-link-item'><a className="nav-link" href="#about">About</a></li>
       <li onClick={closeNav} className='nav-link-item'><a className="nav-link" href="#education">Skills</a></li>
       <li onClick={closeNav} className='nav-link-item'><a className="nav-link" href="#projects">Projects</a></li> 

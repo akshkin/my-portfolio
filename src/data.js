@@ -1,9 +1,9 @@
 const data = [
   {
     
-    title: "Movie & Tv search (React)",
+    title: "Movie & Tv search (React) with Unit Testing",
     Description: "A movie and Tv search app where users can search for movie/tv shows and get more info on clicking on the cards which takes them to a new page as well as similar movies/tv shows.",
-    builtWith : "React, Context API, React Router, SCSS, TMDB API",      
+    builtWith : "React, Context API, React Router, SCSS, TMDB API, Jest and React-Testing-Library for Unit Testing",      
     imageUrl: "/images/screenshots/movie&tvsearch.png",  
     liveDemo: "https://mymovieandtvsearch.netlify.app/",
     sourceCode: "https://github.com/akshkin/react-movie-search"    
@@ -41,9 +41,9 @@ const data = [
     imageUrl: "/images/screenshots/color-scheme-generator_.png"
   },
   {
-    title: "Game of thrones rolodex",
+    title: "Game of thrones rolodex with Unit Testing",
     Description: "This is a React project where users can search for their favorite characters and can also see a random quote by one of the characters",
-    builtWith : "React, CSS and TheThronesAPI",
+    builtWith : "React, CSS and TheThronesAPI, Jest and React-Testing-Library for Unit testing",
     sourceCode  : "https://github.com/akshkin/game-of-thrones",
     liveDemo : "https://stellar-gelato-1f1f28.netlify.app/",
     imageUrl: "/images/screenshots/game-of-thrones.png"

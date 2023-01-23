@@ -1,5 +1,6 @@
 import { AnimationOnScroll } from "react-animation-on-scroll"
 import { ReactComponent as SCSSIcon } from "../../assets/svgs/scss.svg"
+import { ReactComponent as JestIcon } from "../../assets/svgs/jest.svg"
 
 function Skills (){
   return (
@@ -13,6 +14,7 @@ function Skills (){
           <li><img src="/logo192.png" width="20em" alt="react logo"/> React </li>
           <li>Responsive layouts(mobile first approach)</li>
           <li>Styled Components (CSS-in-JS)</li>
+          <li><JestIcon />Jest</li>
       </ul>
 
       <a className="download" href="/Akshaya_Kini_Resume.pdf" download>Click to download Resume</a> 

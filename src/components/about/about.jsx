@@ -10,7 +10,7 @@ function About(){
         I am always looking for ways to improve. I enjoy learning by building applications. 
       </p>
       <p>I have a Bachelor's degree in alternative medicine. Looking to learn something new, I came across HTML and CSS.
-        And when I started coding I found my new passion and I couldn't go back and only continued to learn new skills in frontend development.        
+        And when I started coding I found my new passion and I couldn't go back and only continued to learn new skills.        
       </p>
       <p>When I am not coding, I am spending time with my toddler and husband.</p> 
           
