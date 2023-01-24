@@ -1,7 +1,8 @@
 .hero{
-  background: url("./../../assets/images/Vorderrhein.png");
+  background: url("./../../assets/images/fern-bg.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
   max-width: 100%;
   display: flex;
@@ -9,27 +10,33 @@
   justify-content: center;
   align-items: flex-start;
   text-align: left;
+  color: #b3d3b8;
+
 
   .hero-title{
     margin-top: 0;
     margin-bottom: 0;
     font-size: 2.5rem;
     padding: 1em;
+    padding-bottom: 0;
     font-weight: regular;
     word-wrap: no-wrap;
-    background: white;
+    margin-bottom: 0;
 
+      
     .accent{
       display: block;
       letter-spacing: 3px;
-      font-size: 4.5rem;
-      color: #1CBDC5;
+      font-size: 3.5rem;
+      color: white;
+      z-index: 100;
     }
   } 
 
   .hero-subtitle{
     animation: fadeIn 1s 1.8s backwards;
-    background: white;
+    animation-delay: 3s;
+    letter-spacing: 1.2px;
     padding: 1em;
     padding-left: 2.5em;
     margin-top: 0;

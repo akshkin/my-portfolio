@@ -28,6 +28,13 @@ header{
       width: 80vw;
       height: 70vh;
     }
+
+    .open{
+      animation: fadeInRight 0.5s forwards;
+    }
+    .close{
+      animation: fadeOutRight 0.5s forwards;
+    }
       
     .toggle-btn{
       background-color: transparent;

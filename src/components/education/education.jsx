@@ -1,11 +1,12 @@
 import "./education.style.scss"
+import { ReactComponent as CertficateIcon } from "../../assets/svgs/certificate.svg"
 import { AnimationOnScroll } from "react-animation-on-scroll"
 
 function Education(){
   return (
     <AnimationOnScroll animateIn="animate__fadeInLeft">
       <h2>CERTIFICATES / EDUCATION</h2>
-      <ul>
+      <ul className="certificates-list">
           <li>Learn UI Design, Scrimba</li>
           <li>Responsive Web Design, Scrimba</li>
           <li>Frontend Career Path, Scrimba</li>

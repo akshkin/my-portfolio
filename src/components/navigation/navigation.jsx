@@ -6,15 +6,17 @@ function Navigation(){
   const [isOpen, setIsOpen] = useState(false)
   
   function handleToggleBtn(){
-    setIsOpen(prevOpen => !prevOpen)
+    setIsOpen(prevOpen => !prevOpen)    
   }
+
+  const openClass = isOpen ? "open" : "close"
 
   return (
     <header>
       <nav className="mobile">
         <img className="logo" src="/images/logo.png" alt="logo"/>
         <button className="toggle-btn" onClick={handleToggleBtn}>&#9776;</button>
-        {isOpen && <NavLinks setIsOpen={setIsOpen} isOpen={isOpen} />}
+        {isOpen && <NavLinks openClass={openClass} setIsOpen={setIsOpen} isOpen={isOpen} />}
       </nav>
 
       <nav className="desktop">

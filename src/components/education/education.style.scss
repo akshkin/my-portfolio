@@ -1,9 +1,21 @@
 .education{
-  background-color: #BDE1E5;
-  background-image: url("../../assets/images/Vorderrhein.png");
-  background-position: left;
-  background-blend-mode: lighten;
-  color: #252525;
+  // background-color: #BDE1E5;
+  background-image: url("../../assets/images/fern-bg.jpg");
+  background-position: center;
+  // background-blend-mode: multiply;
+  // color: #252525;
+  color: white;
   padding: 1em;
   margin: 0 auto;
+  
+
+  .certificates-list{
+    li{
+      margin-block: 1em;
+    }
+  }
+
+  @media (min-width: 1000px) {
+      display: flex;
+  }
 }

@@ -32,15 +32,13 @@ function Contact({id}){
     <AnimationOnScroll animateIn="animate__fadeInLeft" className="contact-container">
       <h3>CONTACT ME</h3>
       <p>Sparked your interest ? Please don't hesitate to contact me!</p>
-      <p>PHONE:
-      +46764411356</p>
-
-      <form ref={form} onSubmit={sendEmail}>
-        <input className="input" type="text" placeholder="Name" name="name" required/>
-        <input className="input" type="email" placeholder="Emil address" name="email" required />
-        <input className="input" type="text" placeholder="Subject" name="subject" required/>
-        <textarea className="input"  placeholder="Message" name="message" required/>
-        <button className="submit-btn" type="submit" value="Send">Send</button>
+      
+      <form ref={form} onSubmit={sendEmail}>        
+        <input className="input name" type="text" placeholder="Name" name="name" required/>
+        <input className="input email" type="email" placeholder="Emil address" name="email" required />
+        <input className="input subject" type="text" placeholder="Subject" name="subject" required/>
+        <textarea className="input message"  placeholder="Message" name="message" required/>
+        <button className="submit-btn button" type="submit" value="Send">Send</button>
       </form>
 
     </AnimationOnScroll>
