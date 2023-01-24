@@ -19,13 +19,14 @@ function Hero(){
             strArray={nameArray}
             index={15}
           />
-        </span>
+        </span>        
       </h1>
       <p className="hero-subtitle">
-        <AnimatedLetters letterClass={letterClass}
+        {/* <AnimatedLetters letterClass={letterClass}
           strArray={jobTitleArray}
-          index={25}
-        />
+          index={15}
+        /> */}
+        Frontend developer
       </p>
     </div>    
   )

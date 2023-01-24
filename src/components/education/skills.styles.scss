@@ -1,0 +1,14 @@
+.skills-list-items{
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    margin-block: 0.625em;
+
+    .icon{
+        font-size: 1.5rem;
+    }
+    .styled{
+        color: rgb(229, 122, 140);
+        font-size: 2rem;
+    }
+}
