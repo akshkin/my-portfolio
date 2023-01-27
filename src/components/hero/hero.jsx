@@ -22,11 +22,7 @@ function Hero(){
         </span>        
       </h1>
       <p className="hero-subtitle">
-        {/* <AnimatedLetters letterClass={letterClass}
-          strArray={jobTitleArray}
-          index={15}
-        /> */}
-        Frontend developer
+       Frontend developer
       </p>
     </div>    
   )

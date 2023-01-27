@@ -61,6 +61,27 @@ a{
   padding: 2em;
 }
 
+// .download-container{
+//   margin: 3em auto 0;
+//   display: flex;
+//   justify-content: center;
+
+//   .download{
+//       display: inline-flex;
+//       align-items: center;
+//       justify-content: center;
+//       gap: 0.3em;
+//       background-color: white;
+//       color: #252525;
+//       padding: 0.5em 1.5em;
+//       border-radius: 5px;
+//   }
+// }
+
+.projects-title{
+  margin-top: 2em;
+}
+
 .projects-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
