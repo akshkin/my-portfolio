@@ -19,6 +19,16 @@ const data = [
     liveDemo: "https://shopzone-project.netlify.app/",
     imageUrl: "/images/screenshots/shopzone.png",
   },
+  {
+    title: "Full stack MERN Task Manager App",
+    Description:
+      "Users can create an account, sign in, update/delete profiles, create/read/update/delete tasks. Use email: jane@gmail.com and password: 1234567 to login.",
+    builtWith:
+      "React, React Router, Redux, Styled Components, Node JS, Express, Mongo DB",
+    sourceCode: "https://github.com/akshkin/task-manager-react",
+    liveDemo: "https://easytaskmanager.netlify.app/",
+    imageUrl: "/images/screenshots/task-manager.png",
+  },
   // {
   //   title: "Movie watchlist",
   //   Description: "This is one of Scrimba's solo projects. The challenge is to build out this watchlist and get it looking as close to the design as possible, with a feature to add to watchlist.",
