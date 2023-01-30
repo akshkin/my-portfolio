@@ -7,6 +7,7 @@ import { ReactComponent as ResponsiveIcon } from "../../assets/svgs/responsive.s
 import { ReactComponent as SCSSIcon } from "../../assets/svgs/scss.svg";
 import { ReactComponent as StyledComponentsIcon } from "../../assets/svgs/styled-components.svg";
 import { ReactComponent as JestIcon } from "../../assets/svgs/jest.svg";
+import { ReactComponent as NodeIcon } from "../../assets/svgs/node.svg";
 
 import "./skills.styles.scss";
 
@@ -39,6 +40,9 @@ function Skills() {
         </li>
         <li className="skills-list-items">
           <JestIcon className="icon" /> Jest
+        </li>
+        <li className="skills-list-items">
+          <NodeIcon className="icon" /> Node JS
         </li>
       </ul>
     </AnimationOnScroll>
