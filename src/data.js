@@ -10,11 +10,11 @@ const data = [
     sourceCode: "https://github.com/akshkin/react-movie-search",
   },
   {
-    title: "Shopzone e-comm site",
+    title: "Fullstack MERN Shopzone e-comm site",
     Description:
-      "This project was built to test my skills learnt from Advanced React. Users can add items to 'favorites' which is saved in local storage",
+      "A frontend React project converted to fullstack with authentication. Users can add items to 'favorites', add items to cart and change the number of the products in thecart. Migrated from Context API to Redux for state management",
     builtWith:
-      "React, React Router, Context API, CSS-in-JS(Styled Components), fakestoreAPI, Firebase for authentication",
+      "React, React Router, Redux , CSS-in-JS(Styled Components), REST API (using Node JS, Express, MongoDB)",
     sourceCode: "https://github.com/akshkin/shopzone-e-comm-site",
     liveDemo: "https://shopzone-project.netlify.app/",
     imageUrl: "/images/screenshots/shopzone.png",
@@ -22,7 +22,7 @@ const data = [
   {
     title: "Full stack MERN Task Manager App",
     Description:
-      "Users can create an account, sign in, update/delete profiles, create/read/update/delete tasks. Use email: jane@gmail.com and password: 1234567 to login.",
+      "Users can create an account, sign in, update/delete profiles, create/read/update/delete tasks.",
     builtWith:
       "React, React Router, Redux, Styled Components, Node JS, Express, Mongo DB",
     sourceCode: "https://github.com/akshkin/task-manager-react",

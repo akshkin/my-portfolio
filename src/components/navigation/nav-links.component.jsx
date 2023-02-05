@@ -1,19 +1,38 @@
-import React from 'react'
+import React from "react";
 
-function NavLinks({ setIsOpen, isOpen, openClass }) {
+function NavLinks({ toggleNavigation }) {
+  // function closeNav() {
+  //   const navList = document.querySelector(".nav-links-container");
+  //   navList.classList.add("close");
+  //   // setTimeout(() => {
+  //   //   navList.classList.remove("close");
+  //   // }, 500);
+  // }
 
-  function closeNav(){
-    if(isOpen) setIsOpen(false)
-  }
-  
   return (
-    <ul className={`${openClass} nav-links-container`}>
-      <li onClick={closeNav} className='nav-link-item'><a className="nav-link" href="#about">About</a></li>
-      <li onClick={closeNav} className='nav-link-item'><a className="nav-link" href="#education">Skills</a></li>
-      <li onClick={closeNav} className='nav-link-item'><a className="nav-link" href="#projects">Projects</a></li> 
-      <li onClick={closeNav} className='nav-link-item'><a className="nav-link" href="#contact">Contact</a></li>         
+    <ul className="nav-links-container">
+      <li className="nav-link-item" onClick={toggleNavigation}>
+        <a className="nav-link" href="#about">
+          About
+        </a>
+      </li>
+      <li className="nav-link-item" onClick={toggleNavigation}>
+        <a className="nav-link" href="#education">
+          Skills
+        </a>
+      </li>
+      <li className="nav-link-item" onClick={toggleNavigation}>
+        <a className="nav-link" href="#projects">
+          Projects
+        </a>
+      </li>
+      <li className="nav-link-item" onClick={toggleNavigation}>
+        <a className="nav-link" href="#contact">
+          Contact
+        </a>
+      </li>
     </ul>
-  )
+  );
 }
 
-export default NavLinks
+export default NavLinks;

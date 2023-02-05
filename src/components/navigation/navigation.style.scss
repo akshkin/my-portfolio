@@ -1,8 +1,5 @@
 header{
-  .mobile{
-    display: flex;
-    justify-content: space-between;
-  }
+  
   nav{
     padding: 1em;
     max-width: 100%;
@@ -27,7 +24,13 @@ header{
       align-items: center;
       width: 80vw;
       height: 70vh;
-      //animation: fadeOutRight 0.5s forwards;
+      animation: fadeOutRight 0.5s forwards;
+    }
+
+    .logo-container{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
     }
 
     .open{
@@ -44,29 +47,27 @@ header{
       z-index: 1000;
     }
   
-  }
-  .desktop{
-    display: none;
-
-
     @media (min-width: 500px) {
       padding: 1em;
       display: flex; 
       justify-content: space-between;
 
+      .toggle-btn{
+        display: none;
+      }
+  
       .logo{
         width: 70px;
       }
-
+  
       .nav-links-container{
-        position:static;
-        transform: none;
+        position:unset;
         flex-direction: row;
-        padding: 1em;
-        
+        padding: 1em;        
         width: auto;
         height: auto;
-
+        animation: none;
+  
         li{
           margin-left: 1em;
         }
@@ -74,11 +75,16 @@ header{
       
     }
   }
+  // .desktop{
+  //   display: none;
 
-  @media (min-width: 500px) {
-    .mobile{
-      display: none;
-    }
-  }
+
+
+
+  // @media (min-width: 500px) {
+  //   .mobile{
+  //     display: none;
+  //   }
+  // }
 
 }
