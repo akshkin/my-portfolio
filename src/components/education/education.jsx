@@ -19,6 +19,7 @@ function Education() {
             experience working with tools which are used at Skyscanner.
           </small>
         </li>
+        <li>The Complete Node JS Developer Course</li>
       </ul>
     </AnimationOnScroll>
   );
