@@ -10,17 +10,17 @@ const data = [
     sourceCode: "https://github.com/akshkin/react-movie-search",
   },
   {
-    title: "Fullstack MERN Shopzone e-comm site",
+    title: "MERN stack Shopzone e-comm site",
     Description:
       "A frontend React project converted to fullstack with authentication. Users can add items to 'favorites', add items to cart and change the number of the products in thecart. Migrated from Context API to Redux for state management",
     builtWith:
-      "React, React Router, Redux , CSS-in-JS(Styled Components), REST API (using Node JS, Express, MongoDB)",
+      "React + TypeScript, React Router, Redux Toolkit, CSS-in-JS(Styled Components), REST API (using Node JS, Express, MongoDB)",
     sourceCode: "https://github.com/akshkin/shopzone-e-comm-site",
     liveDemo: "https://shopzone-project.netlify.app/",
     imageUrl: "/images/screenshots/shopzone.png",
   },
   {
-    title: "Full stack MERN Task Manager App",
+    title: "MERN stack Task Manager App",
     Description:
       "Users can create an account, sign in, update/delete profiles, create/read/update/delete tasks.",
     builtWith:
