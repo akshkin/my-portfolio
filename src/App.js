@@ -11,9 +11,9 @@ function App() {
         <Navigation />
       </header>
       <Home />
-      <Routes>
+      {/* <Routes>
         <Route path="/projects/:project" element={<Project />} />
-      </Routes>
+      </Routes> */}
     </div>
   );
 }

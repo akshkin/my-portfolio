@@ -5,7 +5,7 @@ function Hero() {
   const letterClass = "text-animate";
   const name = "Akshaya  Kini";
   const nameArray = name.split("");
-  const jobTitle = "Frontend Developer";
+  const jobTitle = "Web developer with a focus on frontend";
   const jobTitleArray = jobTitle.split("");
 
   return (
@@ -21,7 +21,7 @@ function Hero() {
           />
         </span>
       </h1>
-      <p className="hero-subtitle">Frontend developer</p>
+      <p className="hero-subtitle">Web developer with a focus on frontend</p>
     </div>
   );
 }
