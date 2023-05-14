@@ -26,11 +26,11 @@ function Home() {
             <Skills />
           </div>
 
-          <div className="download-container">
+          {/* <div className="download-container">
             <a className="download" href="/Akshaya_Kini_Resume.pdf" download>
               Download Resume <DownloadIcon />
             </a>
-          </div>
+          </div> */}
         </div>
 
         <h2 className="projects-title">MY PROJECTS</h2>
