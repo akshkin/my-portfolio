@@ -1,40 +1,39 @@
-.education{
-  background-image: url("../../assets/images/fern-bg.jpg");
+.education {
+  background-image: url("../../assets/images/sky-bg.jpg");
   background-position: center;
+  background-size: cover;
+  background-color: #824d95;
+  background-blend-mode: multiply;
   color: white;
   padding: 1em;
   margin: 0 auto;
   position: relative;
-  
 
-  .certificates-list{
-    li{
+  .certificates-list {
+    li {
       margin-block: 1em;
-      small{
+      small {
         color: #a7a2a2;
       }
     }
   }
 
   @media (min-width: 1000px) {
-      display: grid;
-      grid-template-areas: 
-        "certificates skills"
-        "download download"
-        ;
-      justify-items: center;
+    display: grid;
+    grid-template-areas:
+      "certificates skills"
+      "download download";
+    justify-items: center;
 
-      .certificates{
-        grid-area: certificates;
-      }
-      .skills{
-        grid-area: skills;
-      }
-      
-      .download-container{
-        grid-area: download;
+    .certificates {
+      grid-area: certificates;
+    }
+    .skills {
+      grid-area: skills;
     }
 
-
+    .download-container {
+      grid-area: download;
+    }
   }
 }

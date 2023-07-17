@@ -9,7 +9,7 @@ function Hero() {
   const jobTitleArray = jobTitle.split("");
 
   return (
-    <div className="hero">
+    <div className="">
       <h1 className="hero-title">
         <span className={letterClass}>Hi, &nbsp; </span>
         <span className={`${letterClass} _14`}> I'm &nbsp;</span>

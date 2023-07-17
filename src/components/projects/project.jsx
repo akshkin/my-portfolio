@@ -23,7 +23,7 @@ function Project({ project }) {
         <p>
           <span className="accent-color">Technologies used:</span> {builtWith}
         </p>
-        {sourceCode && liveDemo ? (
+        {sourceCode ? (
           <>
             <a
               href={sourceCode}
@@ -33,9 +33,16 @@ function Project({ project }) {
             >
               Source Code
             </a>
-            <a href={liveDemo} rel="noreferrer" target="_blank" className="btn">
-              Live Demo
-            </a>
+            {liveDemo && (
+              <a
+                href={liveDemo}
+                rel="noreferrer"
+                target="_blank"
+                className="btn"
+              >
+                Live Demo
+              </a>
+            )}
           </>
         ) : (
           <span className="coming-soon">Coming soon!</span>

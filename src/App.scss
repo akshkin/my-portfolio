@@ -1,61 +1,66 @@
-*{
+* {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
-$blue: #1CBDC5;
-$yellow: #F5E1A1;
-$green: #B7D1C6;
+$blue: #1cbdc5;
+$yellow: #f5e1a1;
+$green: #b7d1c6;
 
 @font-face {
   font-family: primaryFont;
-  src: url("./assets/fonts/Satista.otf");
+  src: url("./assets/fonts/GrandSlang-Roman.ttf");
 }
-body{
+body {
   text-align: center;
-} 
-a{
+}
+a {
   text-decoration: none;
   color: #252525;
 
   &:hover,
-  &:focus{
+  &:focus {
     color: #cbc4c4;
   }
 }
 
-button{
+button {
   cursor: pointer;
 }
-.container{
+.container {
   padding: 1em;
   text-align: left;
 }
 
-img{
+img {
   max-width: 100%;
 }
-h1, h2, h3{  
-  font-family: 'Montserrat', sans-serif;
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
 }
-h1{
-  margin-top: 0; 
+h1 {
+  margin-top: 0;
+  font-family: primaryFont, sans-serif;
+  font-weight: bold;
+  font-size: 8rem;
 }
-a{
+a {
   text-decoration: none;
 }
 
-.accent-color{
+.accent-color {
   font-weight: bold;
 }
 
-.pattern{
+.pattern {
   width: 30%;
   height: 30%;
   top: 0;
   border: 2px solid black;
 }
-.inner{
+.inner {
   max-width: 800px;
   margin: 0 auto;
   padding: 2em;
@@ -78,11 +83,11 @@ a{
 //   }
 // }
 
-.projects-title{
+.projects-title {
   margin-top: 2em;
 }
 
-.projects-container{
+.projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
   // grid-auto-rows: 1fr;
@@ -92,21 +97,24 @@ a{
   padding: 1em;
 }
 
-
-.contact{
-  background: url("./assets/images/fern-bg.jpg");
-  background-position: center;;
+.contact {
+  background: url("./assets/images/sky-bg.jpg");
+  background-position: top;
+  background-size: cover;
+  background-color: #824d95;
+  background-blend-mode: multiply;
   color: white;
 }
-.btn{
-  background: #508056;
+.btn {
+  // background: #508056;
+  background: #824d95;
   color: white;
-  text-decoration: none;  
+  text-decoration: none;
   display: inline-block;
   border-radius: 7px;
   padding: 0.5em 1.2em;
 
-  &:hover{
+  &:hover {
     background-color: white;
     color: #252525;
     border: 1px solid #252525;
@@ -117,7 +125,12 @@ a{
 }
 
 @media (min-width: 600px) {
-    html{
-      font-size: 120%;
-    }
+  html {
+    font-size: 120%;
+  }
+}
+@media (min-width: 900px) {
+  h1 {
+    font-size: 150%;
+  }
 }

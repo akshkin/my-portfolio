@@ -8,6 +8,7 @@ import { ReactComponent as SCSSIcon } from "../../assets/svgs/scss.svg";
 import { ReactComponent as StyledComponentsIcon } from "../../assets/svgs/styled-components.svg";
 import { ReactComponent as JestIcon } from "../../assets/svgs/jest.svg";
 import { ReactComponent as NodeIcon } from "../../assets/svgs/node.svg";
+import { ReactComponent as ReactNativeIcon } from "../../assets/svgs/react-native.svg";
 
 import "./skills.styles.scss";
 
@@ -30,6 +31,9 @@ function Skills() {
         </li>
         <li className="skills-list-items">
           <ReactIcon className="icon" /> React{" "}
+        </li>
+        <li className="skills-list-items">
+          <ReactNativeIcon className="icon" /> React Native{" "}
         </li>
         <li className="skills-list-items">
           <ResponsiveIcon className="icon" /> Responsive layouts

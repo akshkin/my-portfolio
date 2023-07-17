@@ -19,15 +19,25 @@ const data = [
     liveDemo: "https://shopzone-project.netlify.app/",
     imageUrl: "/images/screenshots/shopzone.png",
   },
+  // {
+  //   title: "MERN stack Task Manager App",
+  //   Description:
+  //     "Users can create an account, sign in, update/delete profiles, create/read/update/delete tasks.",
+  //   builtWith:
+  //     "React, React Router, Redux, Styled Components, Node JS, Express, Mongo DB",
+  //   sourceCode: "https://github.com/akshkin/task-manager-react",
+  //   liveDemo: "https://easytaskmanager.netlify.app/",
+  //   imageUrl: "/images/screenshots/task-manager.png",
+  // },
   {
-    title: "MERN stack Task Manager App",
+    title: "React Native Expense Tracker App",
     Description:
-      "Users can create an account, sign in, update/delete profiles, create/read/update/delete tasks.",
+      "Users can create/read/update/delete expenses, set a maximum expense limt and receive a notification when the expense limit is exceeded",
     builtWith:
-      "React, React Router, Redux, Styled Components, Node JS, Express, Mongo DB",
-    sourceCode: "https://github.com/akshkin/task-manager-react",
-    liveDemo: "https://easytaskmanager.netlify.app/",
-    imageUrl: "/images/screenshots/task-manager.png",
+      "React Native using Expo, React Navigation, Redux Toolkit, Async Storage",
+    sourceCode: "https://github.com/akshkin/expense-tracker-react-native",
+    //  liveDemo: "https://easytaskmanager.netlify.app/",
+    imageUrl: "/images/screenshots/expense-tracker.png",
   },
   {
     title: "Travel Guide App",
