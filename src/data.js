@@ -29,16 +29,7 @@ const data = [
   //   liveDemo: "https://easytaskmanager.netlify.app/",
   //   imageUrl: "/images/screenshots/task-manager.png",
   // },
-  {
-    title: "React Native Expense Tracker App",
-    Description:
-      "Users can create/read/update/delete expenses, set a maximum expense limt and receive a notification when the expense limit is exceeded",
-    builtWith:
-      "React Native using Expo, React Navigation, Redux Toolkit, Async Storage",
-    sourceCode: "https://github.com/akshkin/expense-tracker-react-native",
-    //  liveDemo: "https://easytaskmanager.netlify.app/",
-    imageUrl: "/images/screenshots/expense-tracker.png",
-  },
+
   {
     title: "Travel Guide App",
     Description:
@@ -64,6 +55,25 @@ const data = [
     sourceCode: "https://github.com/akshkin/quizzical",
     liveDemo: "https://quizzical-scrimba.netlify.app/",
     imageUrl: "/images/screenshots/quizzical.png",
+  },
+  {
+    title: "React Native Expense Tracker App",
+    Description:
+      "Users can create/read/update/delete expenses, set a maximum expense limt and receive a notification when the expense limit is exceeded",
+    builtWith:
+      "React Native using Expo, React Navigation, Redux Toolkit, Async Storage",
+    sourceCode: "https://github.com/akshkin/expense-tracker-react-native",
+    //  liveDemo: "https://easytaskmanager.netlify.app/",
+    imageUrl: "/images/screenshots/expense-tracker.png",
+  },
+  {
+    title: "React Native Shopzone App",
+    Description: "Users can view the mobile app for the Shopzone website",
+    builtWith:
+      "React Native using Expo, React Navigation, Redux Toolkit, Expo Secure Store",
+    sourceCode: "https://github.com/akshkin/shopzone-react-native",
+    //  liveDemo: "https://easytaskmanager.netlify.app/",
+    imageUrl: "/images/screenshots/shopzone-rn.png",
   },
   // {
   //   title: "Colorscheme generator",
