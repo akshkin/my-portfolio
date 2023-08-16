@@ -16,11 +16,11 @@ body {
 }
 a {
   text-decoration: none;
-  color: #252525;
+  color: #cbc4c4;
 
   &:hover,
   &:focus {
-    color: #cbc4c4;
+    color: #838080;
   }
 }
 
@@ -85,23 +85,30 @@ a {
 
 .projects-title {
   margin-top: 2em;
+  color: white;
+  // background-color: #461956;
 }
 
-.projects-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
-  // grid-auto-rows: 1fr;
-  grid-gap: 1.5em;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
+// .projects-container {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+//   // grid-auto-rows: 1fr;
+//   grid-gap: 1.5em;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 1em;
+// }
+
+#projects {
+  background-color: #07010a;
+  padding-top: 2em;
 }
 
 .contact {
-  background: url("./assets/images/sky-bg.jpg");
+  // background: url("./assets/images/sky-bg.jpg");
   background-position: top;
   background-size: cover;
-  background-color: #824d95;
+  background-color: #050006;
   background-blend-mode: multiply;
   color: white;
 }
@@ -113,6 +120,7 @@ a {
   display: inline-block;
   border-radius: 7px;
   padding: 0.5em 1.2em;
+  border: 1px solid #824d95;
 
   &:hover {
     background-color: white;

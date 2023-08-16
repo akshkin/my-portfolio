@@ -1,15 +1,21 @@
 import "./project.style.scss";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
-function Project({ project }) {
-  const { title, imageUrl, Description, builtWith, sourceCode, liveDemo } =
+function Project({ project, setActiveId, setOpen }) {
+  const { title, imageUrl, Description, builtWith, sourceCode, liveDemo, id } =
     project;
+  function openModal() {
+    setActiveId(id);
+    setOpen(true);
+  }
   return (
-    <AnimationOnScroll
-      animateIn="animate__fadeInUp"
-      key={title}
-      className="card"
-    >
+    // <AnimationOnScroll
+    //   animateIn="animate__fadeInUp"
+    //   key={title}
+    //   className="card"
+    // >
+
+    <div className="card" onClick={openModal}>
       <div className="img-container">
         <img
           src={imageUrl}
@@ -17,8 +23,9 @@ function Project({ project }) {
           alt={`${project.title} screenshot`}
         />
       </div>
-      <div className="card-decription">
-        <h3>{title}</h3>
+      <h3>{title}</h3>
+      {/* <div className="card-decription">
+        <h3></h3>
         <p>{Description}</p>
         <p>
           <span className="accent-color">Technologies used:</span> {builtWith}
@@ -47,8 +54,9 @@ function Project({ project }) {
         ) : (
           <span className="coming-soon">Coming soon!</span>
         )}
-      </div>
-    </AnimationOnScroll>
+      </div> */}
+    </div>
+    // </AnimationOnScroll>
   );
 }
 

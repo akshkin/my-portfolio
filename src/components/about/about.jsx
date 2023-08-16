@@ -23,9 +23,7 @@ function About() {
         deliver impactful projects.
       </p>
 
-      <p>
-        When I am not coding, I am spending time with my toddler and husband.
-      </p>
+      <p>When I am not coding, I like to spend time with my family.</p>
     </AnimationOnScroll>
   );
 }

@@ -33,8 +33,8 @@ function Home() {
           </div> */}
         </div>
 
-        <h2 className="projects-title">MY PROJECTS</h2>
-        <div className="projects-container" id="projects">
+        <div id="projects">
+          <h2 className="projects-title">MY PROJECTS</h2>
           <Projects />
         </div>
 

@@ -1,26 +1,123 @@
-.card{
+.card {
   padding: 1em;
   margin: 0 auto;
-  // max-width: 350px;
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   transform: scale(1);
-  overflow:hidden;
+  overflow: hidden;
   // height: 720px;
   background-color: white;
+  cursor: pointer;
+  background-color: rgb(36, 9, 40);
+  color: white;
+  box-shadow: 5px 15px 20px 5px rgba(184, 170, 182, 0.3);
+  box-shadow: -5px -5px 10px rgba(136, 126, 136, 0.3);
 
-  &:hover{
-    transform: scale(1.02);
-    transition: transform ease-in-out 0.3s;
+  &:hover {
+    transform: scale(1.07);
+    transition: transform ease-in 0.3s;
   }
 
-  .coming-soon{
-    color: #F2D64F;
+  .coming-soon {
+    color: #f2d64f;
   }
-  .img-container{
-    max-height: 250px;
+  .img-container {
+    height: 250px;
     max-width: 100%;
-    object-fit: cover;
-    overflow:hidden;
+    object-fit: contain;
+    overflow: hidden;
+    object-position: top;
+  }
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 400px));
+  grid-gap: 1.5em;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  // background-color: rgb(30, 2, 34);
+}
+.projects {
+  position: relative;
+  // background-color: #877d4a;
+
+  .overlay {
+    position: fixed;
+    inset: 0;
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(136, 136, 136, 0.399);
+    z-index: 10;
+    padding: 1em;
+  }
+}
+.modal {
+  position: absolute;
+  inset: 0;
+  top: 10%;
+  background-color: black;
+  color: rgba(250, 250, 250, 0.679);
+  width: 90%;
+  z-index: 200;
+  margin: 1em auto;
+  padding: 1em;
+  padding-top: 2em;
+  border-radius: 20px;
+  overflow-y: scroll;
+  animation: fadeInUp 0.5s forwards;
+
+  .img-container {
+    img {
+      height: 350px;
+    }
+  }
+
+  .cancel-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: transparent;
+    color: white;
+    border: 0;
+    font-size: larger;
+  }
+
+  .links-container {
+    .btn + .btn {
+      margin-top: 1em;
+      margin-inline: auto;
+    }
+
+    @media (min-width: 300px) {
+      .btn + .btn {
+        margin-left: 1em;
+      }
+    }
+  }
+
+  @media (min-width: 500px) {
+    height: fit-content;
+    overflow-y: hidden;
+  }
+
+  @media (min-width: 900px) {
+    display: flex;
+    gap: 2em;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+
+    .img-container {
+      width: 150%;
+      img {
+        // height: 600px;
+        width: 700px;
+        object-fit: cover;
+        object-position: top;
+      }
+    }
   }
 }
