@@ -1,20 +1,23 @@
-header{
-  
-  nav{
+header {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  nav {
     padding: 1em;
     max-width: 100%;
 
-    .logo{
+    .logo {
       width: 50px;
       margin-bottom: -0.7em;
     }
-    
-    .nav-links-container{
+
+    .nav-links-container {
       list-style-type: none;
       position: fixed;
       top: 0;
       right: 0;
-      background-color: white;
+      background-color: rgb(14, 14, 14);
       z-index: 100;
       margin: 0;
       padding: 0;
@@ -25,66 +28,66 @@ header{
       width: 80vw;
       height: 70vh;
       animation: fadeOutRight 0.5s forwards;
+
+      li {
+        color: white;
+      }
     }
 
-    .logo-container{
+    .logo-container {
       width: 100%;
       display: flex;
       justify-content: space-between;
     }
 
-    .open{
+    .open {
       animation: fadeInRight 0.5s forwards;
     }
-    .close{
+    .close {
       animation: fadeOutRight 0.5s forwards;
     }
-      
-    .toggle-btn{
+
+    .toggle-btn {
       background-color: transparent;
       border: none;
       font-size: 1.2rem;
       z-index: 1000;
+      color: white;
     }
-  
+
     @media (min-width: 500px) {
       padding: 1em;
-      display: flex; 
+      display: flex;
       justify-content: space-between;
 
-      .toggle-btn{
+      .toggle-btn {
         display: none;
       }
-  
-      .logo{
+
+      .logo {
         width: 70px;
       }
-  
-      .nav-links-container{
-        position:unset;
+
+      .nav-links-container {
+        position: unset;
         flex-direction: row;
-        padding: 1em;        
+        padding: 1em;
         width: auto;
         height: auto;
         animation: none;
-  
-        li{
+
+        li {
           margin-left: 1em;
         }
-      }    
-      
+      }
     }
   }
   // .desktop{
   //   display: none;
-
-
-
 
   // @media (min-width: 500px) {
   //   .mobile{
   //     display: none;
   //   }
   // }
-
 }
