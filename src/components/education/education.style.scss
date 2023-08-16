@@ -1,13 +1,26 @@
 .education {
-  background-image: url("../../assets/images/sky-bg.jpg");
+  // background-image: url("../../assets/images/sky-bg.jpg");
   background-position: center;
   background-size: cover;
-  background-color: #824d95;
+  // background-color: #22032d;
+  background-color: #0d0310;
   background-blend-mode: multiply;
   color: white;
   padding: 1em;
   margin: 0 auto;
   position: relative;
+
+  .certificate {
+    background: linear-gradient(45deg, rgba(79, 32, 96, 0.7), #e996cbb4);
+    padding: 0.1em 2em;
+    border-radius: 20px;
+    margin-block: 1em;
+
+    .provider {
+      font-size: smaller;
+      font-weight: 200;
+    }
+  }
 
   .certificates-list {
     li {

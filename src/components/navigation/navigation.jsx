@@ -13,7 +13,8 @@ function Navigation() {
     <header>
       <nav>
         <div className="logo-container">
-          <img className="logo" src="/images/logo.png" alt="logo" />
+          {/* <img className="logo" src="/images/logo.png" alt="logo" /> */}
+          <span className="logo">AK</span>
           <button className="toggle-btn" onClick={toggleNavigation}>
             &#9776;
           </button>
