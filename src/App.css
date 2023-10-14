@@ -15,8 +15,9 @@ a {
   text-decoration: none;
   color: #252525;
 }
-a:hover, a:focus {
-  color: #A03445;
+a:hover,
+a:focus {
+  color: #a03445;
 }
 
 .container {
@@ -28,7 +29,9 @@ img {
   max-width: 100%;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Cinzel Decorative", cursive;
 }
 
@@ -42,7 +45,7 @@ a {
 
 .accent-color {
   font-weight: bold;
-  color: #A03445;
+  color: #a03445;
 }
 
 .inner {
@@ -83,8 +86,8 @@ a {
   margin-left: 1em;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   html {
     font-size: 120%;
   }
-}/*# sourceMappingURL=App.css.map */
+}

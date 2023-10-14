@@ -1,14 +1,7 @@
 import React from "react";
 
 function NavLinks({ toggleNavigation }) {
-  // function closeNav() {
-  //   const navList = document.querySelector(".nav-links-container");
-  //   navList.classList.add("close");
-  //   // setTimeout(() => {
-  //   //   navList.classList.remove("close");
-  //   // }, 500);
-  // }
-
+  
   return (
     <ul className="nav-links-container">
       <li className="nav-link-item" onClick={toggleNavigation}>

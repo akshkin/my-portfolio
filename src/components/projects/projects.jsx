@@ -24,7 +24,7 @@ function Projects() {
         <div className="overlay">
           <div className="modal">
             <button className="cancel-btn" onClick={() => setOpen(false)}>
-              X
+              &times;
             </button>
             <div className="img-container">
               <img
