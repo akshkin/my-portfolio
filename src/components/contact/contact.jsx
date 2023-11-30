@@ -2,6 +2,8 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "./contact.style.scss";
+import { ReactComponent as GithubIcon } from "../../assets/svgs/github.svg";
+import { ReactComponent as EmailIcon } from "../../assets/svgs/email.svg";
 
 function Contact({ id }) {
   const form = useRef();
@@ -27,6 +29,42 @@ function Contact({ id }) {
       );
   }
 
+  /**
+   * 
+   * // <form ref={form} onSubmit={sendEmail}>
+      //   <input
+      //     className="input name"
+      //     type="text"
+      //     placeholder="Name"
+      //     name="name"
+      //     required
+      //   />
+      //   <input
+      //     className="input email"
+      //     type="email"
+      //     placeholder="Email address"
+      //     name="email"
+      //     required
+      //   />
+      //   <input
+      //     className="input subject"
+      //     type="text"
+      //     placeholder="Subject"
+      //     name="subject"
+      //     required
+      //   />
+      //   <textarea
+      //     className="input message"
+      //     placeholder="Message"
+      //     name="message"
+      //     required
+      //   />
+      //   <button className="submit-btn button" type="submit" value="Send">
+      //     Send
+      //   </button>
+      // </form>
+   */
+
   return (
     <AnimationOnScroll
       animateIn="animate__fadeInLeft"
@@ -35,39 +73,14 @@ function Contact({ id }) {
       <img src="/images/splsh.jpg" alt="background" />
       <h3>CONTACT ME</h3>
       <p>Sparked your interest ? Please don't hesitate to contact me!</p>
-
-      <form ref={form} onSubmit={sendEmail}>
-        <input
-          className="input name"
-          type="text"
-          placeholder="Name"
-          name="name"
-          required
-        />
-        <input
-          className="input email"
-          type="email"
-          placeholder="Email address"
-          name="email"
-          required
-        />
-        <input
-          className="input subject"
-          type="text"
-          placeholder="Subject"
-          name="subject"
-          required
-        />
-        <textarea
-          className="input message"
-          placeholder="Message"
-          name="message"
-          required
-        />
-        <button className="submit-btn button" type="submit" value="Send">
-          Send
-        </button>
-      </form>
+      <div className="links">
+        <a href="https://github.com/akshkin" title="Github profile">
+          <GithubIcon fontSize={30} />
+        </a>
+        <a href="mailto:akshaya.kini12@gmail.com" title="Email">
+          <EmailIcon fontSize={30} />
+        </a>
+      </div>
     </AnimationOnScroll>
   );
 }

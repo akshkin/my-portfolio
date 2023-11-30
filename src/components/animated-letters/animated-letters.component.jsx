@@ -1,18 +1,16 @@
-import "animate.css"
-import "./animated-letters.style.scss"
+import "animate.css";
+import "./animated-letters.style.scss";
 
-const AnimatedLetters = ({letterClass, strArray, index}) => {
+const AnimatedLetters = ({ letterClass, strArray, index }) => {
   return (
     <span>
-      {
-        strArray.map((char, i) => (
-          <span key={char + i} className={`${letterClass} _${i + index}`}>
-            {char}
-          </span>
-        ))
-      }
+      {strArray.map((char, i) => (
+        <span key={char + i} className={`${letterClass} _${i + index}`}>
+          {char}
+        </span>
+      ))}
     </span>
-  )
-}
+  );
+};
 
-export default AnimatedLetters
+export default AnimatedLetters;

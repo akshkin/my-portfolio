@@ -1,16 +1,10 @@
 .hero {
-  // background: url("./../../assets/images/sky-bg.jpg");
-  // background-position: center;
-  background-size: cover;
-  // background-repeat: no-repeat;
   height: 100vh;
   max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // align-items: flex-start;
-  // text-align: left;
   text-align: center;
   color: #ebcade;
 
@@ -26,7 +20,6 @@
     margin-top: 0;
     margin-bottom: 0;
     font-size: 2.5rem;
-    // padding: 1em;
     padding-bottom: 0;
     font-weight: regular;
     word-wrap: no-wrap;

@@ -14,7 +14,7 @@ const data = [
     id: 2,
     title: "MERN stack Shopzone e-comm site",
     Description:
-      "A frontend React project converted to fullstack with authentication. Users can add items to 'favorites', add items to cart and change the number of the products in thecart. Migrated from Context API to Redux for state management",
+      "A frontend React project converted to fullstack with authentication. Users can add items to 'favorites', add items to cart and change the number of the products in the cart. Migrated from Context API to Redux for state management",
     builtWith:
       "React + TypeScript, React Router, Redux Toolkit, CSS-in-JS(Styled Components), REST API (using Node JS, Express, MongoDB)",
     sourceCode: "https://github.com/akshkin/shopzone-e-comm-site",
@@ -35,7 +35,7 @@ const data = [
 
   {
     id: 4,
-    title: "Travel Guide App",
+    title: "Travel Guide App (React)",
     Description:
       "This is a Chingu Voyage project where users get recommendation for travel, see a carousel of top countries, explore more about the countries and filter destinations based on the continents, create an account, sign in, ",
     builtWith: "React, React Router, Tailwind CSS",
@@ -43,24 +43,36 @@ const data = [
     liveDemo: "https://chingu-voyages.github.io/v43-tier2-team-18/",
     imageUrl: "/images/screenshots/travel-guide.png",
   },
-  // {
-  //id: 5,
-  //   title: "Movie watchlist",
-  //   Description: "This is one of Scrimba's solo projects. The challenge is to build out this watchlist and get it looking as close to the design as possible, with a feature to add to watchlist.",
-  //   builtWith : "HTML, CSS, JavaScript",
-  //   sourceCode : "https://github.com/akshkin/movie-watchlist",
-  //   liveDemo : "https://akshkin.github.io/movie-watchlist/",
-  //   imageUrl: "/images/screenshots/movie-watchlist.png"
-  // },
+
   {
     id: 6,
-    title: "Quizzical",
+    title: "Quizzical (React)",
     Description:
       "This is one of Scrimba's solo project. The challenge is to get questions using The TriviaDB API and users should click on the answers and then tally by clicking on 'check answers'.",
     builtWith: "React, CSS, and The Trivia Database API",
     sourceCode: "https://github.com/akshkin/quizzical",
     liveDemo: "https://quizzical-scrimba.netlify.app/",
     imageUrl: "/images/screenshots/quizzical.png",
+  },
+  {
+    id: 5,
+    title: "Movie watchlist (Vanilla JavaScript)",
+    Description:
+      "This is one of Scrimba's solo projects. The challenge is to build out this watchlist and get it looking as close to the design as possible, with a feature to add to watchlist.",
+    builtWith: "HTML, CSS, JavaScript",
+    sourceCode: "https://github.com/akshkin/movie-watchlist",
+    liveDemo: "https://akshkin.github.io/movie-watchlist/",
+    imageUrl: "/images/screenshots/movie-watchlist.png",
+  },
+  {
+    id: 9,
+    title: "Colorscheme generator (Vanilla JavaScript)",
+    Description:
+      "This is one of Scrimba's solo project. The challenge is to get color schemes using The Color API. Users can select the color and type of color scheme.",
+    builtWith: "HTML, CSS, JavaScript and TheColorAPI",
+    sourceCode: "https://github.com/akshkin/color-scheme-generator",
+    liveDemo: "https://akshkin.github.io/color-scheme-generator/",
+    imageUrl: "/images/screenshots/color-scheme-generator_.png",
   },
   {
     id: 7,
@@ -83,16 +95,7 @@ const data = [
     //  liveDemo: "https://easytaskmanager.netlify.app/",
     imageUrl: "/images/screenshots/shopzone-rn.png",
   },
-  // {
-  //id: 9,
-  //   title: "Colorscheme generator",
-  //   Description:
-  //     "This is one of Scrimba's solo project. The challenge is to get color schemes using The Color API. Users can select the color and type of color scheme.",
-  //   builtWith: "HTML, CSS, JavaScript and TheColorAPI",
-  //   sourceCode: "https://github.com/akshkin/color-scheme-generator",
-  //   liveDemo: "https://akshkin.github.io/color-scheme-generator/",
-  //   imageUrl: "/images/screenshots/color-scheme-generator_.png",
-  // },
+
   // {
   //id: 10,
   //   title: "Game of thrones rolodex with Unit Testing",
