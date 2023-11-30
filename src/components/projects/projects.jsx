@@ -1,12 +1,18 @@
 import { useState } from "react";
 import data from "../../data";
 import Project from "./project";
+import { ReactComponent as CloseIcon } from "../../assets/svgs/close.svg";
 
 function Projects() {
   const [activeId, setActiveId] = useState("");
   const [open, setOpen] = useState(false);
 
   const activeProject = data.find((project) => activeId === project.id);
+
+  function closeModal() {
+    setOpen(false);
+    document.body.style.overflow = "scroll";
+  }
 
   return (
     <div className="projects">
@@ -23,8 +29,8 @@ function Projects() {
       {open && (
         <div className="overlay">
           <div className="modal">
-            <button className="cancel-btn" onClick={() => setOpen(false)}>
-              X
+            <button className="cancel-btn" onClick={closeModal}>
+              <CloseIcon />
             </button>
             <div className="img-container">
               <img
@@ -33,7 +39,6 @@ function Projects() {
                 alt={`${activeProject.title} screenshot`}
               />
             </div>
-            {/* <h3>{activeProject.title}</h3> */}
             <div className="card-decription">
               <h3>{activeProject.title}</h3>
               <p>{activeProject.Description}</p>
