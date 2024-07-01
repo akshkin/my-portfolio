@@ -26,7 +26,7 @@ function NavLinks({ toggleNavigation }) {
           Projects
         </a>
       </li>
-      <li className="nav-link-item" onClick={toggleNavigation}>
+      <li className="nav-link-item contact" onClick={toggleNavigation}>
         <a className="nav-link" href="#contact">
           Contact
         </a>

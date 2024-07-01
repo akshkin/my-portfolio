@@ -9,8 +9,10 @@
   cursor: pointer;
   background-color: rgb(36, 9, 40);
   color: white;
-  box-shadow: 5px 15px 20px 5px rgba(184, 170, 182, 0.3);
-  box-shadow: -5px -5px 10px rgba(136, 126, 136, 0.3);
+  box-shadow: 5px 15px 20px 5px rgba(80, 80, 80, 0.3);
+  box-shadow: -5px -5px 10px rgba(108, 107, 108, 0.3);
+  // box-shadow: 5px 15px 20px 5px rgba(184, 170, 182, 0.3);
+  // box-shadow: -5px -5px 10px rgba(136, 126, 136, 0.3);
 
   &:hover {
     transform: scale(1.07);
@@ -65,6 +67,14 @@
   border-radius: 20px;
   overflow-y: auto;
   animation: fadeInUp 0.5s forwards;
+
+  h3 {
+    color: white;
+  }
+
+  .accent-color {
+    color: rgb(240, 237, 237);
+  }
 
   &::-webkit-scrollbar {
     display: none;

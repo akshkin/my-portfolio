@@ -4,6 +4,10 @@
   margin: 0 auto;
   padding: 2em;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   .links {
     display: flex;
