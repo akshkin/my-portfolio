@@ -7,7 +7,7 @@ function About() {
       <h2>ABOUT ME</h2>
 
       <p>
-        As a web developer with a year of continuous learning experience, my
+        As a web developer with two years of continuous learning experience, my
         focus is on front-end development, utilizing HTML, CSS, JavaScript, and
         React to create intuitive user experiences. I am passionate about
         continuously improving my skills and collaborating with dynamic teams to

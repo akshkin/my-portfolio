@@ -87,7 +87,7 @@ const data = [
   },
   {
     id: 8,
-    title: "React Native Shopzone App",
+    title: "React Native Shopzone App (for the web app)",
     Description: "Users can view the mobile app for the Shopzone website",
     builtWith:
       "React Native using Expo, React Navigation, Redux Toolkit, Expo Secure Store",
