@@ -17,14 +17,14 @@ function Project({ project, setActiveId, setOpen }) {
     // >
 
     <div className="card" onClick={openModal}>
-      <div className="img-container">
-        <img
-          src={imageUrl}
-          className="card-img"
-          alt={`${project.title} screenshot`}
-        />
-      </div>
-      <h3>{title}</h3>
+      {/* <div className="img-container"> */}
+      <img
+        src={imageUrl}
+        className="card-img"
+        alt={`${project.title} screenshot`}
+      />
+      {/* </div> */}
+      {/* <h3>{title}</h3> */}
     </div>
     // </AnimationOnScroll>
   );

@@ -29,7 +29,7 @@ function Projects() {
       {open && (
         <div className="overlay">
           <div className="modal">
-            <button className="cancel-btn" onClick={closeModal}>
+            <button title="Close" className="cancel-btn" onClick={closeModal}>
               <CloseIcon />
             </button>
             <div className="img-container">
