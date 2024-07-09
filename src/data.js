@@ -6,7 +6,7 @@ const data = [
       "A movie and Tv search app where users can search for movie/tv shows and get more info on clicking on the cards which takes them to a new page as well as similar movies/tv shows.",
     builtWith:
       "React, Context API, React Router, SCSS, TMDB API, Jest and React-Testing-Library for Unit Testing",
-    imageUrl: "/images/screenshots/movie-search-mockup.png",
+    imageUrl: "/images/screenshots/movie-search-r-mockup.png",
     liveDemo: "https://mymovieandtvsearch.netlify.app/",
     sourceCode: "https://github.com/akshkin/react-movie-search",
   },
@@ -19,7 +19,7 @@ const data = [
       "React + TypeScript, React Router, Redux Toolkit, CSS-in-JS(Styled Components), REST API (using Node JS, Express, MongoDB)",
     sourceCode: "https://github.com/akshkin/shopzone-e-comm-site",
     liveDemo: "https://shopzone-project.netlify.app/",
-    imageUrl: "/images/screenshots/shopzone-mockup.png",
+    imageUrl: "/images/screenshots/shopzone-r-mockup.png",
   },
   // {
   //id: 3,
@@ -41,7 +41,7 @@ const data = [
     builtWith: "React, React Router, Tailwind CSS",
     sourceCode: "https://github.com/chingu-voyages/v43-tier2-team-18",
     liveDemo: "https://chingu-voyages.github.io/v43-tier2-team-18/",
-    imageUrl: "/images/screenshots/chingu-project-mockup.png",
+    imageUrl: "/images/screenshots/chingu-r-mockup.png",
   },
 
   {
@@ -52,7 +52,7 @@ const data = [
     builtWith: "React, CSS, and The Trivia Database API",
     sourceCode: "https://github.com/akshkin/quizzical",
     liveDemo: "https://quizzical-scrimba.netlify.app/",
-    imageUrl: "/images/screenshots/quizzical-mockup.png",
+    imageUrl: "/images/screenshots/quizzical-r-mockup.png",
   },
   {
     id: 5,
@@ -62,7 +62,7 @@ const data = [
     builtWith: "HTML, CSS, JavaScript",
     sourceCode: "https://github.com/akshkin/movie-watchlist",
     liveDemo: "https://akshkin.github.io/movie-watchlist/",
-    imageUrl: "/images/screenshots/movie-watchlist-mockup.png",
+    imageUrl: "/images/screenshots/movie-watchlist-r-mockup.png",
   },
   {
     id: 9,
@@ -72,7 +72,7 @@ const data = [
     builtWith: "HTML, CSS, JavaScript and TheColorAPI",
     sourceCode: "https://github.com/akshkin/color-scheme-generator",
     liveDemo: "https://akshkin.github.io/color-scheme-generator/",
-    imageUrl: "/images/screenshots/color-scheme-mockup.png",
+    imageUrl: "/images/screenshots/color-scheme-r-mockup.png",
   },
   {
     id: 7,
