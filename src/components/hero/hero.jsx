@@ -12,7 +12,8 @@ function Hero() {
 
   return (
     <div className="">
-      <img src="/images/splsh.jpg" />
+      {/* <img src="/images/splsh-white.png" /> */}
+      {/* <img src="images/hero-bg.jpg" /> */}
       <h1 className="hero-title">
         <span className={letterClass}>Hi, &nbsp; </span>
         <span className={`${letterClass} _14`}> I'm &nbsp;</span>
