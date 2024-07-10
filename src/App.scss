@@ -124,3 +124,9 @@ a {
     font-size: 120%;
   }
 }
+
+@media (min-width: 600px) and (max-width: 940px) and (orientation: landscape) {
+  html {
+    font-size: 90%;
+  }
+}

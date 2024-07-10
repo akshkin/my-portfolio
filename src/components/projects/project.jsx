@@ -24,7 +24,7 @@ function Project({ project, setActiveId, setOpen }) {
         alt={`${project.title} screenshot`}
       />
       {/* </div> */}
-      {/* <h3>{title}</h3> */}
+      <h3>{title}</h3>
     </div>
     // </AnimationOnScroll>
   );
