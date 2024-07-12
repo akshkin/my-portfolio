@@ -7,10 +7,14 @@ $blue: #1cbdc5;
 $yellow: #f5e1a1;
 $green: #b7d1c6;
 
+$black: #020305;
+$white: white;
+
 @font-face {
   font-family: primaryFont;
   src: url("./assets/fonts/GrandSlang-Roman.ttf");
 }
+
 body {
   text-align: center;
   background-color: #020305;
@@ -40,6 +44,7 @@ h1,
 h2,
 h3 {
   font-family: "Montserrat", sans-serif;
+  color: $white;
 }
 h1 {
   font-family: primaryFont, sans-serif;
@@ -92,15 +97,12 @@ a {
 }
 
 .contact {
-  // background: url("./assets/images/sky-bg.jpg");
   background-position: top;
   background-size: cover;
-  background-color: #050006;
-  background-blend-mode: multiply;
+  background: linear-gradient(45deg, rgb(238, 133, 194), #6b3b7c);
   color: white;
 }
 .btn {
-  // background: #508056;
   background: #824d95;
   color: white;
   text-decoration: none;
@@ -128,5 +130,31 @@ a {
 @media (min-width: 600px) and (max-width: 940px) and (orientation: landscape) {
   html {
     font-size: 90%;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: whitesmoke;
+    color: #020305;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: #020305;
+  }
+
+  .projects-title {
+    color: #020305;
+  }
+
+  a {
+    color: #3d3d3d;
+
+    &:hover,
+    &:focus {
+      color: #838080;
+    }
   }
 }

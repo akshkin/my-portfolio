@@ -70,11 +70,16 @@ function Contact({ id }) {
       animateIn="animate__fadeInLeft"
       className="contact-container"
     >
-      <img src="/images/splsh.jpg" alt="background" />
+      {/* <img src={imgSource} alt="background" /> */}
       <h3>CONTACT ME</h3>
       <p>Sparked your interest ? Please don't hesitate to contact me!</p>
       <div className="links">
-        <a href="https://github.com/akshkin" title="Github profile">
+        <a
+          href="https://github.com/akshkin"
+          title="Github profile"
+          target="_blank"
+          rel="noreferrer"
+        >
           <GithubIcon fontSize={30} />
         </a>
         <a href="mailto:akshaya.kini12@gmail.com" title="Email">

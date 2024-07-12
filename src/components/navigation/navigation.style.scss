@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 header {
   background-color: #121212;
   position: fixed;
@@ -34,17 +36,28 @@ header {
       animation: fadeOutRight 0.5s forwards;
 
       li a {
-        color: white;
+        color: $white;
       }
 
       li.contact {
-        background-color: rgb(190, 79, 181);
+        // background-color: rgb(190, 79, 181);
         padding: 0.5em 1em;
         border-radius: 5px;
       }
 
+      li.contact a {
+        color: white;
+      }
+
       li.contact a:hover {
         filter: brightness(120%);
+      }
+      @media (prefers-color-scheme: light) {
+        background-color: $white;
+
+        li a {
+          color: $black;
+        }
       }
     }
 
@@ -67,7 +80,7 @@ header {
       border: none;
       font-size: 1.2rem;
       z-index: 1000;
-      color: white;
+      color: $white;
     }
 
     @media (min-width: 500px) {
@@ -95,6 +108,15 @@ header {
           margin-left: 1em;
         }
       }
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    background-color: $white;
+    color: $black;
+
+    nav .toggle-btn {
+      color: $black;
     }
   }
 }
