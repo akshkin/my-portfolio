@@ -10,7 +10,7 @@ header {
 
     .logo {
       width: 50px;
-      color: rgb(190, 79, 181);
+      color: rgb(222, 127, 214);
       font-family: cursive;
       font-size: 1.25rem;
     }
@@ -33,7 +33,7 @@ header {
       background-color: #121212;
       animation: fadeOutRight 0.5s forwards;
 
-      li {
+      li a {
         color: white;
       }
 
@@ -41,10 +41,6 @@ header {
         background-color: rgb(190, 79, 181);
         padding: 0.5em 1em;
         border-radius: 5px;
-      }
-
-      li.contact a {
-        color: white;
       }
 
       li.contact a:hover {

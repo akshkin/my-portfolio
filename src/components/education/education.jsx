@@ -9,10 +9,10 @@ function Education() {
       <h2>CERTIFICATES / EDUCATION</h2>
       {certificates.map((certificate) => (
         <div key={certificate.name} className="certificate">
-          <h4>
+          <p>
             {certificate.name},{" "}
             <span className="provider">{certificate.provider}</span>
-          </h4>
+          </p>
         </div>
       ))}
       {/* <div className="certificate">
