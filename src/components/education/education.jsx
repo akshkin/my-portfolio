@@ -1,5 +1,4 @@
 import "./education.style.scss";
-import { ReactComponent as CertficateIcon } from "../../assets/svgs/certificate.svg";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { certificates } from "./data";
 

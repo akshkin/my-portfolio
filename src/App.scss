@@ -9,10 +9,13 @@ $green: #b7d1c6;
 
 $black: #020305;
 $white: white;
+$pink: #ee85c2;
+$purple: #6b3b7c;
 
 @font-face {
   font-family: primaryFont;
   src: url("./assets/fonts/GrandSlang-Roman.ttf");
+  font-display: swap;
 }
 
 body {
@@ -99,20 +102,21 @@ a {
 .contact {
   background-position: top;
   background-size: cover;
-  background: linear-gradient(45deg, rgb(238, 133, 194), #6b3b7c);
+  background: linear-gradient(45deg, $pink, $purple);
   color: white;
 }
 .btn {
-  background: #824d95;
+  background: $purple;
   color: white;
   text-decoration: none;
   display: inline-block;
   border-radius: 7px;
   padding: 0.5em 1.2em;
-  border: 1px solid #824d95;
+  border: 1px solid $purple;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
   &:hover {
-    background-color: white;
+    background-color: $pink;
     color: #252525;
     border: 1px solid #252525;
   }
