@@ -1,13 +1,13 @@
-import { useCallback } from "react";
-import NavLinks from "./nav-links.component";
+import { useState } from "react";
 import "./navigation.style.scss";
+import MobileNav from "./nav-links.component";
 
 function Navigation() {
-  const toggleNavigation = useCallback(() => {
-    const navbar = document.querySelector(".nav-links-container");
+  const [openNav, setOpenNav] = useState(false);
 
-    navbar.classList.toggle("open");
-  }, []);
+  function toggleNav() {
+    setOpenNav(!openNav);
+  }
 
   return (
     <header>
@@ -15,12 +15,39 @@ function Navigation() {
         <div className="logo-container">
           <span className="logo">AK</span>
           <div>
-            <button className="toggle-btn" onClick={toggleNavigation}>
+            <button className="toggle-btn" onClick={toggleNav}>
               &#9776;
             </button>
           </div>
         </div>
-        <NavLinks toggleNavigation={toggleNavigation} />
+        <MobileNav
+          style={{
+            transform: openNav ? "translate(0%, 0)" : "translate(100%, 0)",
+          }}
+          setOpenNav={setOpenNav}
+        />
+        <ul className="desktop-nav">
+          <li className="nav-link-item">
+            <a className="nav-link" href="#about">
+              About
+            </a>
+          </li>
+          <li className="nav-link-item">
+            <a className="nav-link" href="#education">
+              Skills
+            </a>
+          </li>
+          <li className="nav-link-item">
+            <a className="nav-link" href="#projects">
+              Projects
+            </a>
+          </li>
+          <li className="nav-link-item contact">
+            <a className="nav-link" href="#contact">
+              Contact
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
   );

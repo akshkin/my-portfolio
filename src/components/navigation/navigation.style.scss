@@ -17,10 +17,14 @@ header {
       font-size: 1.25rem;
     }
 
+    .desktop-nav {
+      display: none;
+    }
+
     .nav-links-container {
       list-style-type: none;
       position: fixed;
-      top: 0;
+      top: 10;
       right: 0;
       z-index: 100;
       margin: 0;
@@ -33,14 +37,13 @@ header {
       width: 80vw;
       height: 100vh;
       background-color: #121212;
-      animation: fadeOutRight 0.5s forwards;
+      transition: all 0.3s ease-in-out;
 
       li a {
         color: $white;
       }
 
       li.contact {
-        // background-color: rgb(190, 79, 181);
         padding: 0.5em 1em;
         border-radius: 5px;
       }
@@ -68,13 +71,6 @@ header {
       align-items: center;
     }
 
-    .open {
-      animation: fadeInRight 0.5s forwards;
-    }
-    .close {
-      animation: fadeOutRight 0.5s forwards;
-    }
-
     .toggle-btn {
       background-color: transparent;
       border: none;
@@ -97,15 +93,30 @@ header {
       }
 
       .nav-links-container {
-        position: unset;
-        flex-direction: row;
-        width: auto;
-        height: auto;
-        animation: none;
-        gap: 1em;
+        display: none;
+      }
+
+      .desktop-nav {
+        list-style-type: none;
+        margin-right: 1em;
+        display: flex;
+        align-items: center;
 
         li {
-          margin-left: 1em;
+          margin-left: 0.75em;
+        }
+
+        li.contact {
+          padding: 0.5em 1em;
+          border-radius: 5px;
+        }
+
+        li.contact a {
+          color: white;
+        }
+
+        li.contact a:hover {
+          filter: brightness(120%);
         }
       }
     }
