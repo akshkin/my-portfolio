@@ -1,10 +1,16 @@
+@import "../../App.scss";
+
 .about {
   padding: 1em;
   padding-block: 6em;
-  color: #eae6e6;
+  color: $white;
 
   h2 {
     text-align: center;
     padding-bottom: 0;
+  }
+
+  @media (prefers-color-scheme: light) {
+    color: $black;
   }
 }

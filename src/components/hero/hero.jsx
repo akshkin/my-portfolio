@@ -7,13 +7,9 @@ function Hero() {
   const surname = "Kini";
   const nameArray = name.split("");
   const surnameArray = surname.split("");
-  const jobTitle = "Web developer with a focus on frontend";
-  const jobTitleArray = jobTitle.split("");
 
   return (
     <div className="">
-      {/* <img src="/images/splsh-white.png" /> */}
-      {/* <img src="images/hero-bg.jpg" /> */}
       <h1 className="hero-title">
         <span className={letterClass}>Hi, &nbsp; </span>
         <span className={`${letterClass} _14`}> I'm &nbsp;</span>

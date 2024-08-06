@@ -43,4 +43,8 @@
       grid-area: download;
     }
   }
+
+  @media (prefers-color-scheme: light) {
+    color: #020305;
+  }
 }

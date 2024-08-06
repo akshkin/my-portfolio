@@ -1,16 +1,10 @@
+@import "../../App.scss";
+
 .card {
   margin: 0 auto;
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   overflow: hidden;
-  background-color: white;
   cursor: pointer;
-  background-color: #020305;
-  color: white;
-  // box-shadow: 5px 15px 20px 5px rgba(80, 80, 80, 0.3);
-  // box-shadow: -5px -5px 10px rgba(108, 107, 108, 0.3);
-  // box-shadow: 5px 15px 20px 5px rgba(184, 170, 182, 0.3);
-  // box-shadow: -5px -5px 10px rgba(136, 126, 136, 0.3);
 
   img {
     max-width: 100%;
@@ -45,96 +39,113 @@
   justify-content: center;
   align-items: center;
   padding: 1em;
-  // grid-auto-rows: 500px;
 }
-.projects {
-  position: relative;
 
-  .overlay {
-    position: fixed;
-    inset: 0;
-    height: 100vh;
-    width: 100%;
-    margin: 0 auto;
-    background-color: rgba(136, 136, 136, 0.399);
-    z-index: 10;
-    padding: 1em;
-  }
-}
-.modal {
-  position: absolute;
-  inset: 0;
-  top: 10%;
-  background-color: rgb(18, 9, 9);
-  color: rgba(250, 250, 250, 0.679);
-  width: 90%;
-  z-index: 200;
-  margin: 1em auto;
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease-in-out;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(136, 136, 136, 0.399);
   padding: 1em;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  border-radius: 20px;
-  overflow-y: auto;
-  animation: fadeInUp 0.5s forwards;
+  z-index: 999;
 
-  h3 {
-    color: white;
-  }
+  .modal {
+    background-color: $black;
+    color: $white;
+    width: 90%;
+    margin: 1em auto;
+    padding: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-radius: 20px;
+    max-height: 90vh;
+    animation: fadeInUp 0.5s forwards;
 
-  .accent-color {
-    color: rgb(240, 237, 237);
-  }
+    .modal-content {
+      max-height: 80vh;
+      overflow-y: auto;
 
-  &::-webkit-scrollbar {
-    display: none;
-  }
-
-  .img-container {
-    img {
-      height: 200px;
-      object-fit: contain;
-    }
-  }
-
-  .cancel-btn {
-    position: fixed;
-    right: 10px;
-    top: 10px;
-    background-color: transparent;
-    color: white;
-    border: 0;
-    font-size: larger;
-    font-weight: bolder;
-  }
-
-  .links-container {
-    .btn + .btn {
-      margin: 1em auto 0;
-    }
-
-    @media (min-width: 300px) {
-      .btn + .btn {
-        margin-left: 1em;
+      &::-webkit-scrollbar {
+        display: none;
       }
     }
-  }
 
-  @media (min-width: 700px) {
-    height: max-content;
-    display: flex;
-    gap: 1em;
-    max-width: 800px;
-    margin: auto;
-    text-align: left;
+    h3 {
+      color: $white;
+    }
+
+    .accent-color {
+      color: rgb(240, 237, 237);
+    }
 
     .img-container {
-      width: 100%;
-      display: block;
-      margin: auto;
       img {
-        width: 100%;
-        object-fit: cover;
-        object-position: top;
+        height: 200px;
+        object-fit: contain;
+      }
+    }
+
+    .cancel-btn {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      background-color: transparent;
+      color: $white;
+      border: 0;
+      font-size: larger;
+      font-weight: bolder;
+    }
+
+    .links-container {
+      .btn + .btn {
+        margin: 1em auto 0;
+      }
+
+      @media (min-width: 300px) {
+        .btn + .btn {
+          margin-left: 1em;
+        }
+      }
+    }
+
+    @media (prefers-color-scheme: light) {
+      background-color: whitesmoke;
+      color: $black;
+
+      h3 {
+        color: $black;
+      }
+
+      .accent-color {
+        color: rgb(84, 82, 82);
+      }
+
+      .cancel-btn {
+        color: rgb(6, 6, 6);
+      }
+    }
+
+    @media (min-width: 700px) {
+      .modal-content {
+        display: flex;
+        gap: 1em;
+        max-width: 800px;
+        margin: 2em auto;
+        text-align: left;
+
+        .img-container {
+          width: 100%;
+          display: block;
+          margin: auto;
+          img {
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+          }
+        }
       }
     }
   }

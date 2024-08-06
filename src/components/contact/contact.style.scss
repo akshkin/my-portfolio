@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 .contact-container {
   max-width: 700px;
   height: 50vh;
@@ -93,5 +95,17 @@
         height: 50px;
       }
     }
+  }
+
+  @media (prefers-color-scheme: light) {
+    color: $white;
+
+    h3,
+    a {
+      color: $white;
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    color: $white;
   }
 }

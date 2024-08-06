@@ -1,32 +1,24 @@
 import React from "react";
 
-function NavLinks({ toggleNavigation }) {
-  // function closeNav() {
-  //   const navList = document.querySelector(".nav-links-container");
-  //   navList.classList.add("close");
-  //   // setTimeout(() => {
-  //   //   navList.classList.remove("close");
-  //   // }, 500);
-  // }
-
+function MobileNav({ setOpenNav, style }) {
   return (
-    <ul className="nav-links-container">
-      <li className="nav-link-item" onClick={toggleNavigation}>
+    <ul style={style} className="nav-links-container">
+      <li className="nav-link-item" onClick={() => setOpenNav(false)}>
         <a className="nav-link" href="#about">
           About
         </a>
       </li>
-      <li className="nav-link-item" onClick={toggleNavigation}>
+      <li className="nav-link-item" onClick={() => setOpenNav(false)}>
         <a className="nav-link" href="#education">
           Skills
         </a>
       </li>
-      <li className="nav-link-item" onClick={toggleNavigation}>
+      <li className="nav-link-item" onClick={() => setOpenNav(false)}>
         <a className="nav-link" href="#projects">
           Projects
         </a>
       </li>
-      <li className="nav-link-item contact" onClick={toggleNavigation}>
+      <li className="nav-link-item contact" onClick={() => setOpenNav(false)}>
         <a className="nav-link" href="#contact">
           Contact
         </a>
@@ -35,4 +27,4 @@ function NavLinks({ toggleNavigation }) {
   );
 }
 
-export default NavLinks;
+export default MobileNav;
