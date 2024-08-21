@@ -1,64 +1,64 @@
 @import "../../App.scss";
+@import "../../../styles/mixins";
 
 .hero {
   height: 100vh;
+  max-height: 100vh;
   max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   color: #ebcade;
-  background-image: url("../../assets/images/hero-bg.jpg");
-  background-size: cover;
-  background-color: #484747b0;
-  background-blend-mode: multiply;
-  background-position: center top;
-  // -webkit-mask-image: linear-gradient(
-  //   to bottom,
-  //   rgba(138, 137, 137, 0.951),
-  //   transparent
-  // );
-  // mask-image: linear-gradient(
-  //   to bottom,
-  //   rgba(108, 106, 106, 0.951),
-  //   transparent
-  // );
+  margin-top: 2em;
+  // background-image: url("../../assets/images/hero-bg.jpg");
+  // background-size: cover;
+  // background-color: #484747b0;
+
   filter: brightness(130%);
 
-  // img {
-  //   position: absolute;
-  //   inset: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   object-fit: cover;
-  //   object-position: top;
-  // }
+  .video-bg {
+    @extend %full-screen-width;
+    object-fit: cover;
+    z-index: -1;
+  }
 
-  .hero-title {
-    margin-bottom: 0;
-    font-size: 2.5rem;
-    font-weight: regular;
-    word-wrap: no-wrap;
-    color: $white;
-    text-align: center;
+  .hero-content {
+    @extend %full-screen-width !optional;
+    background-color: rgba(0, 0, 0, 0.566);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    .accent {
-      display: block;
-      letter-spacing: 3px;
-      font-size: 3rem;
-      z-index: 100;
+    .hero-title {
+      margin-bottom: 0;
+      // margin-top: 2.5em;
+      font-size: 2rem;
+      font-weight: 200;
+      word-wrap: no-wrap;
+      color: $white;
+      text-align: center;
 
-      .surname {
+      .accent {
         display: block;
-        margin-top: 0;
+        font-weight: 700;
+        letter-spacing: 3px;
+        font-size: 3rem;
+        z-index: 100;
+
+        .surname {
+          display: block;
+          margin-top: 0;
+        }
       }
 
       @media (width > 500px) and (width < 950px) and (orientation: landscape) {
-        font-size: 3rem;
+        font-size: 2rem;
       }
       @media (min-width: 700px) {
-        font-size: 4.5rem;
+        font-size: 3rem;
+        .accent {
+          font-size: 5rem;
+        }
       }
     }
   }

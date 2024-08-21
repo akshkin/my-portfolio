@@ -10,26 +10,35 @@ function Hero() {
 
   return (
     <div className="">
-      <h1 className="hero-title">
-        <span className={letterClass}>Hi, &nbsp; </span>
-        <span className={`${letterClass} _14`}> I'm &nbsp;</span>
-        <span className="accent">
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={nameArray}
-            index={15}
-          />
-          &nbsp;
-          <span className="accent surname">
+      <video
+        src="/background-compressed.mp4"
+        className="video-bg"
+        autoPlay
+        loop
+        muted
+      />
+      <div className="hero-content">
+        <h1 className="hero-title">
+          <span className={letterClass}>Hi, &nbsp; </span>
+          <span className={`${letterClass} _14`}> I'm &nbsp;</span>
+          <span className="accent">
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={surnameArray}
-              index={25}
+              strArray={nameArray}
+              index={15}
             />
+            &nbsp;
+            <span className="accent surname">
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={surnameArray}
+                index={25}
+              />
+            </span>
           </span>
-        </span>
-      </h1>
-      <p className="hero-subtitle">Web developer with a focus on frontend</p>
+        </h1>
+        <p className="hero-subtitle">Web developer with a focus on frontend</p>
+      </div>
     </div>
   );
 }
