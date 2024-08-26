@@ -14,7 +14,8 @@ import "./skills.styles.scss";
 
 function Skills() {
   return (
-    <AnimationOnScroll className="skills" animateIn="animate__fadeInRight">
+    // <AnimationOnScroll className="skills" animateIn="animate__fadeInRight">
+    <div className="skills">
       <h2 style={{ textAlign: "center" }}>SKILLS</h2>
       <ul className="skills-list">
         <li className="skills-list-items">
@@ -49,7 +50,8 @@ function Skills() {
           <NodeIcon className="icon" /> Node JS
         </li>
       </ul>
-    </AnimationOnScroll>
+    </div>
+    // </AnimationOnScroll>
   );
 }
 
