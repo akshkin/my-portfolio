@@ -3,7 +3,8 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 
 function About() {
   return (
-    <AnimationOnScroll animateIn="animate__fadeInUp" className="inner">
+    // <AnimationOnScroll animateIn="animate__fadeInUp" className="inner">
+    <div className="inner">
       <h2>ABOUT ME</h2>
 
       <p>
@@ -16,7 +17,8 @@ function About() {
       </p>
 
       <p>When I am not coding, I like to spend time with my family.</p>
-    </AnimationOnScroll>
+    </div>
+    // </AnimationOnScroll>
   );
 }
 

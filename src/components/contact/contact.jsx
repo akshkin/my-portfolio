@@ -65,11 +65,13 @@ function Contact({ id }) {
    */
 
   return (
-    <AnimationOnScroll
-      animateIn="animate__fadeInLeft"
-      className="contact-container"
-    >
+    // <AnimationOnScroll
+    //   animateIn="animate__fadeInLeft"
+    //   className="contact-container"
+    // >
+    <div className="contact-container">
       {/* <img src={imgSource} alt="background" /> */}
+
       <h3>CONTACT ME</h3>
       <p>Sparked your interest ? Please don't hesitate to contact me!</p>
       <div className="links">
@@ -85,7 +87,8 @@ function Contact({ id }) {
           <EmailIcon fontSize={30} />
         </a>
       </div>
-    </AnimationOnScroll>
+    </div>
+    // </AnimationOnScroll>
   );
 }
 

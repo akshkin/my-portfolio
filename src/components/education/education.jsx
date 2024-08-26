@@ -4,7 +4,8 @@ import { certificates } from "./data";
 
 function Education() {
   return (
-    <AnimationOnScroll animateIn="animate__fadeInLeft" className="certificates">
+    // <AnimationOnScroll animateIn="animate__fadeInLeft" className="certificates">
+    <div className="certificates">
       <h2>CERTIFICATES / EDUCATION</h2>
       {certificates.map((certificate) => (
         <div key={certificate.name} className="certificate">
@@ -14,7 +15,8 @@ function Education() {
           </p>
         </div>
       ))}
-    </AnimationOnScroll>
+    </div>
+    // </AnimationOnScroll>
   );
 }
 
