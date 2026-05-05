@@ -1,34 +1,34 @@
 // import emailjs from "@emailjs/browser";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "./contact.style.scss";
-import { ReactComponent as GithubIcon } from "../../assets/svgs/github.svg";
-import { ReactComponent as EmailIcon } from "../../assets/svgs/email.svg";
+import GithubIcon from "../../assets/svgs/github.svg?react";
+import EmailIcon from "../../assets/svgs/email.svg?react";
 
 function Contact({ id }) {
-  // const form = useRef();
+	// const form = useRef();
 
-  // function sendEmail(event) {
-  //   event.preventDefault();
+	// function sendEmail(event) {
+	//   event.preventDefault();
 
-  //   emailjs
-  //     .sendForm(
-  //       "service_9syqat6",
-  //       "template_pc9ucdo",
-  //       form.current,
-  //       "hoo_nkUP9cGUQu31Q"
-  //     )
-  //     .then(
-  //       () => {
-  //         alert("Message sent successfully");
-  //         window.location.reload(false);
-  //       },
-  //       () => {
-  //         alert("Failed to send message. Please try again");
-  //       }
-  //     );
-  // }
+	//   emailjs
+	//     .sendForm(
+	//       "service_9syqat6",
+	//       "template_pc9ucdo",
+	//       form.current,
+	//       "hoo_nkUP9cGUQu31Q"
+	//     )
+	//     .then(
+	//       () => {
+	//         alert("Message sent successfully");
+	//         window.location.reload(false);
+	//       },
+	//       () => {
+	//         alert("Failed to send message. Please try again");
+	//       }
+	//     );
+	// }
 
-  /**
+	/**
    * 
    * // <form ref={form} onSubmit={sendEmail}>
       //   <input
@@ -64,32 +64,32 @@ function Contact({ id }) {
       // </form>
    */
 
-  return (
-    // <AnimationOnScroll
-    //   animateIn="animate__fadeInLeft"
-    //   className="contact-container"
-    // >
-    <div className="contact-container">
-      {/* <img src={imgSource} alt="background" /> */}
+	return (
+		// <AnimationOnScroll
+		//   animateIn="animate__fadeInLeft"
+		//   className="contact-container"
+		// >
+		<div className="contact-container">
+			{/* <img src={imgSource} alt="background" /> */}
 
-      <h3>CONTACT ME</h3>
-      <p>Sparked your interest ? Please don't hesitate to contact me!</p>
-      <div className="links">
-        <a
-          href="https://github.com/akshkin"
-          title="Github profile"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <GithubIcon fontSize={30} />
-        </a>
-        <a href="mailto:akshaya.kini12@gmail.com" title="Email">
-          <EmailIcon fontSize={30} />
-        </a>
-      </div>
-    </div>
-    // </AnimationOnScroll>
-  );
+			<h3>CONTACT ME</h3>
+			<p>Sparked your interest ? Please don't hesitate to contact me!</p>
+			<div className="links">
+				<a
+					href="https://github.com/akshkin"
+					title="Github profile"
+					target="_blank"
+					rel="noreferrer"
+				>
+					<GithubIcon fontSize={30} />
+				</a>
+				<a href="mailto:akshaya.kini12@gmail.com" title="Email">
+					<EmailIcon fontSize={30} />
+				</a>
+			</div>
+		</div>
+		// </AnimationOnScroll>
+	);
 }
 
 export default Contact;
