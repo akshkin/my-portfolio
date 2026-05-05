@@ -14,7 +14,7 @@ const data = [
 		id: 11,
 		title: "Product or inventory management app",
 		Description:
-			"This is a fullstack app developed as a part of lexicons final project. Registered users can create groups and add other members to the group with role assignment, create categories in each group and create items in each category. The app supports CRUD for each of the entities based on the user's role in the group",
+			"This is a fullstack app developed as a part of lexicon's final project. Registered users can create groups and add other members to the group with role assignment, create categories in each group and create items in each category. The app supports CRUD for each of the entities based on the user's role in the group",
 		builtWith:
 			"ASP.NET Core MVC, PostgreSQL(Neon), Supabase for profile image storage, React + Typescript, RTK query and, SCSS modules ",
 		sourceCode: "https://github.com/akshkin/StockNestMVC",
@@ -24,9 +24,15 @@ const data = [
 	{
 		id: 12,
 		title: "Recipes app",
-		Description:
-			"This is a fullstack recipes app. Registered users can create recipes and other users can search for and see recipes according to categories or cuisine",
-		builtWith: "Next.js + Typescript, MongoDB, TailwindCSS",
+		Description: `This is a fullstack recipes app. 
+			Registered users can create recipes and other users can search for and see recipes according to categories or cuisine.The app supports CRUD for recipes based on the user's authentication status.
+			Recipe images are stored in Supabase after getting a presigned url from the backend.
+			The global search feature allows users to search for recipes as well as authors by typing in the search bar. The search results are displayed in a dropdown as the user types, providing an intuitive and efficient way to find relevant recipes and authors.
+			Users can leave a review and rating for a recipe. The average rating is calculated and displayed on the recipe card as well as the recipe details page.
+			It is also possible to download a recipe as a pdf file.
+			A new feature just added is the ability for a user(author) to upload a pdf file which auto-populates the recipe details by extracting the text from the pdf and parsing it. This feature is especially useful for users who have their recipes in pdf format and want to quickly add them to the app without manually entering all the details.`,
+		builtWith:
+			"Next.js + Typescript, MongoDB, TailwindCSS, Supabase for image storage",
 		sourceCode: "https://github.com/akshkin/recipes-app",
 		liveDemo: "https://recipes-app-flame.vercel.app/",
 		imageUrl: "/images/screenshots/recipes-mockup.png",

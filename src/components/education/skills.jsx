@@ -13,46 +13,53 @@ import { ReactComponent as ReactNativeIcon } from "../../assets/svgs/react-nativ
 import "./skills.styles.scss";
 
 function Skills() {
-  return (
-    // <AnimationOnScroll className="skills" animateIn="animate__fadeInRight">
-    <div className="skills">
-      <h2 style={{ textAlign: "center" }}>SKILLS</h2>
-      <ul className="skills-list">
-        <li className="skills-list-items">
-          <HTMLIcon className="icon" /> HTML
-        </li>
-        <li className="skills-list-items">
-          <CSSIcon className="icon" /> CSS
-        </li>
-        <li className="skills-list-items">
-          <SCSSIcon className="icon" /> Sass/SCSS
-        </li>
-        <li className="skills-list-items">
-          <JavaScriptIcon className="icon" /> JavaScript
-        </li>
-        <li className="skills-list-items">
-          <ReactIcon className="icon" /> React{" "}
-        </li>
-        <li className="skills-list-items">
-          <ReactNativeIcon className="icon" /> React Native{" "}
-        </li>
-        <li className="skills-list-items">
-          <ResponsiveIcon className="icon" /> Responsive layouts
-        </li>
-        <li className="skills-list-items">
-          <StyledComponentsIcon className="icon styled" /> Styled Components
-          (CSS-in-JS)
-        </li>
-        <li className="skills-list-items">
-          <JestIcon className="icon" /> Jest
-        </li>
-        <li className="skills-list-items">
-          <NodeIcon className="icon" /> Node JS
-        </li>
-      </ul>
-    </div>
-    // </AnimationOnScroll>
-  );
+	return (
+		// <AnimationOnScroll className="skills" animateIn="animate__fadeInRight">
+		<div className="skills">
+			<h2 style={{ textAlign: "center" }}>SKILLS</h2>
+			<ul className="skills-list">
+				<li className="skills-list-items">
+					<HTMLIcon className="icon" /> HTML
+				</li>
+				<li className="skills-list-items">
+					<CSSIcon className="icon" /> CSS
+				</li>
+				<li className="skills-list-items">
+					<SCSSIcon className="icon" /> Sass/SCSS
+				</li>
+				<li className="skills-list-items">
+					<JavaScriptIcon className="icon" /> JavaScript
+				</li>
+				<li className="skills-list-items">
+					<ReactIcon className="icon" /> React{" "}
+				</li>
+				<li className="skills-list-items">
+					<ReactNativeIcon className="icon" /> React Native{" "}
+				</li>
+				<li className="skills-list-items">
+					<ResponsiveIcon className="icon" /> Responsive layouts
+				</li>
+				<li className="skills-list-items">
+					<StyledComponentsIcon className="icon styled" /> Styled Components
+					(CSS-in-JS)
+				</li>
+				<li className="skills-list-items">
+					<JestIcon className="icon" /> Jest
+				</li>
+				<li className="skills-list-items">
+					<NodeIcon className="icon" /> Node JS
+				</li>
+				<li className="skills-list-items">
+					<img
+						src="/images/microsoft-certified-azure-fundamentals.png"
+						className="icon"
+						alt="Microsoft Certified Azure Fundamentals"
+					/>
+				</li>
+			</ul>
+		</div>
+		// </AnimationOnScroll>
+	);
 }
 
 export default Skills;
