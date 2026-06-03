@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/aksh/Documents/projects/personal/portfolio/my-portfolio/app/layout.jsx"],"sourcesContent":["export const metadata = {\r\n\ttitle: \"Akshaya Kini - Portfolio\",\r\n\tdescription:\r\n\t\t\"Fullstack developer specializing in React and ASP.NET Core. Welcome to my portfolio showcasing my projects and skills in web development.\",\r\n};\r\n\r\nexport default function RootLayout({ children }) {\r\n\treturn (\r\n\t\t<html lang=\"en\">\r\n\t\t\t<body>{children}</body>\r\n\t\t</html>\r\n\t);\r\n}\r\n"],"names":["metadata","title","description","RootLayout","children","lang"],"mappings":";;;;;;;;AAAO,MAAMA,WAAW;IACvBC,OAAO;IACPC,aACC;AACF;AAEe,SAASC,WAAW,EAAEC,QAAQ,EAAE;IAC9C,qBACC,iQAAC;QAAKC,MAAK;kBACV,cAAA,iQAAC;sBAAMD;;;;;;;;;;;AAGV"}},
+    {"offset": {"line": 40, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/aksh/Documents/projects/personal/portfolio/my-portfolio/node_modules/next/src/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = (\n  require('../../module.compiled') as typeof import('../../module.compiled')\n).vendored['react-rsc']!.ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":"AAAAA,OAAOC,OAAO,GACZC,QAAQ,yIACRC,QAAQ,CAAC,YAAY,CAAEC,kBAAkB","ignoreList":[0]}}]
+}

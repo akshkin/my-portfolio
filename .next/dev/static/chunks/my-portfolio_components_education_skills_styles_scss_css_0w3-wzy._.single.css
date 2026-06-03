@@ -1,0 +1,46 @@
+/* [project]/my-portfolio/components/education/skills.styles.scss.css [app-client] (css) */
+.skills-list {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5em;
+  list-style: none;
+  display: flex;
+}
+
+.skills-list-items {
+  flex-direction: column;
+  align-items: center;
+  gap: .5em;
+  margin-block: .625em;
+  font-size: .625rem;
+  display: flex;
+}
+
+.skills-list-items .icon {
+  font-size: 5rem;
+}
+
+.skills-list-items .styled {
+  color: #e57a8c;
+  margin-top: -.09em;
+  font-size: 5.5rem;
+}
+
+.download-container {
+  justify-content: center;
+  margin: 0 auto 2em;
+  display: flex;
+}
+
+.download-container .download {
+  color: #252525;
+  background-color: #fff;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: .3em;
+  padding: .5em 1.5em;
+  display: inline-flex;
+}
+
+/*# sourceMappingURL=my-portfolio_components_education_skills_styles_scss_css_0w3-wzy._.single.css.map*/

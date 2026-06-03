@@ -1,0 +1,54 @@
+globalThis.__BUILD_MANIFEST = {
+  "pages": {
+    "/_app": [
+      "static/chunks/0bqi_next_dist_compiled_1a4jra1._.js",
+      "static/chunks/0bqi_next_dist_shared_lib_1sxqxh5._.js",
+      "static/chunks/0bqi_next_dist_client_0ixda2o._.js",
+      "static/chunks/0bqi_next_dist_15qrvdi._.js",
+      "static/chunks/0bqi_next_app_1o0vlie.js",
+      "static/chunks/[next]_entry_page-loader_ts_136cheu._.js",
+      "static/chunks/0bqi_react_1f-9ap7._.js",
+      "static/chunks/0bqi_react-dom_cjs_react-dom_development_1tkftyy.js",
+      "static/chunks/0bqi_react-dom_1n1qi4m._.js",
+      "static/chunks/0bqi_0ncbf4s._.js",
+      "static/chunks/[root-of-the-server]__037r8fd._.js",
+      "static/chunks/my-portfolio_pages__app_0du2_q-._.js",
+      "static/chunks/turbopack-my-portfolio_pages__app_00rol4m._.js"
+    ],
+    "/_error": [
+      "static/chunks/0bqi_next_dist_compiled_1a4jra1._.js",
+      "static/chunks/0bqi_next_dist_shared_lib_0b340ly._.js",
+      "static/chunks/0bqi_next_dist_client_0ixda2o._.js",
+      "static/chunks/0bqi_next_dist_0z0iyqi._.js",
+      "static/chunks/[next]_entry_page-loader_ts_1mjweeq._.js",
+      "static/chunks/0bqi_react_1f-9ap7._.js",
+      "static/chunks/0bqi_react-dom_cjs_react-dom_development_1tkftyy.js",
+      "static/chunks/0bqi_react-dom_1n1qi4m._.js",
+      "static/chunks/0bqi_0ncbf4s._.js",
+      "static/chunks/[root-of-the-server]__0s7gqkc._.js",
+      "static/chunks/my-portfolio_pages__error_0du2_q-._.js",
+      "static/chunks/turbopack-my-portfolio_pages__error_0buh_ow._.js"
+    ]
+  },
+  "devFiles": [],
+  "polyfillFiles": [
+    "static/chunks/0bqi_next_dist_build_polyfills_polyfill-nomodule.js"
+  ],
+  "lowPriorityFiles": [
+    "static/development/_buildManifest.js",
+    "static/development/_ssgManifest.js",
+    "static/development/_clientMiddlewareManifest.js"
+  ],
+  "rootMainFiles": [
+    "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_14x1ywm._.js",
+    "static/chunks/0bqi_next_dist_compiled_next-devtools_index_0p9wkcs.js",
+    "static/chunks/0bqi_next_dist_compiled_react-dom_0rvur2q._.js",
+    "static/chunks/0bqi_next_dist_compiled_react-server-dom-turbopack_1hpablw._.js",
+    "static/chunks/0bqi_next_dist_compiled_20w6_6-._.js",
+    "static/chunks/0bqi_next_dist_client_1vredfb._.js",
+    "static/chunks/0bqi_next_dist_085gj_7._.js",
+    "static/chunks/0bqi_0owt7by._.js",
+    "static/chunks/my-portfolio_1anvha4._.js",
+    "static/chunks/turbopack-my-portfolio_1ex0y-w._.js"
+  ]
+};

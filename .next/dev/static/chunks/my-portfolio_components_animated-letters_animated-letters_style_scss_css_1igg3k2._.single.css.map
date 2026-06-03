@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///C:/Users/aksh/Documents/projects/personal/portfolio/my-portfolio/components/animated-letters/animated-letters.style.scss"],"sourcesContent":[".text-animate {\r\n  display: inline-block;\r\n  opacity: 0;\r\n  animation: bounceIn 1s 1s;\r\n  animation-fill-mode: forwards;\r\n  min-width: 12px;  \r\n}\r\n\r\n@for $i from 1 through 45{\r\n  .text-animate._#{$i} {\r\n    animation-delay: #{$i / 10}s;\r\n  }\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;;AASE;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA;;;;AAAA"}}]
+}
