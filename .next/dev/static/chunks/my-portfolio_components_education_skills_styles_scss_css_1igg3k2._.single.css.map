@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///C:/Users/aksh/Documents/projects/personal/portfolio/my-portfolio/components/education/skills.styles.scss"],"sourcesContent":[".skills-list {\r\n  list-style: none;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  gap: 1.5em;\r\n}\r\n.skills-list-items {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 0.5em;\r\n  align-items: center;\r\n  margin-block: 0.625em;\r\n  font-size: 0.625rem;\r\n\r\n  .icon {\r\n    font-size: 5rem;\r\n  }\r\n  .styled {\r\n    color: rgb(229, 122, 140);\r\n    font-size: 5.5rem;\r\n    margin-top: -0.09em;\r\n  }\r\n}\r\n\r\n.download-container {\r\n  margin: 0 auto 2em;\r\n  display: flex;\r\n  justify-content: center;\r\n\r\n  .download {\r\n    display: inline-flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    gap: 0.3em;\r\n    background-color: white;\r\n    color: #252525;\r\n    padding: 0.5em 1.5em;\r\n    border-radius: 5px;\r\n  }\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;;;AAOA;;;;;;;;;AAQE;;;;AAGA;;;;;;AAOF;;;;;;AAKE"}}]
-}
