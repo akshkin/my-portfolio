@@ -64,16 +64,6 @@ function Contact({ id }) {
       // </form>
    */
 
-	  max-width: 700px;
-  height: 50vh;
-  margin: 0 auto;
-  padding: 2em;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
 	return (
 		// <AnimationOnScroll
 		//   animateIn="animate__fadeInLeft"
@@ -84,7 +74,7 @@ function Contact({ id }) {
 
 			<h3>CONTACT ME</h3>
 			<p>Sparked your interest ? Please don't hesitate to contact me!</p>
-			<div className="links">
+			<div className="flex justify-around gap-8 mt-4">
 				<a
 					href="https://github.com/akshkin"
 					title="Github profile"

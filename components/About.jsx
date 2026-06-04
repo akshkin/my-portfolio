@@ -1,25 +1,9 @@
-import "./about.styles.scss";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-
-.about {
-  padding: 1em;
-  padding-block: 6em;
-  color: $white;
-
-  h2 {
-    text-align: center;
-    padding-bottom: 0;
-  }
-
-  @media (prefers-color-scheme: light) {
-    color: $black;
-  }
-}
 
 function About() {
 	return (
 		// <AnimationOnScroll animateIn="animate__fadeInUp" className="inner">
-		<div className="inner">
+		<div className="p-8 max-w-5xl mx-auto text-2xl mb-8">
 			<h2 className="text-center pb-0">ABOUT ME</h2>
 
 			<p>
@@ -33,13 +17,14 @@ function About() {
 
 			<p>When I am not coding, I like to spend time with my family.</p>
 
-			<h3>My Open Source Contribution</h3>
+			<h3 className="mt-8 text-3xl font-bold">My Open Source Contribution</h3>
 			<p>
 				I contributed to an open source project from Zero To Mastery -{" "}
 				<a
 					href="https://github.com/zero-to-mastery/ZtM-Job-Board/pull/3476"
 					target="_blank"
 					rel="noreferrer"
+					className="text-purple-400 hover:filter hover:brightness-125 transition duration-300"
 				>
 					ZTM Job Board (Feel free to check it here)
 				</a>

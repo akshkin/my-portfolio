@@ -1,4 +1,5 @@
-import Navigation from "../components/navigation/navigation";
+import Navigation from "@/components/navigation/Navigation";
+import "./globals.css";
 
 export const metadata = {
 	title: "Akshaya Kini - Portfolio",
@@ -10,7 +11,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<Navigation />
-			<body>{children}</body>
+			<body className="w-screen max-w-screen">{children}</body>
 		</html>
 	);
 }

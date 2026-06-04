@@ -1,41 +1,38 @@
-import About from "../components/about/about";
-import Education from "../components/education/education";
-import Skills from "../components/education/skills";
-import Hero from "../components/hero/hero";
+import About from "@/components/About";
+import Education from "@/components/education/Education";
+import Hero from "@/components/Hero";
+import Skills from "@/components/Skills";
 
 export default function HomePage() {
 	return (
 		<div>
 			<main>
-				<div className="hero container">
+				<div className="">
 					<Hero />
 				</div>
-				<div className="about container" id="about">
+				<div className="" id="about">
 					<About />
 				</div>
-				<div className="education container" id="education">
-					<div className="inner">
-						<Education />
-					</div>
-
-					<div className="inner">
-						<Skills />
-					</div>
-
-					{/* <div className="download-container">
-            <a className="download" href="/Akshaya_Kini_Resume.pdf" download>
-              Download Resume <DownloadIcon />
-            </a>
-          </div> */}
+				<div id="skills">
+					<Skills />
+				</div>
+				<div className="" id="education">
+					<Education />
 				</div>
 
-				<div id="projects">
+				{/* <div className="download-container">
+						<a className="download" href="/Akshaya_Kini_Resume.pdf" download>
+						Download Resume <DownloadIcon />
+						</a>
+					</div> */}
+
+				{/* <div id="projects">
 					<h2 className="projects-title">MY PROJECTS</h2>
 					<Projects />
-				</div>
+				</div> */}
 
 				<div className="contact container" id="contact">
-					<Contact />
+					{/* <Contact /> */}
 				</div>
 			</main>
 		</div>
