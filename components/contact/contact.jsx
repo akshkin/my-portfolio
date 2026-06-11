@@ -1,8 +1,9 @@
 // import emailjs from "@emailjs/browser";
+import { Mail } from "lucide-react";
+import Image from "next/image";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import "./contact.style.scss";
-import GithubIcon from "../../assets/svgs/github.svg?react";
-import EmailIcon from "../../assets/svgs/email.svg?react";
+// import GithubIcon from "@/assets/svgs/github.svg?react";
+// import EmailIcon from "@/assets/svgs/email.svg?react";
 
 function Contact({ id }) {
 	// const form = useRef();
@@ -69,22 +70,27 @@ function Contact({ id }) {
 		//   animateIn="animate__fadeInLeft"
 		//   className="contact-container"
 		// >
-		<div className="max-w-2xl h-[50vh] mx-auto p-8 relative flex flex-col justify-center items-center">
-			{/* <img src={imgSource} alt="background" /> */}
-
-			<h3>CONTACT ME</h3>
+		<div className="max-w-2xl h-[60vh] mx-auto p-8 relative flex flex-col  items-center">
+			<h2>CONTACT ME</h2>
 			<p>Sparked your interest ? Please don't hesitate to contact me!</p>
 			<div className="flex justify-around gap-8 mt-4">
 				<a
 					href="https://github.com/akshkin"
-					title="Github profile"
+					title="Go to Github profile"
 					target="_blank"
 					rel="noreferrer"
 				>
-					<GithubIcon fontSize={30} />
+					<Image
+						src="/assets/svgs/github.svg"
+						color="white"
+						alt="GitHub"
+						className="icon"
+						width={30}
+						height={30}
+					/>
 				</a>
-				<a href="mailto:akshaya.kini12@gmail.com" title="Email">
-					<EmailIcon fontSize={30} />
+				<a href="mailto:akshaya.kini12@gmail.com" title="Send Email">
+					<Mail size={30} />
 				</a>
 			</div>
 		</div>

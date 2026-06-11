@@ -23,6 +23,10 @@ p {
 	line-height: 1.6;
 }
 
+a {
+	@apply hover:text-pink-200 transition-colors duration-300;
+}
+
 .full-screen-width {
 	position: absolute;
 	top: 0;

@@ -8,7 +8,7 @@ function Hero() {
 	const surnameArray = surname.split("");
 
 	return (
-		<div className="max-w-screen h-screen max-h-screen  text-white overflow-x-hidden flex flex-col justify-center items-center">
+		<div className="max-w-screen  h-screen  max-h-screen  text-white overflow-x-hidden flex flex-col justify-center items-center max-md:h-[70vh]">
 			{/* <video
 				src="/background-compressed.mp4"
 				className="full-screen-width object-cover -z-10"
@@ -17,10 +17,10 @@ function Hero() {
 				muted
 			/> */}
 
-			<span className={letterClass}>Hi, </span>
-			<span className={`${letterClass} _14`}> I'm</span>
+			<span className="text-2xl">Hi, I'm</span>
+			{/* <span className={`${letterClass} _14`}> I'm</span> */}
 			<h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-4 m-0">
-				<span className="bg-gradient-to-r from-blue-400 via-purple-500 to-blue-400 text-transparent bg-clip-text bg-[size:200%] animate-gradient">
+				<span className="bg-linear-to-r from-blue-400 via-purple-500 to-blue-400 text-transparent bg-clip-text bg-[size:200%] animate-gradient">
 					Akshaya Kini
 				</span>
 				{/* </h1> */}
@@ -40,7 +40,7 @@ function Hero() {
 						</span>
 					</span> */}
 			</h1>
-			<h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-100 to-gray-300 __web-inspector-hide-shortcut__">
+			<h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 bg-clip-text text-transparent bg-linear-to-r from-gray-100 to-gray-300">
 				Fullstack Developer
 			</h2>
 			<p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed px-4">

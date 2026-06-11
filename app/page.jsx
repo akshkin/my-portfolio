@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Contact from "@/components/contact/contact";
 import Education from "@/components/education/Education";
 import Hero from "@/components/Hero";
 import Skills from "@/components/Skills";
@@ -6,7 +7,7 @@ import Skills from "@/components/Skills";
 export default function HomePage() {
 	return (
 		<div>
-			<main>
+			<main className="max-w-screen overflow-hidden">
 				<div className="">
 					<Hero />
 				</div>
@@ -32,7 +33,7 @@ export default function HomePage() {
 				</div> */}
 
 				<div className="contact container" id="contact">
-					{/* <Contact /> */}
+					<Contact />
 				</div>
 			</main>
 		</div>

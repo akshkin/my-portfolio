@@ -3,8 +3,8 @@ import MobileNav from "./MobileNav";
 
 function Navigation() {
 	return (
-		<header className="px-2 bg-transparent">
-			<div className="flex justify-between gap-3 items-center ml-3 ">
+		<header className="px-2 bg-transparent max-w-screen overflow-hidden">
+			<div className="flex justify-between gap-3 items-center">
 				<Link href="/" className="link max-sm:pb-3">
 					<img src="/assets/logo.svg" alt="logo" width={100} height={70} />
 				</Link>
