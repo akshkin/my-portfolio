@@ -13,11 +13,11 @@ function MobileNav() {
 				title="Navigation"
 				className="border-none mx-auto bg-black/90 text-white p-4"
 			>
-				<SheetClose asChild>
+				{/* <SheetClose asChild>
 					<Link href="/" className="link">
 						<span>AK</span>
 					</Link>
-				</SheetClose>
+				</SheetClose> */}
 				<div className="flex flex-col gap-6 mt-16">
 					<SheetClose asChild>
 						<Link href="#about">

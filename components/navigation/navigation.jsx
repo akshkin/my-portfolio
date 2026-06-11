@@ -1,12 +1,18 @@
 import Link from "next/link";
 import MobileNav from "./MobileNav";
+import Image from "next/image";
 
 function Navigation() {
 	return (
 		<header className="px-2 bg-transparent max-w-screen overflow-hidden">
 			<div className="flex justify-between gap-3 items-center">
 				<Link href="/" className="link max-sm:pb-3">
-					<img src="/assets/logo.svg" alt="logo" width={100} height={70} />
+					<Image
+						src="/assets/images/logo.png"
+						alt="logo"
+						width={100}
+						height={70}
+					/>
 				</Link>
 
 				<div className="flex w-full  items-center justify-end gap-4 px-4 pb-4 sm:py-3 max-md:hidden">
