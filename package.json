@@ -24,7 +24,6 @@
 		"react-animation-on-scroll": "^5.1.0",
 		"react-dom": "^18.2.0",
 		"react-router-dom": "^6.4.1",
-		"sass": "^1.55.0",
 		"shadcn": "^4.10.0",
 		"tailwind-merge": "^3.6.0",
 		"tailwindcss": "^4.3.0",
