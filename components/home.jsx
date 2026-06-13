@@ -4,7 +4,7 @@ import About from "./About";
 import Education from "./education/Education";
 import Skills from "./Skills";
 import Projects from "./projects/projects";
-import Contact from "./contact/contact";
+import Contact from "./Contact";
 import DownloadIcon from "../assets/svgs/download.svg?react";
 
 function Home() {
