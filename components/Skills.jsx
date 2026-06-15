@@ -14,7 +14,7 @@ import Image from "next/image";
 function Skills() {
 	return (
 		// <AnimationOnScroll className="skills" animateIn="animate__fadeInRight">
-		<div className="mx-auto max-w-3xl px-8 pt-8 my-10">
+		<div className="mx-auto max-w-3xl px-8 pt-8 my-10" id="skills">
 			<h2 style={{ textAlign: "center" }}>SKILLS</h2>
 			<ul className="flex flex-wrap justify-center items-center gap-8 mt-8">
 				<li className="">

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function Navigation() {
 	return (
-		<header className="px-2 bg-transparent max-w-screen overflow-hidden">
+		<header className="px-8 py-4 bg-transparent max-w-screen overflow-hidden">
 			<div className="flex justify-between gap-3 items-center">
 				<Link href="/" className="link max-sm:pb-3">
 					<Image

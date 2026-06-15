@@ -7,36 +7,16 @@ import Skills from "@/components/Skills";
 
 export default function HomePage() {
 	return (
-		<div>
-			<main className="max-w-screen overflow-hidden">
-				<div className="">
-					<Hero />
-				</div>
-				<div className="" id="about">
-					<About />
-				</div>
-				<div id="skills">
-					<Skills />
-				</div>
-				<div className="" id="education">
-					<Education />
-				</div>
+		<main className="max-w-screen overflow-hidden">
+			<Hero />
+			<About />
+			<Skills />
 
-				{/* <div className="download-container">
-						<a className="download" href="/Akshaya_Kini_Resume.pdf" download>
-						Download Resume <DownloadIcon />
-						</a>
-					</div> */}
+			<Education />
 
-				<div id="projects">
-					<h2 className="projects-title">MY PROJECTS</h2>
-					<Projects />
-				</div>
+			<Projects />
 
-				<div className="mx-auto border-t-2" id="contact">
-					<Contact />
-				</div>
-			</main>
-		</div>
+			<Contact />
+		</main>
 	);
 }

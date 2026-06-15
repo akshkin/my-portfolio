@@ -3,7 +3,7 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 function About() {
 	return (
 		// <AnimationOnScroll animateIn="animate__fadeInUp" className="inner">
-		<div className="p-8 max-w-5xl mx-auto text-2xl mb-8">
+		<div className="p-8 max-w-5xl mx-auto text-2xl mb-8" id="about">
 			<h2 className="text-center pb-0">ABOUT ME</h2>
 
 			<p>

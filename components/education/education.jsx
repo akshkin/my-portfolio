@@ -25,7 +25,7 @@ import { certificates } from "./data";
 function Education() {
 	return (
 		// <AnimationOnScroll animateIn="animate__fadeInLeft" className="certificates">
-		<section className="mx-auto max-w-3xl px-8">
+		<section className="mx-auto max-w-3xl px-8" id="education">
 			<h2>CERTIFICATES / EDUCATION</h2>
 			{certificates.map((certificate) => (
 				<div
