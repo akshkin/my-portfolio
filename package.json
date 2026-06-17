@@ -43,7 +43,7 @@
 	},
 	"scripts": {
 		"start": "vite",
-		"build": "vite build",
+		"build": "next build",
 		"serve": "vite preview",
 		"dev": "next dev"
 	},

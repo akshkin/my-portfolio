@@ -35,6 +35,11 @@ function MobileNav() {
 						</Link>
 					</SheetClose>
 					<SheetClose asChild>
+						<Link href={"/blog"}>
+							<span className="text-xl uppercase">Tech Notes</span>
+						</Link>
+					</SheetClose>
+					<SheetClose asChild>
 						<Link href={"#contact"}>
 							<span className="text-xl uppercase">Contact</span>
 						</Link>

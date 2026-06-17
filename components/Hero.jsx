@@ -1,4 +1,4 @@
-import AnimatedLetters from "./animated-letters/animated-letters.component";
+// import AnimatedLetters from "./animated-letters/animated-letters.component";
 
 function Hero() {
 	const letterClass = "text-animate";
