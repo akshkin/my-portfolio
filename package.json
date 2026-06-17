@@ -37,14 +37,12 @@
 	"devDependencies": {
 		"@tailwindcss/typography": "^0.5.20",
 		"@vitejs/plugin-react": "^6.0.1",
-		"vite": "^8.0.10",
 		"vite-plugin-svgr": "^5.2.0",
 		"webpack-dev-server": "^4.11.1"
 	},
 	"scripts": {
 		"start": "vite",
 		"build": "next build",
-		"serve": "vite preview",
 		"dev": "next dev"
 	},
 	"eslintConfig": {
