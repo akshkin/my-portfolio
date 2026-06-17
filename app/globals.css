@@ -2,6 +2,7 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 @import "@fontsource-variable/geist";
+@plugin "@tailwindcss/typography";
 
 @custom-variant dark (&:is(.dark *));
 @tailwind utilities;
@@ -36,7 +37,11 @@ a {
 }
 
 h2 {
-	@apply text-center text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-100 to-gray-300;
+	@apply font-semibold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-100 to-gray-300;
+}
+
+.section-headings {
+	@apply text-center;
 }
 
 @theme inline {
