@@ -1,4 +1,4 @@
-import data from "@/src/data";
+import data from "@/data";
 import Project from "./project";
 import {
 	Dialog,
