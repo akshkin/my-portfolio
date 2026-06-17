@@ -13,7 +13,7 @@ import {
 function Projects() {
 	return (
 		<div className="" id="projects">
-			<h2 className="mt-16 mb-0">MY PROJECTS</h2>
+			<h2 className="text-center mt-16 mb-0">MY PROJECTS</h2>
 			<div className="grid grid-cols-[repeat(auto-fit,minmax(250px,400px))] justify-center gap-8 align-middle p-8">
 				{data.map((project) => (
 					<Dialog key={project.id} className="mx-8">
