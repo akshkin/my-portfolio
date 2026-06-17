@@ -1,0 +1,124 @@
+# Using Alias Imports in Next.js
+
+_Akshaya Kini · June 17, 2026_
+
+One small improvement that made my project structure feel significantly cleaner was switching from relative imports to alias imports.
+
+Instead of writing imports like:
+
+```js
+import ProjectCard from "../../components/projects/project-card";
+import ReactNativeIcon from "../../../assets/svgs/react-native.svg";
+```
+
+I can now write:
+
+```js
+import ProjectCard from "@/components/projects/project-card";
+import ReactNativeIcon from "@/assets/svgs/react-native.svg";
+```
+
+Much easier to read, easier to move files around, and less frustrating when components become deeply nested.
+
+---
+
+## The problem with relative imports
+
+Relative imports work fine at the beginning of a project.
+
+But as the project grows:
+
+- imports can become difficult to read
+- moving files breaks paths
+- navigating the codebase becomes slower
+
+I started noticing this while restructuring my portfolio and adding new folders.
+
+---
+
+## Setting up alias imports in Next.js
+
+I am using JavaScript, so I created a `jsconfig.json` file in the project root.
+
+Project structure:
+
+```txt
+my-portfolio/
+├── app/
+│── components/
+│── assets/
+│   └── data/
+├── jsconfig.json
+├── package.json
+```
+
+Create `jsconfig.json`:
+
+```json
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["./*"] // or ["src/*"] if using src
+		}
+	}
+}
+```
+
+This tells Next.js:
+
+> Whenever something starts with `@/`, resolve it from the root folder \*or src folder if you have it structured that way.
+
+---
+
+## Before vs After
+
+Before:
+
+```js
+import data from "../../data";
+import Dialog from "../../../components/ui/dialog";
+```
+
+After:
+
+```js
+import data from "@/data";
+import Dialog from "@/components/ui/dialog";
+```
+
+The difference becomes more noticeable as the application grows.
+
+---
+
+## One issue I ran into
+
+After adding `jsconfig.json`, the imports still failed.
+
+The issue was that my folder structure did not match the alias configuration.
+
+If your config is:
+
+```json
+"@/*": ["src/*"]
+```
+
+then files must actually live inside:
+
+```txt
+src/
+```
+
+Otherwise Next.js cannot resolve them.
+
+I also had to restart the development server.
+
+---
+
+## Final thoughts
+
+Alias imports are a small change, but they make a project feel cleaner immediately.
+
+Especially in component-heavy applications, reducing long relative paths improves readability and makes refactoring easier.
+
+This is one of those changes that takes a minute to set up and quietly improves the developer experience every day.
