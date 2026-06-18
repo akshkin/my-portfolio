@@ -20,17 +20,17 @@ function MobileNav() {
 				</SheetClose> */}
 				<div className="flex flex-col gap-6 mt-16">
 					<SheetClose asChild>
-						<Link href="#about">
+						<Link href="/#about">
 							<span className="text-xl uppercase">About</span>
 						</Link>
 					</SheetClose>
 					<SheetClose asChild>
-						<Link href={"#skills"}>
+						<Link href={"/#skills"}>
 							<span className="text-xl uppercase">Skills</span>
 						</Link>
 					</SheetClose>
 					<SheetClose asChild>
-						<Link href={"#projects"}>
+						<Link href={"/#projects"}>
 							<span className="text-xl uppercase">Projects</span>
 						</Link>
 					</SheetClose>
@@ -40,7 +40,7 @@ function MobileNav() {
 						</Link>
 					</SheetClose>
 					<SheetClose asChild>
-						<Link href={"#contact"}>
+						<Link href={"/#contact"}>
 							<span className="text-xl uppercase">Contact</span>
 						</Link>
 					</SheetClose>

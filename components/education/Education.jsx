@@ -26,7 +26,7 @@ function Education() {
 	return (
 		// <AnimationOnScroll animateIn="animate__fadeInLeft" className="certificates">
 		<section className="mx-auto max-w-3xl px-8" id="education">
-			<h2>CERTIFICATES / EDUCATION</h2>
+			<h2 className="section-heading">CERTIFICATES / EDUCATION</h2>
 			{certificates.map((certificate) => (
 				<div
 					key={certificate.name}

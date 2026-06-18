@@ -13,8 +13,8 @@ import {
 function Projects() {
 	return (
 		<div className="" id="projects">
-			<h2 className="text-center mt-16 mb-0">MY PROJECTS</h2>
-			<div className="grid grid-cols-[repeat(auto-fit,minmax(250px,400px))] justify-center gap-8 align-middle p-8">
+			<h2 className="section-heading">MY PROJECTS</h2>
+			<div className="grid grid-cols-[repeat(auto-fit,minmax(200px,300px))] justify-center gap-8 align-middle p-8">
 				{data.map((project) => (
 					<Dialog key={project.id} className="mx-8">
 						<DialogTrigger asChild>
@@ -22,7 +22,9 @@ function Projects() {
 						</DialogTrigger>
 						<DialogContent className="w-[92vw] sm:max-w-2xl max-w-2xl sm:p-4 bg-black/90 text-white border-none ">
 							<DialogHeader>
-								<DialogTitle className="px-4">{project.title}</DialogTitle>
+								<DialogTitle className="text-2xl font-bold px-4">
+									{project.title}
+								</DialogTitle>
 								<DialogDescription className="text-stone-200 text-lg"></DialogDescription>
 							</DialogHeader>
 							<div className="overflow-y-auto max-h-[60vh]">

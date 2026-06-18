@@ -74,7 +74,7 @@ function Contact({ id }) {
 			className="max-w-2xl h-[60vh] mx-auto p-8 relative flex flex-col  items-center border-t mt-8"
 			id="contact"
 		>
-			<h2>CONTACT ME</h2>
+			<h2 className="section-heading">CONTACT ME</h2>
 			<p>Sparked your interest ? Please don't hesitate to contact me!</p>
 			<div className="flex justify-around gap-8 mt-4">
 				<a

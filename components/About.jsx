@@ -4,7 +4,7 @@ function About() {
 	return (
 		// <AnimationOnScroll animateIn="animate__fadeInUp" className="inner">
 		<div className="p-8 max-w-5xl mx-auto text-2xl mb-8" id="about">
-			<h2 className="text-center pb-0">ABOUT ME</h2>
+			<h2 className="section-heading">ABOUT ME</h2>
 
 			<p>
 				As a web developer with two years of continuous learning experience, my
