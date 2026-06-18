@@ -1,0 +1,54 @@
+# Fixing module not found (case sensitivity) issue during build in Netlify
+
+_By Akshaya Kini · June 18, 2026_
+
+---
+
+The error I faced during deployment:
+
+```
+Module not found: Can't resolve '@/components/education/Education'
+Module not found: Can't resolve '@/components/navigation/Navigation'
+```
+
+The build worked perfectly locally on Windows but failed on Netlify's Linux build server.
+
+## Root Cause
+
+Linux filesystems are case-sensitive, Windows filesystems are not.
+I had renamed the files from lowercase to uppercase. After some debugging, I checked what git actually has using the follwing command:
+
+```
+# PowerShell
+git ls-files | Select-String "components"
+
+# Bash/Linux
+git ls-files | grep -i components
+```
+
+The output:
+
+```
+/components/education/education"; // small E
+/components/navigation/navigation"; // small N
+```
+
+On Windows, education.jsx and Education.jsx resolve to the same file. On Linux, they are completely different — and since the file was lowercase, the import failed.
+
+## The Fix
+
+Rename the files using `git mv` to force git to track the case-only rename (git ignores case-only renames by default):
+
+```
+git mv components/education/education.jsx components/education/Education.jsx
+git mv components/navigation/navigation.jsx components/navigation/Navigation.jsx
+```
+
+And then commit and push the changes
+
+## Lesson
+
+Changing the filename casing locally did not change how git was storing it.
+
+- Always verify your file casing matches your imports exactly when deploying to a Linux environment. Windows silently tolerates mismatches; Linux does not.
+- If the file casing matches, Verify how those files are stored in git using the `git ls-files` command

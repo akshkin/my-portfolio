@@ -1,0 +1,137 @@
+# Fixing Netlify Build Failures After Migrating from Vite to Next.js
+
+_Akshaya Kini · June 18, 2026_
+
+---
+
+After migrating my portfolio from Vite to Next.js, I expected deployment to be straightforward.
+
+Locally everything worked:
+
+```bash
+npm run build
+```
+
+No errors.
+
+But when deploying to Netlify, the build kept failing.
+
+---
+
+## The error
+
+The first error I saw looked like this:
+
+```txt
+Build failed
+
+[UNRESOLVED_ENTRY]
+Cannot resolve entry module index.html
+```
+
+Then later I noticed:
+
+```txt
+Detected 2 framework(s)
+
+"next"
+"vite"
+```
+
+I had not uninstalled vite.
+
+---
+
+## What confused me
+
+This project originally started as a Vite application.
+
+I had manually added Next.js later while restructuring the portfolio and adding blog support.
+
+So even though the app itself was now using Next.js:
+
+- Netlify was still detecting Vite
+- The build system was expecting `index.html`
+- Deployment routing became inconsistent
+
+Locally this didn’t show up because development was already running through Next.
+
+---
+
+## Debugging steps
+
+First, I checked the build scripts:
+
+```json
+{
+	"scripts": {
+		"dev": "next dev",
+		"build": "vite build",
+		"start": "next start"
+	}
+}
+```
+
+I still had the `vite` command so, I changed it to `next build`.
+
+Then I removed old Vite leftovers and uninstalled Vite:
+
+I checked Netlify build settings and it was publishing `dist`. Then I changed it to `.next`.
+
+Now the project was building successfully, but I got a 404 page.
+
+---
+
+## The actual fix
+
+The missing piece was installing the Netlify Next.js plugin.
+
+Install:
+
+```bash
+npm install -D @netlify/plugin-nextjs
+```
+
+Then create at the root of the project:
+
+```txt
+netlify.toml
+```
+
+```toml
+[build]
+command = "npm run build"
+
+[[plugins]]
+package = "@netlify/plugin-nextjs"
+```
+
+After pushing the changes and redeploying:
+
+```txt
+Detected framework:
+Next.js
+```
+
+Only one framework.
+
+Build successful.
+Deployment worked.
+
+---
+
+## What I learned
+
+Migration work often leaves behind configuration that doesn’t immediately break local development.
+
+When deployment behaves differently:
+
+- check framework detection
+- check publish directory on hosting platform
+- check old config files
+- check build scripts
+- check hosting plugins
+
+Sometimes the fix is not in the application code at all.
+
+In this case, the solution ended up being a deployment configuration issue rather than a Next.js issue.
