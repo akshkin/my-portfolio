@@ -19,15 +19,15 @@ export default function BlogPage() {
 		<div className="p-10">
 			<h1 className="text-3xl font-bold mb-6">My tech notes</h1>
 
-			<div className="space-y-4">
+			<div className=" flex flex-wrap gap-4">
 				{posts.map((post) => (
 					<Link
 						key={post.slug}
 						href={`/blog/${post.slug}`}
-						className="max-w-lg block hover:text-pink-200 rounded-lg transition-colors duration-300"
+						className="max-w-lg block w-[250px]"
 					>
-						<div className="p-4 border rounded-lg">
-							<h2 className="text-xs font-semibold">{post.slug}</h2>
+						<div className="p-2 border rounded-lg hover:border-pink-300 transition-colors duration-300">
+							<h2 className="text-xl font-bold">{post.slug}</h2>
 						</div>
 					</Link>
 				))}
