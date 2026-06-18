@@ -1,0 +1,106 @@
+# Fixing PWA Manifest Issues in a Vite + React + TypeScript App (GitHub Pages)
+
+_By Akshaya Kini · June 18, 2026_
+
+---
+
+To convert my React app to a PWA, I followed [this article](https://vite-pwa-org.netlify.app/guide/pwa-minimal-requirements.html) and used [this website](https://realfavicongenerator.net/) to generate favicons.
+
+## Problem
+
+After converting my Vite + React + TS app into a PWA using `vite-plugin-pwa`, the browser showed:
+
+- `No manifest detected`
+- `Manifest fetch failed (404)`
+- `Syntax error at <!DOCTYPE>`
+- Offline functionality was inconsistent
+
+At first it looked like the PWA setup was broken.
+
+---
+
+## Root Cause
+
+There were multiple small issues:
+
+### 1. Wrong manifest filename
+
+As per the article, I assumed the manifest file was:
+
+```text
+manifest.webmanifest
+```
+
+But the Favicon generator generated `site.webmanifest` file.
+
+So the browser requested a file that did not exist.
+
+Because of that, Vite/GitHub Pages returned index.html, which starts with `<!DOCTYPE html>`
+
+The browser tried to parse HTML as a manifest JSON file and showed:
+
+`Syntax error at <!DOCTYPE>`
+
+### 2. I manually added `<link rel="manifest">`
+
+I had manually added after following the [Mozilla Docs](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest#deploying_a_manifest) like so:
+
+```
+<link rel="manifest" href="/site..webmanifest">
+```
+
+But, later I learned that vite-plugin-pwa already injects the manifest automatically.
+
+The manual link pointed to the wrong location and caused conflicts.
+
+### 3. Base path configuration
+
+Since the app is deployed on GitHub Pages, the correct Vite base configuration was important:
+
+```
+base: "/NameOfTheProject/"
+```
+
+Incorrect manifest paths caused 404s.
+
+#### Fix
+
+Remove manual manifest link : `<link rel="manifest" ... />` from index.html.
+
+Configure in vite.config.ts:
+
+```
+plugins: [
+    react(),
+VitePWA({
+  manifest: {
+    name: "NameOfTheProject",
+    short_name: "ChosenName",
+    icons: [...]
+  },
+  workbox: {
+        globPatterns: ["**/*.{js,css,html,ico,png,svg}"],
+      },
+    }),
+  ],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+      src: "/src",
+    },
+  },
+  base: "/StockNestReact/",
+
+```
+
+Keep correct GitHub Pages base
+
+Result
+
+- ✅ Manifest detected
+- ✅ PWA installable
+- ✅ Icons loaded correctly
+- ✅ Service worker working
+- ✅ Offline support functioning in preview/production
+
+This became the final working setup.
