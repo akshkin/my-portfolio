@@ -1,0 +1,103 @@
+# How I resolved ENOENT no such file or directory.mdx
+
+_By Akshaya Kini · June 17, 2026_
+
+---
+
+After days of fruitless debugging — triple-checking file names, verifying import paths, re-examining aliases — I finally tracked down a subtle but devastating misconfiguration that was silently breaking my Vite + React project on GitHub Actions while working perfectly on my local machine.
+
+Here's what happened, why it happened, and how a one-line change fixed everything.
+
+---
+
+## The Error
+
+When I tried to deploy my app in Netlify or Vercel, the build failed with this:
+
+```
+error during build:
+[vite:asset] Could not load \home\runner\work\StockNestReact\StockNestReact\src/assets/images/app-logo.svg
+(imported by src/components/footer/Footer.tsx):
+ENOENT: no such file or directory
+```
+
+The file existed. The import path was correct. The alias was configured. And yet, the build kept failing on the CI runner while working flawlessly locally on Windows.
+
+---
+
+## What I Checked First
+
+Before finding the real cause, I went through the usual suspects:
+
+**File not committed to git?** Nope — `git ls-files src/assets/images/app-logo.svg` confirmed it was tracked.
+
+**Case sensitivity mismatch?** No — Linux filesystems are case-sensitive unlike Windows, but the filename matched exactly.
+
+**Missing Vite alias for `@/`?** My `vite.config.ts` had the alias configured:
+
+```ts
+resolve: {
+  alias: {
+    "@": path.resolve(__dirname, "src"),
+  },
+},
+```
+
+Everything looked right. So what was the actual problem?
+
+---
+
+## The Real Culprit: `path/win32`
+
+The import at the top of my `vite.config.ts`:
+
+```ts
+import path from "path/win32";
+```
+
+Node.js ships with two platform-specific path modules:
+
+- `path/win32` — always uses Windows-style backslash (`\`) separators, **regardless of the OS**
+- `path/posix` — always uses Unix-style forward slash (`/`) separators, **regardless of the OS**
+- `path` — automatically uses the correct separator **for the current OS**
+
+By importing `path/win32`, every call to `path.resolve()` in my Vite config was producing backslash-separated paths — even on the Linux CI runner. This is what caused the mangled, mixed-separator path in the error:
+
+```
+\home\runner\work\StockNestReact\StockNestReact\src/assets/images/app-logo.svg
+```
+
+Notice the `\home\` at the start — on Linux, paths begin with `/home/`. The leading backslash was a clear sign that something was forcefully applying Windows path logic on a Unix system.
+
+---
+
+## The Fix
+
+One word change:
+
+```ts
+// Before
+import path from "path/win32";
+
+// After
+import path from "path";
+```
+
+That's it. The plain `path` module is OS-aware — it uses backslashes on Windows and forward slashes on Linux/macOS automatically. There is almost never a reason to use `path/win32` or `path/posix` directly unless you are explicitly processing paths intended for a _different_ OS than the one you're running on.
+
+---
+
+## The Broader Lesson: Local ≠ CI
+
+This bug is a perfect example of an environment parity problem. Windows silently tolerated the wrong path module because it happened to produce the same result locally. The Linux CI runner had no such tolerance.
+
+A few principles worth internalising from this experience:
+
+- **When a build works locally but fails in CI**, look for OS-specific assumptions in your tooling config before blaming the code itself.
+- **The error message always contains clues** — the leading `\` on a Linux path was pointing directly at the problem from the start.
+
+---
+
+## Conclusion
+
+The fix was a single word in a single import. These are the bugs that teach you the most — they force you to understand your tools at a deeper level than any tutorial would.

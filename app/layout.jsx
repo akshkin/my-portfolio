@@ -10,8 +10,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<Navigation />
-			<body className="w-screen max-w-screen">{children}</body>
+			<body className="w-screen max-w-screen">
+				<Navigation />
+				{children}
+			</body>
 		</html>
 	);
 }

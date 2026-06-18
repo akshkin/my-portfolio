@@ -25,6 +25,9 @@ function Navigation() {
 					<Link href="/#projects" className="flex link text-2xl">
 						<span>Projects</span>
 					</Link>
+					<Link href="/blog" className="flex link text-2xl">
+						<span>Tech Notes</span>
+					</Link>
 					<Link href="/#contact" className="flex link text-2xl">
 						<span>Contact</span>
 					</Link>
