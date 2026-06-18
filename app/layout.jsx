@@ -2,9 +2,12 @@ import Navigation from "@/components/navigation/Navigation";
 import "./globals.css";
 
 export const metadata = {
-	title: "Akshaya Kini - Portfolio",
+	title: {
+		template: "%s | Akshaya Kini",
+		default: "Akshaya Kini - Portfolio",
+	},
 	description:
-		"Fullstack developer specializing in React and ASP.NET Core. Welcome to my portfolio showcasing my projects and skills in web development.",
+		"Fullstack Software developer specializing in React and ASP.NET Core. Welcome to my portfolio showcasing my projects and skills in web development.",
 };
 
 export default function RootLayout({ children }) {
