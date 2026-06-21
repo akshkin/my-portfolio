@@ -19,6 +19,9 @@ function Navigation() {
 					<Link href="/#about" className="flex link text-2xl">
 						<span>About</span>
 					</Link>
+					<Link href="/#testimonials" className="flex link text-2xl">
+						<span>Testimonials</span>
+					</Link>
 					<Link href="/#skills" className="flex link text-2xl">
 						<span>Skills</span>
 					</Link>
