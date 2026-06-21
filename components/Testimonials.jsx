@@ -40,7 +40,6 @@ export default function Testimonials() {
 			className="
                 mx-auto
                 max-w-6xl
-                px-6
                 py-20
             "
 			id="testimonials"

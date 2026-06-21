@@ -13,9 +13,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body className="w-screen max-w-screen">
+			<body className="w-full">
 				<Navigation />
-				<main className="w-screen max-w-screen">{children}</main>
+				<main className="w-full px-6">{children}</main>
 			</body>
 		</html>
 	);
