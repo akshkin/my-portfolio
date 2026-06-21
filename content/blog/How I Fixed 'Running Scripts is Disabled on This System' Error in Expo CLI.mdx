@@ -1,0 +1,81 @@
+# How I Fixed "Running Scripts is Disabled on This System" Error in Expo CLI
+
+_By Akshaya Kini · May 16, 2026_
+
+---
+
+When I was trying to run `expo register` or `expo login`, I encountered the following error, which is a common issue with a straightforward fix.
+
+```
+cannot be loaded because running scripts is disabled on
+this system. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ expo register
++ ~~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+```
+
+This error occurs because Windows PowerShell has a security feature called "Execution Policy," which restricts script execution to prevent malicious activity. By default, it might be set to `Restricted`, which blocks scripts from running, including Expo CLI commands.
+
+## How I Fixed the Issue
+
+### Step 1: Open PowerShell as Administrator
+
+To change the execution policy, I opened PowerShell with administrative privileges:
+
+- Press `Win + X` and select **Windows PowerShell (Admin)** or **Terminal (Admin)**.
+- Click "Yes" if prompted by the User Account Control (UAC).
+
+### Step 2: Check the Current Execution Policy
+
+Before making any changes, I checked my current execution policy by running:
+
+```powershell
+Get-ExecutionPolicy
+```
+
+It returned `Restricted`, which meant scripts are blocked from running.
+
+### Step 3: Change the Execution Policy
+
+To allow scripts to run, I set the policy to `RemoteSigned` with the following command which I found from `Stack overflow`:
+
+```powershell
+Set-ExecutionPolicy RemoteSigned
+```
+
+I got a warning about changing the policy and I typed `Y` and pressed **Enter** to confirm.
+
+### Step 4: Run Expo CLI Command Again
+
+Then I tried running `expo register` or `expo login` again. It worked without the previous error.
+
+### Step 5: Restore the Original Execution Policy
+
+If you want to revert the execution policy back to its original state after successfully running Expo CLI, use:
+
+```powershell
+Set-ExecutionPolicy Restricted
+```
+
+Replace `Restricted` with whatever value you got in Step 2.
+
+## Something that may work - Alternative Workaround: Running Expo Commands with `npx`
+
+(I have not tried this, but found this info)
+If you don’t want to change execution policies, you can run Expo commands with `npx` instead:
+
+```sh
+npx expo register
+npx expo login
+```
+
+This method allows you to execute Expo CLI commands without modifying system policies.
+
+## Conclusion
+
+This issue is simply a security feature of PowerShell restricting script execution. By temporarily changing the execution policy, you can run Expo CLI commands without trouble. Just remember to restore the policy if needed to maintain system security.
+
+Now you’re ready to use Expo CLI without any interruptions!
+One can get a similar error when trying to run other commands as well and it works to follow the same step as above.

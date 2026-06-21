@@ -1,6 +1,6 @@
 # Fixing Netlify Build Failures After Migrating from Vite to Next.js
 
-_Akshaya Kini · June 18, 2026_
+_By Akshaya Kini · June 18, 2026_
 
 ---
 
@@ -119,6 +119,10 @@ Build successful.
 Deployment worked.
 
 ---
+
+## Root Cause
+
+Netlify didn't know the project was a Next.js app, so it couldn't handle Next.js routing. Without the official Netlify Next.js plugin, features like server-side rendering, API routes, and dynamic routing simply don't work.
 
 ## What I learned
 

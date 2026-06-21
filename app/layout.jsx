@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<body className="w-screen max-w-screen">
 				<Navigation />
-				{children}
+				<main className="w-screen max-w-screen">{children}</main>
 			</body>
 		</html>
 	);

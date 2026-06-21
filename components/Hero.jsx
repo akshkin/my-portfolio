@@ -8,7 +8,7 @@ function Hero() {
 	const surnameArray = surname.split("");
 
 	return (
-		<div className="max-w-screen  h-screen  max-h-screen  text-white overflow-x-hidden flex flex-col justify-center items-center max-md:h-[70vh]">
+		<div className="max-w-screen h-screen  max-h-screen  text-white overflow-x-hidden flex flex-col justify-center items-center max-md:h-[70vh]">
 			{/* <video
 				src="/background-compressed.mp4"
 				className="full-screen-width object-cover -z-10"
