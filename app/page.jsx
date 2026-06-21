@@ -8,7 +8,7 @@ import Testimonials from "@/components/Testimonials";
 
 export default function HomePage() {
 	return (
-		<main className="max-w-screen overflow-hidden">
+		<>
 			<Hero />
 			<About />
 			<Skills />
@@ -19,6 +19,6 @@ export default function HomePage() {
 			<Projects />
 
 			<Contact />
-		</main>
+		</>
 	);
 }
