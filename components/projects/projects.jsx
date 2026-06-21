@@ -14,7 +14,7 @@ function Projects() {
 	return (
 		<div className="" id="projects">
 			<h2 className="section-heading">MY PROJECTS</h2>
-			<div className="grid grid-cols-[repeat(auto-fit,minmax(200px,300px))] justify-center gap-8 align-middle p-8">
+			<div className="grid grid-cols-[repeat(auto-fit,minmax(200px,300px))] justify-center gap-8 align-middle py-8">
 				{data.map((project) => (
 					<Dialog key={project.id} className="mx-8">
 						<DialogTrigger asChild>
