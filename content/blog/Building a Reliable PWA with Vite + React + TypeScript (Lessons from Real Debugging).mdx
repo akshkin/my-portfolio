@@ -46,7 +46,7 @@ The browser tried to parse HTML as a manifest JSON file and showed:
 I had manually added after following the [Mozilla Docs](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest#deploying_a_manifest) like so:
 
 ```
-<link rel="manifest" href="/site..webmanifest">
+<link rel="manifest" href="/site.webmanifest">
 ```
 
 But, later I learned that vite-plugin-pwa already injects the manifest automatically.
@@ -89,7 +89,7 @@ VitePWA({
       src: "/src",
     },
   },
-  base: "/StockNestReact/",
+  base: "/NameOfTheProject/",
 
 ```
 

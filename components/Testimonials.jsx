@@ -36,23 +36,10 @@ const testimonials = [
 
 export default function Testimonials() {
 	return (
-		<section
-			className="
-                mx-auto
-                max-w-6xl
-                py-20
-            "
-			id="testimonials"
-		>
+		<section className="mx-auto max-w-6xl py-20" id="testimonials">
 			<h2 className="section-heading">WHAT OTHERS SAY ABOUT ME</h2>
 
-			<div
-				className="
-                    grid
-                    gap-8
-                    md:grid-cols-2
-                    "
-			>
+			<div className="grid gap-8 md:grid-cols-2">
 				{testimonials.map((item) => (
 					<RecommendationCard key={`${item.name}-${item.date}`} {...item} />
 				))}
