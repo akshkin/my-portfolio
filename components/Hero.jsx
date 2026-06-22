@@ -18,6 +18,7 @@ function Hero() {
 			/> */}
 
 			<span className="text-2xl">Hi, I'm</span>
+			<span className="absolute blur-[120px] opacity-20 w-[30] h-[30] rounded-full"></span>
 			{/* <span className={`${letterClass} _14`}> I'm</span> */}
 			<h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-4 m-0">
 				<span className="bg-linear-to-r from-blue-400 via-purple-500 to-blue-400 text-transparent bg-clip-text animate-gradient">
