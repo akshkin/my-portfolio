@@ -34,23 +34,20 @@ export default function RecommendationCard({
 
 	return (
 		<article
-			className={`
-        rounded-3xl
-        border
-        ${style.accent}
-        bg-zinc-950/70
-        p-6
-        backdrop-blur
-        transition
-        hover:-translate-y-1
-        hover:shadow-xl
-      `}
+			className={`rounded-3xl border ${style.accent} bg-zinc-950/70 p-6 backdrop-blur transition hover:-translate-y-1 hover:shadow-xl`}
 		>
 			<div className="flex items-start gap-4">
-				<div className="h-14 w-14 overflow-hidden rounded-full shrink-0 grid items-center justify-center bg-pink-800">
-					<span>
-						{name?.[0]}
-						{name?.split(" ")[1]?.[0]}
+				<div
+					className="h-14 w-14 overflow-hidden rounded-full shrink-0 grid items-center justify-center  bg-linear-to-br
+                    from-violet-500
+                    via-fuchsia-500
+                    to-blue-500"
+				>
+					<span className="font-semibold ">
+						{name
+							?.split(" ")
+							.map((n) => n[0])
+							.join("")}
 					</span>
 				</div>
 
@@ -79,35 +76,16 @@ export default function RecommendationCard({
 				</div>
 			</div>
 
-			<blockquote
-				className="
-                    mt-6
-                    border-l-2
-                    border-zinc-700
-                    pl-4
-                    italic
-                    leading-8
-                    text-zinc-300
-                    "
-			>
-				“{text}”
+			<blockquote className="relative mt-6 border-l-2 border-zinc-700 pl-4 italic leading-8 rext-zinc-300">
+				<span className="absolute top-[-32] left-0 text-8xl">“</span>
+				<span className=" font-serif  select-none text-zinc-300">{text}”</span>
 			</blockquote>
 
 			{source && (
 				<div className="mt-5 text-xs text-zinc-500">Source: {source}</div>
 			)}
 			<span
-				className={`
-                            inline-flex
-                            rounded-full
-                            border
-                            px-3
-                            py-1
-                            text-xs
-                            font-medium
-                            mt-3
-                            ${style.badgeStyle}
-                            `}
+				className={`absolute top-5 right-5 rounded-full backdrop-blur border px-3 py-1 text-xs ${style.badgeStyle}`}
 			>
 				{style.badge}
 			</span>
