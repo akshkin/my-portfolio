@@ -1,0 +1,38 @@
+# Architecting a Scalable Image Upload System: Using Presigned URLs and Client-Side Compression
+
+_By Akshaya Kini · June 23, 2026_
+
+---
+
+When designing the image upload feature for my Recipes app, I needed a solution that could handle high-resolution user photos (often 5MB–10MB from modern smartphones) without degrading app performance or inflating server costs.
+
+## The Architectural Choice: Direct-to-Cloud vs. Server Proxy
+
+During the planning phase, I evaluated the traditional approach of sending files directly to the backend API. However, research into scalable systems highlighted two major flaws with that model:
+
+- Server Bottlenecks: Handling heavy files consumes significant CPU and memory, which can block lightweight API requests and lead to increased server costs.
+
+- Bandwidth Waste: The server acts as an unnecessary middleman, paying for ingress and egress bandwidth for the exact same file.
+
+The Decision: I chose to implement a decoupled architecture using Presigned URLs to allow the frontend to upload directly to cloud storage, keeping the backend entirely stateless.
+
+---
+
+## Solving the UX Dilemma: Client-Side Compression
+
+While direct uploads saved server resources, uploading raw 10MB files from a mobile device on a weak cellular network would still result in a terrible, slow user experience.
+
+Instead of implementing a strict, frustrating file-size limit (forcing users to figure out how to shrink their own photos), I integrated a client-side compression library on the frontend.
+Now:
+
+- The application intercepts the file upload.
+- It compresses the image locally in the background, reducing the file size by up to 80% with minimal quality loss.
+- It requests a short-lived presigned URL from the backend and uploads the optimized image directly to the cloud.
+
+## The Impact
+
+- Better UX: Users can seamlessly upload 10MB smartphone photos without encountering errors or long waiting spinners.
+
+- Reduced Server Load: Backend CPU usage during uploads dropped significantly because the server only processes lightweight JSON metadata, not heavy files.
+
+- Storage Savings: Reduced average file storage requirements by up to 70-80% without noticeable loss in web-viewing quality.
