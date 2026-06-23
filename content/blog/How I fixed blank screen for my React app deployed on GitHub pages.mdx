@@ -1,0 +1,102 @@
+# How I fixed Blank screen for my React App deployed on GitHub Pages
+
+_By Akshaya Kini · June 17, 2026_
+
+---
+
+After having a build issue with deploying my React app on Netlify, I decided to deploy the app to GitHub Pages which seemed straightforward until I opened the live link and saw… a blank page!
+
+This blog walks through the exact problems I faced and how I solved them step by step.
+
+```
+TL;DR
+
+Blank page → Fixed with basename="/my-repo"
+Refresh 404 → Fixed by switching to HashRouter
+```
+
+---
+
+## Problem 1: Blank Screen After Deployment
+
+After deploying the app, instead of seeing my UI, I got a completely blank page.
+What went wrong?
+My app was using `<BrowserRouter>`
+By default, React assumes the app is hosted at the root (/), but GitHub Pages serves project sites under a subpath:
+`https://username.github.io/my-repo/`
+
+So React was trying to load assets from:
+`/static/js/main.js` whis the wrong path.
+
+instead of:
+`/my-repo/static/js/main.js`
+
+### Fix: Add basename to BrowserRouter
+
+To tell React where the app is actually hosted, I added:
+
+```
+<BrowserRouter basename="/my-repo">
+```
+
+This told React that “My app is not at /, it lives inside /my-repo.”
+
+After this, the blank page issue was resolved, and the app loaded correctly.
+
+---
+
+## Problem 2: Page Refresh Caused 404 Errors
+
+Even though the app was now loading, there was another issue:
+
+Navigating inside the app worked but refreshing a page like `/about` caused a 404 error.
+
+### Why did refresh break?
+
+GitHub Pages uses static hosting, meaning:
+
+- It can only serve files that actually exist
+- It does NOT understand React routes
+
+So when I refreshed `https://username.github.io/my-repo/about`, GitHub Pages tried to find `/my-repo/about/index.html`
+
+But that file doesn’t exist → 404
+
+### Fix: Switch to HashRouter
+
+To solve this, I replaced `<BrowserRouter>` with `<HashRouter>`.
+
+#### Why HashRouter Works
+
+With HashRouter, URLs look like `https://username.github.io/my-repo/#/about`.
+
+Key difference:
+
+Everything after # is handled by the browser only
+The server never sees `/about`.
+
+So GitHub Pages always loads:
+`/my-repo/index.html`
+
+Then React reads `#/about` and renders the correct page.
+
+#### Why I No Longer Needed basename with HashRouter:
+
+- Routing happens after the #
+- The server only sees /my-repo/
+- So React doesn't need to adjust paths using basename
+
+---
+
+## Key Learnings
+
+- GitHub Pages = static hosting
+- Static hosts cannot handle client-side routes
+- BrowserRouter:
+  - Needs proper server setup or fallback (like 404.html)
+  - Requires basename when deployed in subfolders
+
+- HashRouter:
+  - Works out-of-the-box for static hosting
+  - Avoids refresh issues completely
+  - Requires no server configuration
