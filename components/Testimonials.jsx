@@ -36,7 +36,7 @@ const testimonials = [
 
 export default function Testimonials() {
 	return (
-		<section className="mx-auto max-w-6xl py-20" id="testimonials">
+		<section className="mx-auto max-w-6xl py-20 scroll-mt-16" id="testimonials">
 			<h2 className="section-heading">WHAT OTHERS SAY ABOUT ME</h2>
 
 			<div className="grid gap-8 md:grid-cols-2">
