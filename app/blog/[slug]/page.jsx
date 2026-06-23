@@ -19,7 +19,7 @@ export default async function BlogPost({ params }) {
 	const fileContent = fs.readFileSync(decodeURIComponent(filePath), "utf8");
 
 	return (
-		<main className="p-6 max-w-3xl mx-auto">
+		<main className="p-6 max-w-3xl mx-auto mt-20">
 			<ArrowLeft /> Back to{" "}
 			<a href="/blog" className="underline">
 				all tech notes
