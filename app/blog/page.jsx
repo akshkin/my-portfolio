@@ -1,20 +1,7 @@
-import fs from "fs";
-import path from "path";
 import Link from "next/link";
+import { posts } from "@/lib/files";
 
 export default function BlogPage() {
-	const files = fs.readdirSync(path.join(process.cwd(), "content/blog"));
-
-	const posts = files.map((filename) => {
-		const filePath = path.join(process.cwd(), "content/blog", filename);
-		const fileContent = fs.readFileSync(filePath, "utf8");
-
-		return {
-			slug: filename.replace(".mdx", ""),
-			...fileContent,
-		};
-	});
-
 	return (
 		<div className="p-8 bg-linear-to-b from-slate-900 to-slate-950 text-slate-100 mt-20">
 			<h1 className="text-3xl font-bold text-center mb-10 relative after:block after:w-20 after:h-1 after:bg-gradient-to-r after:from-violet-500 after:to-pink-500 after:mx-auto after:mt-2">

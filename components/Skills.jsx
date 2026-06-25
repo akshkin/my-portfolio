@@ -25,8 +25,8 @@ function Skills() {
 						className="icon"
 						width={60}
 						height={50}
+						title="HTML"
 					/>
-					HTML
 				</li>
 				<li className="skills-list-items">
 					{/* <CSSIcon className="icon" /> CSS */}
@@ -36,8 +36,8 @@ function Skills() {
 						className="icon"
 						width={60}
 						height={50}
+						title="CSS"
 					/>
-					CSS
 				</li>
 				<li className="skills-list-items">
 					{/* <SCSSIcon className="icon" /> Sass/SCSS */}
@@ -47,8 +47,8 @@ function Skills() {
 						className="icon"
 						width={60}
 						height={50}
+						title="Sass/SCSS"
 					/>
-					Sass/SCSS
 				</li>
 				<li className="skills-list-items">
 					{/* <JavaScriptIcon className="icon" /> JavaScript */}
@@ -58,8 +58,19 @@ function Skills() {
 						className="icon"
 						width={60}
 						height={50}
+						title="Javascript"
 					/>
-					JavaScript
+				</li>
+				<li className="skills-list-items">
+					{/* <JavaScriptIcon className="icon" /> JavaScript */}
+					<Image
+						src="/assets/svgs/typescript.svg"
+						alt="JavaScript"
+						className="icon"
+						width={60}
+						height={50}
+						title="Typescript"
+					/>
 				</li>
 				<li className="skills-list-items">
 					{/* <ReactIcon className="icon" /> React */}
@@ -69,8 +80,8 @@ function Skills() {
 						className="icon"
 						width={60}
 						height={50}
+						title="React"
 					/>
-					React
 				</li>
 				<li className="skills-list-items">
 					{/* <ReactNativeIcon className="icon" /> React Native */}
@@ -80,8 +91,19 @@ function Skills() {
 						className="icon"
 						width={60}
 						height={50}
+						title="React Native"
 					/>
-					React Native
+				</li>
+				<li className="skills-list-items">
+					{/* <ReactNativeIcon className="icon" /> React Native */}
+					<Image
+						src="/assets/svgs/nextjs.svg"
+						alt="NEXT.js"
+						className="icon"
+						width={60}
+						height={50}
+						title="NEXT.js"
+					/>
 				</li>
 				<li className="skills-list-items">
 					{/* <ResponsiveIcon className="icon" /> Responsive layouts */}
@@ -91,8 +113,8 @@ function Skills() {
 						className="icon"
 						width={60}
 						height={50}
+						title="Responsive layouts"
 					/>
-					Responsive layouts
 				</li>
 				<li className="skills-list-items">
 					{/* <StyledComponentsIcon className="icon styled" /> Styled Components */}
@@ -102,8 +124,8 @@ function Skills() {
 						className="icon"
 						width={60}
 						height={50}
+						title="Styled Components"
 					/>
-					Styled Components (CSS-in-JS)
 				</li>
 				<li className="skills-list-items">
 					{/* <JestIcon className="icon" /> Jest */}
@@ -113,8 +135,8 @@ function Skills() {
 						className="icon"
 						width={60}
 						height={50}
+						title="Jest"
 					/>
-					Jest
 				</li>
 				<li className="skills-list-items">
 					{/* <NodeIcon className="icon" /> Node JS */}
@@ -124,8 +146,30 @@ function Skills() {
 						className="icon"
 						width={60}
 						height={50}
+						title="Node.js"
 					/>
-					Node JS
+				</li>
+				<li className="skills-list-items">
+					{/* <NodeIcon className="icon" /> Node JS */}
+					<Image
+						src="/assets/svgs/csharp.svg"
+						alt="C#"
+						className="icon"
+						width={60}
+						height={50}
+						title="C#"
+					/>
+				</li>
+				<li className="skills-list-items">
+					{/* <NodeIcon className="icon" /> Node JS */}
+					<Image
+						src="/assets/svgs/dotnet.svg"
+						alt="ASP.NET"
+						className="icon"
+						width={60}
+						height={50}
+						title="ASP.NET"
+					/>
 				</li>
 				<li className="skills-list-items">
 					<img
@@ -135,6 +179,17 @@ function Skills() {
 					/>
 				</li>
 			</ul>
+			<p>
+				Currently, I am learning{"   "}
+				<Image
+					src="/assets/svgs/docker.svg"
+					alt="Docker"
+					className="inline-block ml-4 mr-4 mb-2"
+					width={100}
+					height={50}
+				/>
+				and <span className="pl-2 font-extrabold text-2xl">AI</span>
+			</p>
 		</div>
 		// </AnimationOnScroll>
 	);
