@@ -1,3 +1,4 @@
+import { files } from "@/lib/files";
 import React from "react";
 
 const statsData = [
@@ -11,7 +12,7 @@ const statsData = [
 	},
 	{
 		label: "Tech Notes",
-		value: "5+",
+		value: `${files.length - 1}+`,
 	},
 ];
 
