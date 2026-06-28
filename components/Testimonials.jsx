@@ -32,6 +32,21 @@ const testimonials = [
 
 		source: "Internship Evaluation",
 	},
+	{
+		type: "recommendation",
+
+		name: "Olga Drungilene",
+
+		role: "Webflow-Utvecklare",
+
+		organization: "Uppåkra Arkeologiska Center",
+
+		date: "June 2026",
+
+		text: "I had the pleasure of working closely with Akshaya as part of a two-person team at Uppåkra Archaeological Center. From the very beginning, it was easy to communicate and collaborate with her. We quickly found common ground, which made our teamwork both effective and enjoyable. She is very detail-oriented and always strives to deliver high-quality work. Whenever we encountered a challenge or needed to improve something, she was always ready to help without hesitation. I truly appreciated her positive attitude, reliability, and dedication throughout our collaboration. It was a pleasure working with her, and I highly recommend her to anyone looking for a supportive, skilled, and dependable colleague. I hope we have the opportunity to work together again in the future.",
+
+		source: "LinkedIn",
+	},
 ];
 
 export default function Testimonials() {
@@ -40,9 +55,11 @@ export default function Testimonials() {
 			<h2 className="section-heading">WHAT OTHERS SAY ABOUT ME</h2>
 
 			<div className="grid gap-8 md:grid-cols-2">
-				{testimonials.map((item) => (
-					<RecommendationCard key={`${item.name}-${item.date}`} {...item} />
-				))}
+				{testimonials
+					.sort((a, b) => new Date(b.date) - new Date(a.date))
+					.map((item) => (
+						<RecommendationCard key={`${item.name}-${item.date}`} {...item} />
+					))}
 			</div>
 		</section>
 	);
