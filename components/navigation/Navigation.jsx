@@ -18,8 +18,6 @@ function Navigation() {
 	function activeLink(hash) {
 		return activeHash === hash;
 	}
-
-	console.log(activeHash);
 	// const [basePath, anchor] = href.split("#");
 	// const isSamePath = pathname === basePath;
 	// const isSameAnchor = anchor ? hash === `#${anchor}` : hash === "";

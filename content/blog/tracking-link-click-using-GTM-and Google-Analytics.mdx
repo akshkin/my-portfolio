@@ -1,0 +1,247 @@
+# How I Implemented Download Tracking in Webflow Using Google Tag Manager and GA4 (Without Custom JavaScript)
+
+## Background
+
+We wanted to track downloads of a game from several pages on a Webflow website and view the results in Google Analytics 4 (GA4).
+
+Initially, I approached this by:
+
+1. Adding custom JavaScript to the website.
+2. Using `dataLayer.push()` to send custom events to Google Tag Manager (GTM).
+3. Creating GA4 event tags based on those custom events.
+
+While the solution worked, it turned out to be more complicated than necessary.
+
+After further investigation, I discovered that GTM's built-in click tracking capabilities were sufficient and allowed us to remove the custom JavaScript entirely.
+
+This post documents the final solution.
+
+---
+
+### The Initial Approach
+
+The original implementation used custom JavaScript:
+
+```javascript
+window.dataLayer.push({
+	event: "game_download",
+	game_name: "Minecraft",
+	link_url: button.href,
+});
+```
+
+A GTM trigger listened for the custom event:
+
+```text
+game_download
+```
+
+and then forwarded the event to GA4.
+
+Although this worked, it required:
+
+- Maintaining custom code
+- Data Layer Variables
+- Additional debugging effort
+
+---
+
+### Discovering a Simpler Solution
+
+While debugging, I noticed that every click on the download link automatically generated the following event inside GTM Preview mode:
+
+```text
+gtm.linkClick
+```
+
+This meant that GTM was already detecting the click without any custom JavaScript.
+
+The only remaining challenge was identifying which download button was clicked.
+
+---
+
+### Adding a Custom HTML Attribute
+
+Each download button was given a custom attribute:
+
+```html
+<a href="..." gtm-download="minecraft"> Download </a>
+```
+
+This attribute became the source of truth for tracking.
+
+---
+
+### Creating a User-Defined GTM Variable
+
+Inside Google Tag Manager, I created a variable with type `Auto-Event Variable` that reads the value of the attribute from the clicked element.
+
+The variable was configured with type `Element Attribute` to read:
+
+```text
+gtm-download
+```
+
+from the clicked link.
+
+Example values:
+
+```text
+minecraft
+minecraft-education
+minecraft-bedrock
+```
+
+---
+
+## Generating Dynamic Event Names
+
+Instead of hardcoding a single event name, the GA4 Event tag was configured with:
+
+```text
+{{Click - gtm-download attribute}}_download
+```
+
+This produced event names such as:
+
+```text
+minecraft_download
+minecraft-education_download
+```
+
+which made the reporting easier to understand without additional dimensions or custom reports.
+
+---
+
+## Handling Empty Values
+
+During testing, some events appeared as:
+
+```text
+_download
+```
+
+and occasionally:
+
+```text
+null_download
+```
+
+This indicated that some clicks did not have a valid `gtm-download` value.
+
+To solve this, I added a trigger condition:
+
+```text
+Click - gtm-download attribute
+matches RegEx
+.+
+```
+
+This ensures the tag only fires when the attribute contains at least one character.
+
+As a result:
+
+- Valid events are sent, example `minecraft_download`
+- Invalid events are blocked `_download` `null_download`
+
+---
+
+## A Surprise: Cookie Consent
+
+Initially, the events appeared in GTM Preview but not in GA4.
+
+The issue turned out to be cookie consent.
+
+In the GTM Consent tab, I found:
+
+```text
+analytics_storage = denied
+```
+
+When analytics consent was denied, GTM still fired the tags, but GA4 ignored the events.
+
+After accepting cookies, the events immediately appeared in:
+
+```text
+GA4 → Realtime
+```
+
+This confirmed that the tracking implementation was correct and that consent settings were the real blocker.
+
+---
+
+## Final GTM Setup
+
+### Trigger
+
+I created a trigger called `Minecraft game download` with Trigger type `Click - Just Links` with conditions:
+
+```text
+Click - gtm-download attribute matches RegEx .+
+```
+
+### Variable
+
+```text
+Click - gtm-download attribute
+```
+
+Reads:
+
+```text
+gtm-download
+```
+
+from the clicked link.
+
+### GA4 Event Tag
+
+I created a tag with Tag type `Google Analytics: GA4 Event` and added the Measurement ID with Event Name:
+
+```text
+{{Click - gtm-download attribute}}_download
+```
+
+and Triggering with
+
+```text
+Minecraft game download
+```
+
+Examples:
+
+```text
+minecraft_download
+minecraft-education_download
+```
+
+---
+
+## Benefits of the Final Solution
+
+Compared to the original implementation, the final version offers several advantages:
+
+- No custom JavaScript
+- No `dataLayer.push()`
+- Simpler maintenance
+- Easier debugging
+- Clear event names in GA4
+- Works across multiple pages
+- Fully managed through GTM
+
+---
+
+## Key Lessons Learned
+
+1. Always check whether GTM can solve a problem before writing custom JavaScript.
+2. GTM Preview mode is invaluable for troubleshooting.
+3. Cookie consent settings can make a working implementation appear broken.
+4. Dynamic event names can simplify reporting when only a few event variants are required.
+5. Use trigger conditions to prevent invalid events from polluting analytics data.
+
+---
+
+## Result
+
+The final implementation successfully tracks game downloads across multiple Webflow pages using link click tracking
+without any custom JavaScript code.
