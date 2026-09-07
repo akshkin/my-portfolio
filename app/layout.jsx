@@ -1,5 +1,10 @@
 import Navigation from "@/components/navigation/Navigation";
 import "./globals.css";
+import { Montserrat } from "next/font/google";
+
+const montserrat = Montserrat({
+	subsets: ["latin"],
+});
 
 export const metadata = {
 	title: {
@@ -13,9 +18,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body className="w-full">
+			<body className={`w-full ${montserrat.className}`}>
 				<Navigation />
-				<main className="w-full px-6">{children}</main>
+				<main className="p-8 mx-auto">{children}</main>
 			</body>
 		</html>
 	);

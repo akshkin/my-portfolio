@@ -70,8 +70,8 @@ function Contact({ id }) {
 		//   animateIn="animate__fadeInLeft"
 		//   className="contact-container"
 		// >
-		<div
-			className="max-w-2xl h-[60vh] mx-auto p-8 relative flex flex-col  items-center border-t mt-8 scroll-mt-16"
+		<section
+			className="max-w-2xl mx-auto h-[60vh] relative flex flex-col items-center border-t mt-8 pt-6 scroll-mt-16"
 			id="contact"
 		>
 			<h2 className="section-heading">CONTACT ME</h2>
@@ -96,7 +96,7 @@ function Contact({ id }) {
 					<Mail size={30} />
 				</a>
 			</div>
-		</div>
+		</section>
 		// </AnimationOnScroll>
 	);
 }

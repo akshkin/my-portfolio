@@ -47,6 +47,21 @@ const testimonials = [
 
 		source: "LinkedIn",
 	},
+	{
+		type: "recommendation",
+
+		name: "Angelica Zuniga",
+
+		role: "IT Security & Systems Admin | IT ansvarig",
+
+		organization: "Uppåkra Arkeologiska Center",
+
+		date: "Aug 2026",
+
+		text: "I am eager to recommend Akshaya Kini, who completed her 3 month internship at Uppåkra Arkeologiska Center. During her time with the team, she consistently demonstrated exceptional initiative, technical ability, and a strong willingness to learn. Successfully implemented data tracking tools for important content and data-analytics tracking, configured cookies, and helped ensure that our web-analytics setup complied with relevant requirements. She also researched compliance checks for the website and contributed to improving our overall approach to privacy, security, and data management. In addition, she maintained detailed records of incidents, took an active leadership role in sprint sessions, and helped restructure workflows and designs to improve user interaction and increase efficiency within the team. Her contributions went well beyond UI/UX. She also worked with Cloudflare and helped configure secure HTTP headers, demonstrating an impressive ability to understand and contribute to both user-facing design and technical infrastructure. She was highly proactive, a quick study, and consistently looked for ways to identify what was missing and improve it. Rather than waiting for instructions, she investigated problems, proposed solutions, and followed through on implementation. Her combination of creativity, technical curiosity, organizational skills, and reliability made her an exceptionally valuable member of the team. In many respects, equivalent to having two people in one: able to contribute across analytics, compliance, UX, project workflows, incident documentation, and web security while maintaining a positive and collaborative attitude. I recommend Akshaya without reservation. She would be an asset to any organization, and I am confident that she will continue to develop into a highly capable professional.",
+
+		source: "LinkedIn",
+	},
 ];
 
 export default function Testimonials() {
