@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<body className="w-full">
 				<Navigation />
-				<main className="w-full px-6">{children}</main>
+				<main className="p-8 mx-auto">{children}</main>
 			</body>
 		</html>
 	);

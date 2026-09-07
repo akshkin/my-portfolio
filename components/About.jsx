@@ -3,7 +3,7 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 function About() {
 	return (
 		// <AnimationOnScroll animateIn="animate__fadeInUp" className="inner">
-		<div className="p-8 max-w-5xl mx-auto text-xl mb-8 scroll-mt-16" id="about">
+		<section className="text-xl mb-8 scroll-mt-16 max-w-5xl mx-auto" id="about">
 			<h2 className="section-heading">ABOUT ME</h2>
 
 			<p>
@@ -50,7 +50,7 @@ function About() {
 				improving build performance and modernizing the project’s tooling. My
 				contribution was reviewed, approved, and merged into the main codebase.
 			</p>
-		</div>
+		</section>
 		// </AnimationOnScroll>
 	);
 }

@@ -13,7 +13,7 @@ import Link from "next/link";
 
 function Projects() {
 	return (
-		<div className="scroll-mt-20" id="projects">
+		<section className="scroll-mt-20" id="projects">
 			<h2 className="section-heading">MY PROJECTS</h2>
 			<p className="text-center text-xl bg-pink-800 p-4">
 				Read some of the problems I faced during building these projects and how
@@ -75,7 +75,7 @@ function Projects() {
 					</Dialog>
 				))}
 			</div>
-		</div>
+		</section>
 	);
 }
 
