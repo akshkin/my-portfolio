@@ -71,7 +71,7 @@ function Contact({ id }) {
 		//   className="contact-container"
 		// >
 		<section
-			className="max-w-2xl h-[60vh] relative flex flex-col  items-center border-t mt-8 scroll-mt-16"
+			className="max-w-2xl mx-auto h-[60vh] relative flex flex-col items-center border-t mt-8 pt-6 scroll-mt-16"
 			id="contact"
 		>
 			<h2 className="section-heading">CONTACT ME</h2>
