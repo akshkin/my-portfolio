@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Approach from "@/components/Approach";
 import Contact from "@/components/Contact";
 import Education from "@/components/education/Education";
 import Hero from "@/components/Hero";
@@ -15,6 +16,7 @@ export default function HomePage() {
 			<Stats />
 			<MyStory />
 			<About />
+			<Approach />
 			<Skills />
 			<Education />
 			<Testimonials />
