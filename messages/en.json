@@ -14,6 +14,20 @@
 		"subtitle": "Building scalable and crafting exceptional accessible web applications with",
 		"cta": "View my work"
 	},
+	"stats": {
+		"yearsOfExp": {
+			"label": "Years of Experience",
+			"value": "3+"
+		},
+		"githubRepos": {
+			"label": "GitHub Repositories",
+			"value": "60+"
+		},
+		"techNotes": {
+			"label": "Tech Notes",
+			"value": "{filesLength}+"
+		}
+	},
 	"about": {
 		"title": "about me",
 		"paragraph1": "As a software developer with 3+ years of continuous learning and hands-on experience, my, focus is on front-end development, utilizing modern frontend frameworks like React to create intuitive user experiences. I enjoy leveraging AI as part of my development workflow for debugging, architectural decisions, improving code quality, and accelerating learning while maintaining strong problem-solving fundamentals. \n I am passionate about continuously improving my skills and collaborating with dynamic teams to deliver impactful projects. I am open to collaborate on interesting projects that add value.",

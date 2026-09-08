@@ -1,22 +1,25 @@
 import { files } from "@/lib/files";
+import { useTranslations } from "next-intl";
 import React from "react";
 
-const statsData = [
-	{
-		label: "Years of Experience",
-		value: "3+",
-	},
-	{
-		label: "GitHub Repositories",
-		value: "60+",
-	},
-	{
-		label: "Tech Notes",
-		value: `${files.length - 1}+`,
-	},
-];
-
 function Stats() {
+	const t = useTranslations("stats");
+
+	const statsData = [
+		{
+			label: t("yearsOfExp.label"),
+			value: t("yearsOfExp.value"),
+		},
+		{
+			label: t("githubRepos.label"),
+			value: t("githubRepos.value"),
+		},
+		{
+			label: t("techNotes.label"),
+			value: t("techNotes.value", { filesLength: `${files.length - 1}` }),
+		},
+	];
+
 	return (
 		<div className="p-8 max-w-5xl mx-auto text-xl mb-8 " id="stats">
 			<h2 className="section-heading">STATS</h2>

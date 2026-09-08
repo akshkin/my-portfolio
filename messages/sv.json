@@ -14,6 +14,20 @@
 		"subtitle": "Bygger skalbara och tillgänglighetsanpassade webbapplikationer med",
 		"cta": "Se mina projekt"
 	},
+	"stats": {
+		"yearsOfExp": {
+			"label": "Års erfarenhet",
+			"value": "3+"
+		},
+		"githubRepos": {
+			"label": "GitHub Repositories",
+			"value": "60+"
+		},
+		"techNotes": {
+			"label": "Tekniska anteckningar",
+			"value": "{filesLength}+"
+		}
+	},
 	"about": {
 		"title": "om mig",
 		"paragraph1": "Som mjukvaruutvecklare med 3+ års kontinuerligt lärande och praktisk erfarenhet fokuserar jag på frontendutveckling med moderna ramverk som React för att skapa intuitiva användarupplevelser. Jag använder AI som en del av mitt arbetsflöde för felsökning, arkitektoniska beslut, kodkvalitet och accelererat lärande – samtidigt som jag behåller starka problemlösningsfundament. \n Jag brinner för att kontinuerligt förbättra mina färdigheter och samarbeta med dynamiska team för att leverera meningsfulla projekt. Jag är öppen för samarbete på intressanta projekt som skapar värde.",
