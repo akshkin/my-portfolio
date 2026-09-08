@@ -71,5 +71,23 @@
 
 		"openSourceTitle": "Mitt Open Source-bidrag",
 		"openSourceText": "Jag bidrog till ett open source-projekt från Zero To Mastery - <link>ZTM Job Board (klicka gärna här för att se det)</link>. Jag migrerade React-applikationen från Create React App till Vite, vilket förbättrade byggprestandan och moderniserade projektets verktyg. Mitt bidrag granskades, godkändes och mergades in i huvudkodbasen."
+	},
+	"philosophy": {
+		"title": "Hur jag bygger",
+		"subtitle": "Principerna som vägleder varje beslut jag tar som utvecklare",
+		"items": {
+			"ux": {
+				"title": "Användarupplevelse först",
+				"description": "Varje beslut jag tar börjar med en fråga: 'Gör detta användarupplevelsen bättre?' Jag anser inte att en funktion är klar förrän den känns intuitiv, tillgänglig och meningsfull."
+			},
+			"architecture": {
+				"title": "Arkitektur före kod",
+				"description": "Innan jag skriver en enda rad tänker jag på skalbarhet. Håller den här lösningen vid 10 gånger den nuvarande belastningen? Är den här komponenten återanvändbar? Skapar jag teknisk skuld för mitt framtida jag? Under min tidigare praktik, när jag arbetade med en React + TypeScript-applikation, stötte jag på en situation där data skickades via props genom olika komponenter. Jag föreslog att införa global tillståndshantering med Redux Toolkit — vilket minskade onödiga API-anrop, gjorde systemet mer skalbart och gav mig en djupare förståelse för dataflöde och systemdesign."
+			},
+			"ship": {
+				"title": "Bygg → Leverera → Förbättra",
+				"description": "Jag tror på att få något att fungera först och sedan göra det snabbt. Prematur optimering dödar momentum. Jag levererar, mäter och optimerar sedan — baserat på verklig data som Lighthouse-poäng, inte antaganden."
+			}
+		}
 	}
 }

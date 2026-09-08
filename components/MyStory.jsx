@@ -18,7 +18,6 @@ function MyStory() {
 			<h2 className="section-heading uppercase">{t("title")}</h2>
 			{myStory.map((item) => (
 				<div className="relative p-2" key={item}>
-					{console.log(item)}
 					<h3 className="text-purple-300 pl-10">{t(`items.${item}.year`)}</h3>
 					<p className="pl-10">{t(`items.${item}.info`)}</p>
 					<div>
