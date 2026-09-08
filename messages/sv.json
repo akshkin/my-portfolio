@@ -13,5 +13,16 @@
 		"title": "Fullstack-utvecklare",
 		"subtitle": "Bygger skalbara och tillgänglighetsanpassade webbapplikationer med",
 		"cta": "Se mina projekt"
+	},
+	"about": {
+		"title": "om mig",
+		"paragraph1": "Som mjukvaruutvecklare med 3+ års kontinuerligt lärande och praktisk erfarenhet fokuserar jag på frontendutveckling med moderna ramverk som React för att skapa intuitiva användarupplevelser. Jag använder AI som en del av mitt arbetsflöde för felsökning, arkitektoniska beslut, kodkvalitet och accelererat lärande – samtidigt som jag behåller starka problemlösningsfundament. \n Jag brinner för att kontinuerligt förbättra mina färdigheter och samarbeta med dynamiska team för att leverera meningsfulla projekt. Jag är öppen för samarbete på intressanta projekt som skapar värde.",
+
+		"paragraph2": "Bakgrund: Innan jag övergick till mjukvaruutveckling tog jag en examen inom homeopati – ett alternativt holistiskt medicinsystem som betonar förståelsen av individen som helhet och identifiering av grundorsaker snarare än att enbart behandla symptom. Detta tankesätt har starkt påverkat mitt förhållningssätt till mjukvaruutveckling, där jag fokuserar på att förstå underliggande orsaker till buggar och tekniska utmaningar för att bygga effektiva, långsiktiga lösningar snarare än tillfälliga fixar.",
+
+		"paragraph3": "När jag inte kodar gillar jag att tillbringa tid med min familj.",
+
+		"openSourceTitle": "Mitt Open Source-bidrag",
+		"openSourceText": "Jag bidrog till ett open source-projekt från Zero To Mastery - <link>ZTM Job Board (klicka gärna här för att se det)</link>. Jag migrerade React-applikationen från Create React App till Vite, vilket förbättrade byggprestandan och moderniserade projektets verktyg. Mitt bidrag granskades, godkändes och mergades in i huvudkodbasen."
 	}
 }
