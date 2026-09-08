@@ -28,6 +28,39 @@
 			"value": "{filesLength}+"
 		}
 	},
+	"myStory": {
+		"title": "Min resa",
+		"items": {
+			"scrimba": {
+				"year": "2022 — Där allt började",
+				"info": "Upptäckte webbutveckling via Scrimba och blev omedelbart förälskad i att bygga saker. Det som började som nyfikenhet blev snabbt en passion jag inte kunde lägga ifrån mig."
+			},
+			"firstInternship": {
+				"year": "Feb 2024 – Jun 2024 — Första verkliga erfarenheten",
+				"info": "Fick min första praktikplats och tillämpade allt jag hade lärt mig självständigt under två år."
+			},
+			"flutter": {
+				"year": "Mitten av 2024 — Nya horisonter",
+				"info": "Utforskade mobilutveckling med Flutter/Dart i samband med en potentiell möjlighet."
+			},
+			"swedish": {
+				"year": "Dec 2024 – Dec 2025 — Investering i svenska",
+				"info": "Åtog mig att lära mig svenska för att fullt ut integreras i den svenska tech-branschen."
+			},
+			"vardbitrade": {
+				"year": "Maj 2025 – Nov 2025 — Ett parallellt kapitel",
+				"info": "Arbetade som vårdbiträde och utvecklade teamarbete, kommunikation och ansvarstagande i en krävande miljö."
+			},
+			"lexicon": {
+				"year": "Nov 2025 – Maj 2026 — Formaliserade mina kunskaper",
+				"info": "Gick Lexicons fullstack-program för att komplettera min självlärda bakgrund med strukturerad utbildning."
+			},
+			"uppakra": {
+				"year": "Maj 2026 – Aug 2026 — Levererar i produktion",
+				"info": "Arbetade som webbutvecklare på Uppåkra Arkeologiska Center med end-to-end ansvar för deras webbplats."
+			}
+		}
+	},
 	"about": {
 		"title": "om mig",
 		"paragraph1": "Som mjukvaruutvecklare med 3+ års kontinuerligt lärande och praktisk erfarenhet fokuserar jag på frontendutveckling med moderna ramverk som React för att skapa intuitiva användarupplevelser. Jag använder AI som en del av mitt arbetsflöde för felsökning, arkitektoniska beslut, kodkvalitet och accelererat lärande – samtidigt som jag behåller starka problemlösningsfundament. \n Jag brinner för att kontinuerligt förbättra mina färdigheter och samarbeta med dynamiska team för att leverera meningsfulla projekt. Jag är öppen för samarbete på intressanta projekt som skapar värde.",

@@ -28,6 +28,39 @@
 			"value": "{filesLength}+"
 		}
 	},
+	"myStory": {
+		"title": "My Journey",
+		"items": {
+			"scrimba": {
+				"year": "2022 — Where it all began",
+				"info": "Discovered web development through Scrimba and immediately fell in love with building things. What started as curiosity quickly became a passion that I couldn't put down."
+			},
+			"firstInternship": {
+				"year": "Feb 2024 – Jun 2024 — First real-world experience",
+				"info": "Landed my first internship and applied everything I had been teaching myself for two years."
+			},
+			"flutter": {
+				"year": "Mid 2024 — Expanding horizons",
+				"info": "Explored mobile development with Flutter/Dart while pursuing a potential opportunity."
+			},
+			"swedish": {
+				"year": "Dec 2024 – Dec 2025 — Investing in Swedish",
+				"info": "Committed to learning Swedish to fully integrate into the Swedish tech industry."
+			},
+			"vardbitrade": {
+				"year": "May 2025 – Nov 2025 — Parallel chapter",
+				"info": "Worked as a care assistant, developing teamwork, communication and responsibility in a high-pressure environment."
+			},
+			"lexicon": {
+				"year": "Nov 2025 – May 2026 — Formalizing my skills",
+				"info": "Joined Lexicon's fullstack program to complement my self-taught background with structured education."
+			},
+			"uppakra": {
+				"year": "May 2026 – Aug 2026 — Delivering in production",
+				"info": "Worked as a web developer at Uppåkra Arkeologiska Center, taking end-to-end ownership of their website."
+			}
+		}
+	},
 	"about": {
 		"title": "about me",
 		"paragraph1": "As a software developer with 3+ years of continuous learning and hands-on experience, my, focus is on front-end development, utilizing modern frontend frameworks like React to create intuitive user experiences. I enjoy leveraging AI as part of my development workflow for debugging, architectural decisions, improving code quality, and accelerating learning while maintaining strong problem-solving fundamentals. \n I am passionate about continuously improving my skills and collaborating with dynamic teams to deliver impactful projects. I am open to collaborate on interesting projects that add value.",
