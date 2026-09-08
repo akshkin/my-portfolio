@@ -2,8 +2,12 @@ import Link from "next/link";
 import React from "react";
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "../ui/sheet";
 import { TextAlignJustify } from "lucide-react";
+import { useTranslations } from "next-intl";
+import AppNavLink from "./AppNavLink";
+import LanguageToggle from "../LanguageToggle";
 
 function MobileNav() {
+	const t = useTranslations("nav");
 	return (
 		<Sheet className="">
 			<SheetTrigger className="md:hidden text-white">
@@ -20,35 +24,25 @@ function MobileNav() {
 				</SheetClose> */}
 				<div className="flex flex-col gap-6 mt-16">
 					<SheetClose asChild>
-						<Link href="/#about">
-							<span className="text-xl uppercase">About</span>
-						</Link>
+						<LanguageToggle />
 					</SheetClose>
 					<SheetClose asChild>
-						<Link href="/#testimonials">
-							<span className="text-xl uppercase">Testimonials</span>
-						</Link>
+						<AppNavLink hash="about" text="about" />
 					</SheetClose>
 					<SheetClose asChild>
-						<Link href={"/#skills"}>
-							<span className="text-xl uppercase">Skills</span>
-						</Link>
+						<AppNavLink hash="testimonials" text="testimonials" />
 					</SheetClose>
 					<SheetClose asChild>
-						<Link href={"/#projects"}>
-							<span className="text-xl uppercase">Projects</span>
-						</Link>
+						<AppNavLink hash="skills" text="skills" />
 					</SheetClose>
 					<SheetClose asChild>
-						<Link href={"/blog"}>
-							<span className="text-xl uppercase">Tech Notes</span>
-						</Link>
+						<AppNavLink hash="projects" text="projects" />
 					</SheetClose>
-					<SheetClose asChild>
+					{/* <SheetClose asChild>
 						<Link href={"/#contact"}>
-							<span className="text-xl uppercase">Contact</span>
+							<span className="text-xl uppercase">{t("contact")}</span>
 						</Link>
-					</SheetClose>
+					</SheetClose> */}
 				</div>
 			</SheetContent>
 		</Sheet>

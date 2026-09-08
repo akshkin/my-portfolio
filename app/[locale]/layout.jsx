@@ -1,6 +1,7 @@
 import Navigation from "@/components/navigation/Navigation";
-import "./globals.css";
+import "../globals.css";
 import { Montserrat } from "next/font/google";
+import { NextIntlClientProvider } from "next-intl";
 
 const montserrat = Montserrat({
 	subsets: ["latin"],
@@ -19,8 +20,10 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body className={`w-full ${montserrat.className}`}>
-				<Navigation />
-				<main className="p-8 mx-auto">{children}</main>
+				<NextIntlClientProvider>
+					<Navigation />
+					<main className="p-8 mx-auto">{children}</main>
+				</NextIntlClientProvider>
 			</body>
 		</html>
 	);
