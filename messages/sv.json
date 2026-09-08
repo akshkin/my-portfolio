@@ -1,0 +1,16 @@
+{
+	"nav": {
+		"about": "Om mig",
+		"testimonials": "Testimonials",
+		"projects": "Projekt",
+		"skills": "Färdigheter",
+		"philosophy": "Hur jag bygger",
+		"notes": "Anteckningar",
+		"contact": "Kontakt"
+	},
+	"hero": {
+		"title": "Fullstack-utvecklare",
+		"subtitle": "Bygger skalbara och tillgänglighetsanpassade webbapplikationer",
+		"cta": "Se mina projekt"
+	}
+}

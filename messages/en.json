@@ -1,0 +1,16 @@
+{
+	"nav": {
+		"about": "About",
+		"testimonials": "Testimonials",
+		"projects": "Projects",
+		"skills": "Skills",
+		"philosophy": "How I Build",
+		"notes": "Tech notes",
+		"contact": "Contact"
+	},
+	"hero": {
+		"title": "Fullstack Developer",
+		"subtitle": "Building scalable and crafting exceptional accessible web applications",
+		"cta": "View my work"
+	}
+}
