@@ -89,5 +89,9 @@
 				"description": "I believe in getting something working first, then making it fast. Premature optimization kills momentum. I ship, measure, then optimize — backed by real data like Lighthouse scores, not assumptions."
 			}
 		}
+	},
+	"skills": {
+		"title": "skills",
+		"currentLearning": "I am currently learning <skill1></skill1> and <skill2></skill2>"
 	}
 }

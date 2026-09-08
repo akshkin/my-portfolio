@@ -89,5 +89,9 @@
 				"description": "Jag tror på att få något att fungera först och sedan göra det snabbt. Prematur optimering dödar momentum. Jag levererar, mäter och optimerar sedan — baserat på verklig data som Lighthouse-poäng, inte antaganden."
 			}
 		}
+	},
+	"skills": {
+		"title": "färdigheter",
+		"currentLearning": "Nu läser jag <skill1></skill1> och <skill2></skill2>"
 	}
 }

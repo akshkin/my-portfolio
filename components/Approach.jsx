@@ -10,7 +10,7 @@ function Approach() {
 		<section className="max-w-5xl mx-auto">
 			<h2 className="section-heading">How I Build</h2>
 			{approach.map((item) => (
-				<div key={item.id}>
+				<div key={item}>
 					<h3 className="font-semibold text-2xl text-purple-200 mt-2 ">
 						{t(`items.${item}.title`)}
 					</h3>

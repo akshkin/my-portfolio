@@ -16,11 +16,10 @@ function Projects() {
 		<section className="scroll-mt-20" id="projects">
 			<h2 className="section-heading">MY PROJECTS</h2>
 			<p className="text-center text-xl bg-pink-800 p-4">
-				Read some of the problems I faced during building these projects and how
-				I solved them{" "}
-				<Link href="/blog" className="text-purple-400">
-					here
-				</Link>
+				<Link href="/blog" className="text-pink-100 hover:text-pink-300">
+					Read some of the problems I faced
+				</Link>{" "}
+				during building these projects and how I solved them
 			</p>
 			<div className="grid grid-cols-[repeat(auto-fit,minmax(200px,300px))] justify-center gap-8 align-middle py-8">
 				{data.map((project) => (
