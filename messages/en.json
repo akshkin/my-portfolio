@@ -70,7 +70,7 @@
 		"paragraph3": "When I am not coding, I like to spend time with my family.",
 
 		"openSourceTitle": "My Open Source Contribution",
-		"openSourceText": "I contributed to an open source project from Zero To Mastery - <link>ZTM Job Board (Feel free to check it here)</link>. I migrated the React application from Create React App to Vite, improving build performance and modernizing the project’s tooling. My contribution was reviewed, approved, and merged into the main codebase."
+		"openSourceText": "I contributed to an open source project from Zero To Mastery - <ztmLink>ZTM Job Board (Feel free to check it here)</ztmLink>. I migrated the React application from Create React App to Vite, improving build performance and modernizing the project’s tooling. My contribution was reviewed, approved, and merged into the main codebase."
 	},
 	"philosophy": {
 		"title": "How I Build",
@@ -93,5 +93,9 @@
 	"skills": {
 		"title": "skills",
 		"currentLearning": "I am currently learning <skill1></skill1> and <skill2></skill2>"
+	},
+	"projects": {
+		"title": "my projects",
+		"text": "<challengesLink>Read more about some of the challenges</challengesLink> I faced while working on my projects and how I solved them"
 	}
 }

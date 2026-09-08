@@ -70,7 +70,7 @@
 		"paragraph3": "När jag inte kodar gillar jag att tillbringa tid med min familj.",
 
 		"openSourceTitle": "Mitt Open Source-bidrag",
-		"openSourceText": "Jag bidrog till ett open source-projekt från Zero To Mastery - <link>ZTM Job Board (klicka gärna här för att se det)</link>. Jag migrerade React-applikationen från Create React App till Vite, vilket förbättrade byggprestandan och moderniserade projektets verktyg. Mitt bidrag granskades, godkändes och mergades in i huvudkodbasen."
+		"openSourceText": "Jag bidrog till ett open source-projekt från Zero To Mastery - <ztmLink>ZTM Job Board (klicka gärna här för att se det)</ztmLink>. Jag migrerade React-applikationen från Create React App till Vite, vilket förbättrade byggprestandan och moderniserade projektets verktyg. Mitt bidrag granskades, godkändes och mergades in i huvudkodbasen."
 	},
 	"philosophy": {
 		"title": "Hur jag bygger",
@@ -93,5 +93,9 @@
 	"skills": {
 		"title": "färdigheter",
 		"currentLearning": "Nu läser jag <skill1></skill1> och <skill2></skill2>"
+	},
+	"projects": {
+		"title": "mina projekt",
+		"text": "<challengesLink>Läs mer om utmaningar jag fick</challengesLink> när jag jobbade på mina projekt och hur jag löste dem"
 	}
 }

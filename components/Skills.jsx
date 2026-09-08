@@ -197,15 +197,6 @@ function Skills() {
 						<span className="pl-2 font-extrabold text-2xl">AI</span>
 					),
 				})}
-				{/* Currently, I am learning{"   "}
-				<Image
-					src="/assets/svgs/docker.svg"
-					alt="Docker"
-					className="inline-block ml-4 mr-4 mb-2"
-					width={100}
-					height={50}
-				/>
-				and <span className="pl-2 font-extrabold text-2xl">AI</span> */}
 			</p>
 		</section>
 		// </AnimationOnScroll>

@@ -10,16 +10,24 @@ import {
 	DialogTrigger,
 } from "../ui/dialog";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 function Projects() {
+	const t = useTranslations("projects");
 	return (
 		<section className="scroll-mt-20" id="projects">
-			<h2 className="section-heading">MY PROJECTS</h2>
+			<h2 className="section-heading">{t("title")}</h2>
 			<p className="text-center text-xl bg-pink-800 p-4">
-				<Link href="/blog" className="text-pink-100 hover:text-pink-300">
-					Read some of the problems I faced
-				</Link>{" "}
-				during building these projects and how I solved them
+				{t.rich("text", {
+					challengesLink: (chunks) => (
+						<Link
+							href="/blog"
+							className="text-purple-200 hover:filter hover:brightness-125 transition+colors duration-300"
+						>
+							{chunks}
+						</Link>
+					),
+				})}
 			</p>
 			<div className="grid grid-cols-[repeat(auto-fit,minmax(200px,300px))] justify-center gap-8 align-middle py-8">
 				{data.map((project) => (

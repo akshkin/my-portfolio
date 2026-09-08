@@ -53,7 +53,7 @@ function About() {
 				improving build performance and modernizing the project’s tooling. My
 				contribution was reviewed, approved, and merged into the main codebase. */}
 				{t.rich("openSourceText", {
-					link: (chunks) => (
+					ztmLink: (chunks) => (
 						<a
 							href="https://github.com/zero-to-mastery/ZtM-Job-Board/pull/3476"
 							target="_blank"
