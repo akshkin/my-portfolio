@@ -9,8 +9,9 @@
 		"contact": "Kontakt"
 	},
 	"hero": {
+		"hi": "Hej, jag heter",
 		"title": "Fullstack-utvecklare",
-		"subtitle": "Bygger skalbara och tillgänglighetsanpassade webbapplikationer",
+		"subtitle": "Bygger skalbara och tillgänglighetsanpassade webbapplikationer med",
 		"cta": "Se mina projekt"
 	}
 }

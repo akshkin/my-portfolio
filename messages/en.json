@@ -9,8 +9,9 @@
 		"contact": "Contact"
 	},
 	"hero": {
+		"hi": "Hi, I am",
 		"title": "Fullstack Developer",
-		"subtitle": "Building scalable and crafting exceptional accessible web applications",
+		"subtitle": "Building scalable and crafting exceptional accessible web applications with",
 		"cta": "View my work"
 	}
 }

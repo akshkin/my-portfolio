@@ -1,6 +1,9 @@
 // import AnimatedLetters from "./animated-letters/animated-letters.component";
 
+import { useTranslations } from "next-intl";
+
 function Hero() {
+	const t = useTranslations("hero");
 	const letterClass = "text-animate";
 	const name = "Akshaya";
 	const surname = "Kini";
@@ -17,7 +20,7 @@ function Hero() {
 				muted
 			/> */}
 
-			<span className="text-2xl">Hi, I'm</span>
+			<span className="text-2xl">{t("hi")}</span>
 			<span className="absolute blur-[120px] opacity-20 w-[30] h-[30] rounded-full"></span>
 			{/* <span className={`${letterClass} _14`}> I'm</span> */}
 			<h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-4 m-0">
@@ -42,13 +45,13 @@ function Hero() {
 					</span> */}
 			</h1>
 			<h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 bg-clip-text text-transparent bg-linear-to-r from-gray-100 to-gray-300">
-				Fullstack Developer
+				{t("title")}
 			</h2>
 			<p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
-				Crafting exceptional experiences with
+				{t("subtitle")}
 				<span className="text-blue-400"> React</span>,
-				<span className="text-purple-400"> Next.js</span>, and
-				<span className="text-blue-400"> React Native</span>
+				<span className="text-purple-400"> Next.js</span>,
+				<span className="text-blue-400"> C#.NET</span>
 			</p>
 		</div>
 	);
