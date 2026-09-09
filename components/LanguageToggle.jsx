@@ -15,7 +15,6 @@ function LanguageToggle() {
 		const newPath = pathname.replace(`/${locale}`, `/${next}`);
 		router.push(`${newPath}${hash}`);
 	};
-	// "🇸🇪" "🇬🇧"
 
 	const iscurrentLangEng = locale === "en";
 
@@ -25,7 +24,17 @@ function LanguageToggle() {
 			className="cursor-pointer"
 			title={`${iscurrentLangEng ? "Switch to swedish" : "Ändra till engelska"}`}
 		>
-			<span>{iscurrentLangEng ? <SwedishFlag /> : <EnglishFlag />}</span>
+			{iscurrentLangEng ? (
+				<span className="flex gap-2">
+					🇬🇧
+					<EnglishFlag />
+				</span>
+			) : (
+				<span className="flex gap-2">
+					🇸🇪
+					<SwedishFlag />
+				</span>
+			)}
 		</button>
 	);
 }

@@ -19,8 +19,7 @@ function Navigation() {
 					/>
 				</Link>
 
-				<div className="flex w-full items-center justify-end gap-4 px-4 pb-4 sm:py-3 max-md:hidden">
-					<LanguageToggle />
+				<div className="flex w-full items-center justify-end gap-4 px-4 pb-4 sm:py-3 max-lg:hidden">
 					<AppNavLink hash="about" text="about" />
 					<AppNavLink hash="testimonials" text="testimonials" />
 					<AppNavLink hash="skills" text="skills" />
@@ -28,12 +27,15 @@ function Navigation() {
 					{/* <Link
 						href="/blog"
 						className={`link text-2xl [&.active]:text-indigo-200 ${activeLink("/blog") ? "active" : ""}`}
-					>
+						>
 						{t("notes")}
-					</Link> */}
+						</Link> */}
 					<AppNavLink hash="contact" text="contact" />
 				</div>
-				<MobileNav />
+				<div className="flex gap-4 items-center">
+					<LanguageToggle />
+					<MobileNav />
+				</div>
 			</div>
 		</header>
 	);

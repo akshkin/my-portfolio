@@ -7,7 +7,7 @@ function Approach() {
 	const approach = ["ux", "architecture", "ship"];
 
 	return (
-		<section className="max-w-5xl mx-auto">
+		<section className="max-w-5xl mx-auto mt-16">
 			<h2 className="section-heading">How I Build</h2>
 			{approach.map((item) => (
 				<div key={item}>

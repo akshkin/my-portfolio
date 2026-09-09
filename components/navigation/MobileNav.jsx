@@ -10,40 +10,33 @@ function MobileNav() {
 	const t = useTranslations("nav");
 	return (
 		<Sheet className="">
-			<SheetTrigger className="md:hidden text-white">
+			<SheetTrigger className="lg:hidden text-white">
 				<TextAlignJustify size={32} />
 			</SheetTrigger>
 			<SheetContent
 				title="Navigation"
-				className="border-none mx-auto bg-black/90 text-white p-4"
+				className="border-none mx-auto bg-black/90 text-white p-4 pt-16"
 			>
+				{/* <div className="flex flex-col gap-6 mt-16"> */}
+				<SheetClose asChild></SheetClose>
+				<SheetClose asChild>
+					<AppNavLink hash="about" text="about" />
+				</SheetClose>
+				<SheetClose asChild>
+					<AppNavLink hash="testimonials" text="testimonials" />
+				</SheetClose>
+				<SheetClose asChild>
+					<AppNavLink hash="skills" text="skills" />
+				</SheetClose>
+				<SheetClose asChild>
+					<AppNavLink hash="projects" text="projects" />
+				</SheetClose>
 				{/* <SheetClose asChild>
-					<Link href="/" className="link">
-						<span>AK</span>
-					</Link>
-				</SheetClose> */}
-				<div className="flex flex-col gap-6 mt-16">
-					<SheetClose asChild>
-						<LanguageToggle />
-					</SheetClose>
-					<SheetClose asChild>
-						<AppNavLink hash="about" text="about" />
-					</SheetClose>
-					<SheetClose asChild>
-						<AppNavLink hash="testimonials" text="testimonials" />
-					</SheetClose>
-					<SheetClose asChild>
-						<AppNavLink hash="skills" text="skills" />
-					</SheetClose>
-					<SheetClose asChild>
-						<AppNavLink hash="projects" text="projects" />
-					</SheetClose>
-					{/* <SheetClose asChild>
 						<Link href={"/#contact"}>
 							<span className="text-xl uppercase">{t("contact")}</span>
 						</Link>
 					</SheetClose> */}
-				</div>
+				{/* </div> */}
 			</SheetContent>
 		</Sheet>
 	);
