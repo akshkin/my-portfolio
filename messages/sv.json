@@ -1,9 +1,9 @@
 {
 	"nav": {
 		"about": "Om mig",
-		"testimonials": "Testimonials",
+		"testimonials": "Rekommendationer",
 		"projects": "Projekt",
-		"skills": "Färdigheter",
+		"skills": "Kompetenser",
 		"philosophy": "Hur jag bygger",
 		"notes": "Anteckningar",
 		"contact": "Kontakt"
@@ -93,6 +93,28 @@
 	"skills": {
 		"title": "färdigheter",
 		"currentLearning": "Nu läser jag <skill1></skill1> och <skill2></skill2>"
+	},
+	"experience": {
+		"title": "Erfarenhet",
+		"items": {
+			"uppakra": {
+				"title": "Webbutvecklare",
+				"bullets": [
+					"Genomförde Lighthouse-audits på live produktionssidor och uppnådde 95+ i prestanda samt perfekta 100 poäng inom Accessibility, Best Practices och SEO",
+					"Diagnostiserade och löste User-Agent crawl-restriktioner i Google Search Console, eliminerade indexeringsfel och återställde synlighet i sökresultat",
+					"Konfigurerade avancerad event-tracking i Google Analytics GA4 och konverterade enkla triggers till detaljerade multi-event analytics-pipelines"
+				]
+			},
+			"newSplitter": {
+				"title": "Frontendutvecklare (praktik)",
+				"bullets": [
+					"Utvecklade och levererade responsiva UI-förbättringar i React Native (mobil) och React + TypeScript (webb) med pixel-perfect precision baserat på Figma-specifikationer",
+					"Tog självständigt initiativ att analysera befintlig Node.js-backend-kod för att förstå dataflödet och implementera en ny funktion — utan tillgång till en backendutvecklare",
+					"Diagnostiserade och löste kraschproblem samt buggar som orsakade felaktig datavisning för slutanvändare, vilket förbättrade applikationens stabilitet",
+					"Samarbetade agilt med teamet via Git med dagliga pull requests och  kodgranskning"
+				]
+			}
+		}
 	},
 	"projects": {
 		"title": "mina projekt",

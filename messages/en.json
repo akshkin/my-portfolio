@@ -94,6 +94,29 @@
 		"title": "skills",
 		"currentLearning": "I am currently learning <skill1></skill1> and <skill2></skill2>"
 	},
+	"experience": {
+		"title": "Experience",
+		"items": {
+			"uppakra": {
+				"title": "Web developer (APL)",
+				"liveDemo": "https://uppakra.se",
+				"bullets": [
+					"Conducted Lighthouse audits achieving 95+ performance and 100/100 in Accessibility, Best Practices and SEO",
+					"Diagnosed and resolved User-Agent crawl restrictions in Google Search Console, restoring live search visibility",
+					"Configured advanced custom event tracking in GA4, converting single metrics into multi-event analytics pipelines"
+				]
+			},
+			"newSplitter": {
+				"title": "Frontend developer (internship)",
+				"bullets": [
+					"Developed and delivered responsive UI improvements in React Native (mobile) and React + TypeScript (web) with pixel-perfect precision based on Figma specifications",
+					"Independently analyzed existing Node.js backend code to understand data flow and implement a new feature — without access to a backend developer",
+					"Diagnosed and resolved crash issues and bugs causing incorrect data display for end users, improving overall application stability",
+					"Collaborated in an agile team via Git with pull requests and code reviews"
+				]
+			}
+		}
+	},
 	"projects": {
 		"title": "my projects",
 		"text": "<challengesLink>Read more about some of the challenges</challengesLink> I faced while working on my projects and how I solved them",
