@@ -96,6 +96,29 @@
 	},
 	"projects": {
 		"title": "my projects",
-		"text": "<challengesLink>Read more about some of the challenges</challengesLink> I faced while working on my projects and how I solved them"
+		"text": "<challengesLink>Read more about some of the challenges</challengesLink> I faced while working on my projects and how I solved them",
+
+		"subtitle": "A selection of projects that showcase my skills and experience",
+		"viewDemo": "Live Demo",
+		"viewCode": "Source Code",
+		"builtWith": "Built with",
+		"items": {
+			"recipes": {
+				"title": "Fullstack Recipes App",
+				"description": "A fullstack recipes app designed for content creators who share recipes on social media but lack a dedicated platform. Registered users can create recipes and other users can search for and view recipes by category or cuisine. Features include global search with dropdown results, user reviews and ratings, PDF download, and AI-powered PDF upload that auto-populates recipe details by extracting and parsing text — eliminating manual data entry."
+			},
+			"inventory": {
+				"title": "Product & Inventory Management App",
+				"description": "A fullstack app developed as Lexicon's final project. Registered users can create groups, add members with role assignment, create categories and items within each group. Supports full CRUD for all entities based on the user's role in the group."
+			},
+			"shopzone": {
+				"title": "Shopzone — MERN Stack E-commerce",
+				"description": "A frontend React project converted to a fullstack e-commerce application with authentication. Users can add items to favorites, manage a cart, and update quantities. Migrated from Context API to Redux Toolkit for scalable state management."
+			},
+			"expenseTracker": {
+				"title": "React Native Expense Tracker",
+				"description": "A mobile expense tracking app where users can create, read, update and delete expenses, set a maximum expense limit and receive a notification when the limit is exceeded."
+			}
+		}
 	}
 }

@@ -30,47 +30,50 @@ function Projects() {
 				})}
 			</p>
 			<div className="grid grid-cols-[repeat(auto-fit,minmax(200px,300px))] justify-center gap-8 align-middle py-8">
-				{data.map((project) => (
-					<Dialog key={project.id} className="mx-8">
+				{Object.entries(data).map(([key, value]) => (
+					<Dialog key={key} className="mx-8">
 						<DialogTrigger asChild>
-							<Project project={project} />
+							<Project
+								title={t(`items.${key}.title`)}
+								imageUrl={value.imageUrl}
+							/>
 						</DialogTrigger>
-						<DialogContent className="w-[92vw] sm:max-w-2xl max-w-2xl sm:p-4 bg-black/90 text-white border-none ">
+						<DialogContent className="w-[92vw] sm:max-w-2xl max-w-2xl sm:p-4 bg-black/90 text-white border-none">
 							<DialogHeader>
-								<DialogTitle className="text-2xl font-bold px-4">
-									{project.title}
+								<DialogTitle className="text-2xl font-bold text-center">
+									{t(`items.${key}.title`)}
 								</DialogTitle>
 								<DialogDescription className="text-stone-200 text-lg"></DialogDescription>
 							</DialogHeader>
-							<div className="overflow-y-auto max-h-[60vh]">
-								{project.Description}
+							<div className="overflow-y-auto max-h-[60vh] text-gray-100 text-xl no-scrollbar">
+								{t(`items.${key}.description`)}
 								<p className="mt-4">
 									<span className="text-pink-600 font-bold">
-										Technologies used:
+										{t("builtWith")}
 									</span>{" "}
-									{project.builtWith}
+									{value.builtWith}
 								</p>
 							</div>
 
 							<DialogFooter className="bg-transparent">
-								{project.sourceCode ? (
+								{value.sourceCode ? (
 									<div className="flex gap-8  justify-end">
 										<a
-											href={project.sourceCode}
+											href={value.sourceCode}
 											rel="noreferrer"
 											target="_blank"
 											className="px-4 py-2 bg-purple-700 hover:bg-purple-700 transition-colors duration-300 border-0 rounded-md"
 										>
-											Source Code
+											{t("viewCode")}
 										</a>
-										{project.liveDemo && (
+										{value.liveDemo && (
 											<a
-												href={project.liveDemo}
+												href={value.liveDemo}
 												rel="noreferrer"
 												target="_blank"
 												className="px-4 py-2 bg-pink-800 hover:bg-pink-700 transition-colors duration-300 border-0 rounded-md"
 											>
-												Live Demo
+												{t("viewDemo")}
 											</a>
 										)}
 									</div>

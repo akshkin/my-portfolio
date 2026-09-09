@@ -96,6 +96,29 @@
 	},
 	"projects": {
 		"title": "mina projekt",
-		"text": "<challengesLink>Läs mer om utmaningar jag fick</challengesLink> när jag jobbade på mina projekt och hur jag löste dem"
+		"text": "<challengesLink>Läs mer om utmaningar jag fick</challengesLink> när jag jobbade på mina projekt och hur jag löste dem",
+
+		"subtitle": "Ett urval av projekt som visar mina färdigheter och erfarenheter",
+		"viewDemo": "Live Demo",
+		"viewCode": "Källkod",
+		"builtWith": "Byggd med",
+		"items": {
+			"recipes": {
+				"title": "Fullstack Receptapp",
+				"description": "En fullstack-receptapp designad för innehållsskapare som delar recept på sociala medier men saknar en dedikerad plattform. Registrerade användare kan skapa recept och andra användare kan söka efter och visa recept efter kategori eller kök. Funktioner inkluderar global sökning med rullgardinsresultat, användarrecensioner och betyg, PDF-nedladdning samt AI-driven PDF-uppladdning som automatiskt fyller i receptdetaljer genom att extrahera och tolka text — vilket eliminerar manuell datainmatning."
+			},
+			"inventory": {
+				"title": "Produkt- och lagerhanteringsapp",
+				"description": "En fullstack-app utvecklad som Lexicons slutprojekt. Registrerade användare kan skapa grupper, lägga till medlemmar med rolltilldelning, skapa kategorier och artiklar inom varje grupp. Stöder full CRUD för alla entiteter baserat på användarens roll i gruppen."
+			},
+			"shopzone": {
+				"title": "Shopzone — MERN Stack E-handel",
+				"description": "Ett frontend React-projekt konverterat till en fullstack e-handelsapplikation med autentisering. Användare kan lägga till artiklar i favoriter, hantera en varukorg och uppdatera antal. Migrerades från Context API till Redux Toolkit för skalbar tillståndshantering."
+			},
+			"expenseTracker": {
+				"title": "React Native Utgiftsspårare",
+				"description": "En mobilapp för utgiftsspårning där användare kan skapa, läsa, uppdatera och ta bort utgifter, ange en maxgräns för utgifter och få en avisering när gränsen överskrids."
+			}
+		}
 	}
 }
