@@ -120,5 +120,9 @@
 				"description": "En mobilapp för utgiftsspårning där användare kan skapa, läsa, uppdatera och ta bort utgifter, ange en maxgräns för utgifter och få en avisering när gränsen överskrids."
 			}
 		}
+	},
+	"contact": {
+		"title": "kontakta mig",
+		"text": "Nyfiken på att samarbeta? Hör gärna av dig!"
 	}
 }
