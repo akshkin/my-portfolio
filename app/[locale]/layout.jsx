@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
 			<body className={`w-full ${montserrat.className}`}>
 				<NextIntlClientProvider>
 					<Navigation />
-					<main className="p-8 mx-auto">{children}</main>
+					<main className="p-8 max-sm:p-4  mx-auto">{children}</main>
 				</NextIntlClientProvider>
 			</body>
 		</html>

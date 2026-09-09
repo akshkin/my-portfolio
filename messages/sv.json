@@ -143,6 +143,10 @@
 			}
 		}
 	},
+	"testimonials": {
+		"title": "Vad andra säger",
+		"note": "Omdömen visas på originalspråket"
+	},
 	"contact": {
 		"title": "kontakta mig",
 		"text": "Nyfiken på att samarbeta? Hör gärna av dig!"

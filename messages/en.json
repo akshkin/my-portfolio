@@ -144,6 +144,10 @@
 			}
 		}
 	},
+	"testimonials": {
+		"title": "what others say about me",
+		"note": "Testimonials are shown in their original language"
+	},
 	"contact": {
 		"title": "contact me",
 		"text": "Sparked your interest? Please don't hesitate to contact me!"

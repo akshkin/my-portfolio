@@ -14,7 +14,7 @@ function MyStory() {
 		"uppakra",
 	];
 	return (
-		<section className="p-8 max-w-5xl mx-auto text-xl mb-8 scroll-mt-16">
+		<section className="max-w-5xl mx-auto text-xl mb-8 scroll-mt-16">
 			<h2 className="section-heading uppercase">{t("title")}</h2>
 			{myStory.map((item) => (
 				<div className="relative p-2" key={item}>
