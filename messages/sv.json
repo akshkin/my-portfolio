@@ -1,0 +1,154 @@
+{
+	"nav": {
+		"about": "Om mig",
+		"testimonials": "Rekommendationer",
+		"projects": "Projekt",
+		"skills": "Kompetenser",
+		"philosophy": "Hur jag bygger",
+		"notes": "Anteckningar",
+		"contact": "Kontakt"
+	},
+	"hero": {
+		"hi": "Hej, jag heter",
+		"title": "Fullstack-utvecklare",
+		"subtitle": "Bygger skalbara och tillgänglighetsanpassade webbapplikationer med",
+		"cta": "Se mina projekt"
+	},
+	"stats": {
+		"yearsOfExp": {
+			"label": "Års erfarenhet",
+			"value": "3+"
+		},
+		"githubRepos": {
+			"label": "GitHub Repositories",
+			"value": "60+"
+		},
+		"techNotes": {
+			"label": "Tekniska anteckningar",
+			"value": "{filesLength}+"
+		}
+	},
+	"myStory": {
+		"title": "Min resa",
+		"items": {
+			"scrimba": {
+				"year": "2022 — Där allt började",
+				"info": "Upptäckte webbutveckling via Scrimba och blev omedelbart förälskad i att bygga saker. Det som började som nyfikenhet blev snabbt en passion jag inte kunde lägga ifrån mig."
+			},
+			"firstInternship": {
+				"year": "Feb 2024 – Jun 2024 — Första verkliga erfarenheten",
+				"info": "Fick min första praktikplats och tillämpade allt jag hade lärt mig självständigt under två år."
+			},
+			"flutter": {
+				"year": "Mitten av 2024 — Nya horisonter",
+				"info": "Utforskade mobilutveckling med Flutter/Dart i samband med en potentiell möjlighet."
+			},
+			"swedish": {
+				"year": "Dec 2024 – Dec 2025 — Investering i svenska",
+				"info": "Åtog mig att lära mig svenska för att fullt ut integreras i den svenska tech-branschen."
+			},
+			"vardbitrade": {
+				"year": "Maj 2025 – Nov 2025 — Ett parallellt kapitel",
+				"info": "Arbetade som vårdbiträde och utvecklade teamarbete, kommunikation och ansvarstagande i en krävande miljö."
+			},
+			"lexicon": {
+				"year": "Nov 2025 – Maj 2026 — Formaliserade mina kunskaper",
+				"info": "Gick Lexicons fullstack-program för att komplettera min självlärda bakgrund med strukturerad utbildning."
+			},
+			"uppakra": {
+				"year": "Maj 2026 – Aug 2026 — Levererar i produktion",
+				"info": "Arbetade som webbutvecklare på Uppåkra Arkeologiska Center med end-to-end ansvar för deras webbplats."
+			}
+		}
+	},
+	"about": {
+		"title": "om mig",
+		"paragraph1": "Som mjukvaruutvecklare med 3+ års kontinuerligt lärande och praktisk erfarenhet fokuserar jag på frontendutveckling med moderna ramverk som React för att skapa intuitiva användarupplevelser. Jag använder AI som en del av mitt arbetsflöde för felsökning, arkitektoniska beslut, kodkvalitet och accelererat lärande – samtidigt som jag behåller starka problemlösningsfundament. \n Jag brinner för att kontinuerligt förbättra mina färdigheter och samarbeta med dynamiska team för att leverera meningsfulla projekt. Jag är öppen för samarbete på intressanta projekt som skapar värde.",
+
+		"paragraph2": "Bakgrund: Innan jag övergick till mjukvaruutveckling tog jag en examen inom homeopati – ett alternativt holistiskt medicinsystem som betonar förståelsen av individen som helhet och identifiering av grundorsaker snarare än att enbart behandla symptom. Detta tankesätt har starkt påverkat mitt förhållningssätt till mjukvaruutveckling, där jag fokuserar på att förstå underliggande orsaker till buggar och tekniska utmaningar för att bygga effektiva, långsiktiga lösningar snarare än tillfälliga fixar.",
+
+		"paragraph3": "När jag inte kodar gillar jag att tillbringa tid med min familj.",
+
+		"openSourceTitle": "Mitt Open Source-bidrag",
+		"openSourceText": "Jag bidrog till ett open source-projekt från Zero To Mastery - <ztmLink>ZTM Job Board (klicka gärna här för att se det)</ztmLink>. Jag migrerade React-applikationen från Create React App till Vite, vilket förbättrade byggprestandan och moderniserade projektets verktyg. Mitt bidrag granskades, godkändes och mergades in i huvudkodbasen."
+	},
+	"philosophy": {
+		"title": "Hur jag bygger",
+		"subtitle": "Principerna som vägleder varje beslut jag tar som utvecklare",
+		"items": {
+			"ux": {
+				"title": "Användarupplevelse först",
+				"description": "Varje beslut jag tar börjar med en fråga: 'Gör detta användarupplevelsen bättre?' Jag anser inte att en funktion är klar förrän den känns intuitiv, tillgänglig och meningsfull."
+			},
+			"architecture": {
+				"title": "Arkitektur före kod",
+				"description": "Innan jag skriver en enda rad tänker jag på skalbarhet. Håller den här lösningen vid 10 gånger den nuvarande belastningen? Är den här komponenten återanvändbar? Skapar jag teknisk skuld för mitt framtida jag? Under min tidigare praktik, när jag arbetade med en React + TypeScript-applikation, stötte jag på en situation där data skickades via props genom olika komponenter. Jag föreslog att införa global tillståndshantering med Redux Toolkit — vilket minskade onödiga API-anrop, gjorde systemet mer skalbart och gav mig en djupare förståelse för dataflöde och systemdesign."
+			},
+			"ship": {
+				"title": "Bygg → Leverera → Förbättra",
+				"description": "Jag tror på att få något att fungera först och sedan göra det snabbt. Prematur optimering dödar momentum. Jag levererar, mäter och optimerar sedan — baserat på verklig data som Lighthouse-poäng, inte antaganden."
+			}
+		}
+	},
+	"skills": {
+		"title": "färdigheter",
+		"currentLearning": "Nu läser jag <skill1></skill1> och <skill2></skill2>"
+	},
+	"experience": {
+		"title": "Erfarenhet",
+		"items": {
+			"uppakra": {
+				"title": "Webbutvecklare",
+				"bullets": [
+					"Genomförde Lighthouse-audits på live produktionssidor och uppnådde 95+ i prestanda samt perfekta 100 poäng inom Accessibility, Best Practices och SEO",
+					"Diagnostiserade och löste User-Agent crawl-restriktioner i Google Search Console, eliminerade indexeringsfel och återställde synlighet i sökresultat",
+					"Konfigurerade avancerad event-tracking i Google Analytics GA4 och konverterade enkla triggers till detaljerade multi-event analytics-pipelines"
+				]
+			},
+			"newSplitter": {
+				"title": "Frontendutvecklare (praktik)",
+				"bullets": [
+					"Utvecklade och levererade responsiva UI-förbättringar i React Native (mobil) och React + TypeScript (webb) med pixel-perfect precision baserat på Figma-specifikationer",
+					"Tog självständigt initiativ att analysera befintlig Node.js-backend-kod för att förstå dataflödet och implementera en ny funktion — utan tillgång till en backendutvecklare",
+					"Diagnostiserade och löste kraschproblem samt buggar som orsakade felaktig datavisning för slutanvändare, vilket förbättrade applikationens stabilitet",
+					"Samarbetade agilt med teamet via Git med dagliga pull requests och  kodgranskning"
+				]
+			}
+		}
+	},
+	"projects": {
+		"title": "mina projekt",
+		"text": "<challengesLink>Läs mer om utmaningar jag fick</challengesLink> när jag jobbade på mina projekt och hur jag löste dem",
+
+		"subtitle": "Ett urval av projekt som visar mina färdigheter och erfarenheter",
+		"viewDemo": "Live Demo",
+		"viewCode": "Källkod",
+		"builtWith": "Byggd med",
+		"items": {
+			"recipes": {
+				"title": "Fullstack Receptapp",
+				"description": "En fullstack-receptapp designad för innehållsskapare som delar recept på sociala medier men saknar en dedikerad plattform. Registrerade användare kan skapa recept och andra användare kan söka efter och visa recept efter kategori eller kök. Funktioner inkluderar global sökning med rullgardinsresultat, användarrecensioner och betyg, PDF-nedladdning samt AI-driven PDF-uppladdning som automatiskt fyller i receptdetaljer genom att extrahera och tolka text — vilket eliminerar manuell datainmatning."
+			},
+			"inventory": {
+				"title": "Produkt- och lagerhanteringsapp",
+				"description": "En fullstack-app utvecklad som Lexicons slutprojekt. Registrerade användare kan skapa grupper, lägga till medlemmar med rolltilldelning, skapa kategorier och artiklar inom varje grupp. Stöder full CRUD för alla entiteter baserat på användarens roll i gruppen."
+			},
+			"shopzone": {
+				"title": "Shopzone — MERN Stack E-handel",
+				"description": "Ett frontend React-projekt konverterat till en fullstack e-handelsapplikation med autentisering. Användare kan lägga till artiklar i favoriter, hantera en varukorg och uppdatera antal. Migrerades från Context API till Redux Toolkit för skalbar tillståndshantering."
+			},
+			"expenseTracker": {
+				"title": "React Native Utgiftsspårare",
+				"description": "En mobilapp för utgiftsspårning där användare kan skapa, läsa, uppdatera och ta bort utgifter, ange en maxgräns för utgifter och få en avisering när gränsen överskrids."
+			}
+		}
+	},
+	"testimonials": {
+		"title": "Vad andra säger",
+		"note": "Omdömen visas på originalspråket"
+	},
+	"contact": {
+		"title": "kontakta mig",
+		"text": "Nyfiken på att samarbeta? Hör gärna av dig!"
+	}
+}

@@ -1,11 +1,13 @@
 // import emailjs from "@emailjs/browser";
 import { Mail } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 // import GithubIcon from "@/assets/svgs/github.svg?react";
 // import EmailIcon from "@/assets/svgs/email.svg?react";
 
 function Contact({ id }) {
+	const t = useTranslations("contact");
 	// const form = useRef();
 
 	// function sendEmail(event) {
@@ -74,8 +76,8 @@ function Contact({ id }) {
 			className="max-w-2xl mx-auto h-[60vh] relative flex flex-col items-center border-t mt-8 pt-6 scroll-mt-16"
 			id="contact"
 		>
-			<h2 className="section-heading">CONTACT ME</h2>
-			<p>Sparked your interest ? Please don't hesitate to contact me!</p>
+			<h2 className="section-heading">{t("title")}</h2>
+			<p>{t("text")}</p>
 			<div className="flex justify-around gap-8 mt-4">
 				<a
 					href="https://github.com/akshkin"

@@ -34,7 +34,7 @@ export default function RecommendationCard({
 
 	return (
 		<article
-			className={`rounded-3xl border ${style.accent} bg-zinc-950/70 p-6 backdrop-blur transition hover:-translate-y-1 hover:shadow-xl`}
+			className={`rounded-3xl border ${style.accent} bg-zinc-950/70 p-6 backdrop-blur transition hover:-translate-y-1 hover:shadow-xl max-sm:pt-16`}
 		>
 			<div className="flex items-start gap-4">
 				<div className="h-14 w-14 overflow-hidden rounded-full shrink-0 grid items-center justify-center  bg-linear-to-br  from-violet-500 via-fuchsia-500 to-blue-500">

@@ -10,12 +10,15 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 // import NodeIcon from "@/assets/svgs/node.svg";
 // import ReactNativeIcon from "@/assets/svgs/react-native.svg";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 function Skills() {
+	const t = useTranslations("skills");
+
 	return (
 		// <AnimationOnScroll className="skills" animateIn="animate__fadeInRight">
 		<section className="mx-auto max-w-3xl pt-8 my-10 scroll-mt-16" id="skills">
-			<h2 className="section-heading">SKILLS</h2>
+			<h2 className="section-heading">{t("title")}</h2>
 			<ul className="flex flex-wrap justify-center items-center gap-8 mt-8">
 				<li className="">
 					{/* <HTMLIcon className="icon" /> HTML */}
@@ -180,15 +183,20 @@ function Skills() {
 				</li>
 			</ul>
 			<p>
-				Currently, I am learning{"   "}
-				<Image
-					src="/assets/svgs/docker.svg"
-					alt="Docker"
-					className="inline-block ml-4 mr-4 mb-2"
-					width={100}
-					height={50}
-				/>
-				and <span className="pl-2 font-extrabold text-2xl">AI</span>
+				{t.rich("currentLearning", {
+					skill1: (chunks) => (
+						<Image
+							src="/assets/svgs/docker.svg"
+							alt="Docker"
+							className="inline-block ml-4 mr-4 mb-2"
+							width={100}
+							height={50}
+						/>
+					),
+					skill2: (chunks) => (
+						<span className="pl-2 font-extrabold text-2xl">AI</span>
+					),
+				})}
 			</p>
 		</section>
 		// </AnimationOnScroll>

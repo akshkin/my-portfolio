@@ -1,0 +1,155 @@
+{
+	"nav": {
+		"about": "About",
+		"testimonials": "Testimonials",
+		"projects": "Projects",
+		"skills": "Skills",
+		"philosophy": "How I Build",
+		"notes": "Tech notes",
+		"contact": "Contact"
+	},
+	"hero": {
+		"hi": "Hi, I am",
+		"title": "Fullstack Developer",
+		"subtitle": "Building scalable and crafting exceptional accessible web applications with",
+		"cta": "View my work"
+	},
+	"stats": {
+		"yearsOfExp": {
+			"label": "Years of Experience",
+			"value": "3+"
+		},
+		"githubRepos": {
+			"label": "GitHub Repositories",
+			"value": "60+"
+		},
+		"techNotes": {
+			"label": "Tech Notes",
+			"value": "{filesLength}+"
+		}
+	},
+	"myStory": {
+		"title": "My Journey",
+		"items": {
+			"scrimba": {
+				"year": "2022 — Where it all began",
+				"info": "Discovered web development through Scrimba and immediately fell in love with building things. What started as curiosity quickly became a passion that I couldn't put down."
+			},
+			"firstInternship": {
+				"year": "Feb 2024 – Jun 2024 — First real-world experience",
+				"info": "Landed my first internship and applied everything I had been teaching myself for two years."
+			},
+			"flutter": {
+				"year": "Mid 2024 — Expanding horizons",
+				"info": "Explored mobile development with Flutter/Dart while pursuing a potential opportunity."
+			},
+			"swedish": {
+				"year": "Dec 2024 – Dec 2025 — Investing in Swedish",
+				"info": "Committed to learning Swedish to fully integrate into the Swedish tech industry."
+			},
+			"vardbitrade": {
+				"year": "May 2025 – Nov 2025 — Parallel chapter",
+				"info": "Worked as a care assistant, developing teamwork, communication and responsibility in a high-pressure environment."
+			},
+			"lexicon": {
+				"year": "Nov 2025 – May 2026 — Formalizing my skills",
+				"info": "Joined Lexicon's fullstack program to complement my self-taught background with structured education."
+			},
+			"uppakra": {
+				"year": "May 2026 – Aug 2026 — Delivering in production",
+				"info": "Worked as a web developer at Uppåkra Arkeologiska Center, taking end-to-end ownership of their website."
+			}
+		}
+	},
+	"about": {
+		"title": "about me",
+		"paragraph1": "As a software developer with 3+ years of continuous learning and hands-on experience, my, focus is on front-end development, utilizing modern frontend frameworks like React to create intuitive user experiences. I enjoy leveraging AI as part of my development workflow for debugging, architectural decisions, improving code quality, and accelerating learning while maintaining strong problem-solving fundamentals. \n I am passionate about continuously improving my skills and collaborating with dynamic teams to deliver impactful projects. I am open to collaborate on interesting projects that add value.",
+
+		"paragraph2": "Background: Before transitioning into software development, I earned a degree in Homeopathy, an alternative holistic system of medicine that emphasizes understanding individuals as a whole and identifying root causes rather than only addressing symptoms. This mindset has strongly influenced my approach to software development where I focus on understanding underlying causes of bugs and technical challenges to build effective, long-term solutions rather than temporary fixes.",
+
+		"paragraph3": "When I am not coding, I like to spend time with my family.",
+
+		"openSourceTitle": "My Open Source Contribution",
+		"openSourceText": "I contributed to an open source project from Zero To Mastery - <ztmLink>ZTM Job Board (Feel free to check it here)</ztmLink>. I migrated the React application from Create React App to Vite, improving build performance and modernizing the project’s tooling. My contribution was reviewed, approved, and merged into the main codebase."
+	},
+	"philosophy": {
+		"title": "How I Build",
+		"subtitle": "The principles that guide every decision I make as a developer",
+		"items": {
+			"ux": {
+				"title": "User Experience First",
+				"description": "Every decision I make starts with one question: 'Will this make the user's experience better?' I don't consider a feature done until it feels intuitive, accessible and purposeful."
+			},
+			"architecture": {
+				"title": "Architecture Before Code",
+				"description": "Before writing a single line, I think about scalability. Will this solution hold up at 10x the current load? Is this component reusable? Am I creating technical debt for future me? During my previous internship, while working on a React + TypeScript application, I encountered a situation where data was being passed through props across various components. I suggested introducing global state management with Redux Toolkit — reducing unnecessary API calls, making the system more scalable, and giving me a deeper understanding of data flow and system design."
+			},
+			"ship": {
+				"title": "Build → Ship → Improve",
+				"description": "I believe in getting something working first, then making it fast. Premature optimization kills momentum. I ship, measure, then optimize — backed by real data like Lighthouse scores, not assumptions."
+			}
+		}
+	},
+	"skills": {
+		"title": "skills",
+		"currentLearning": "I am currently learning <skill1></skill1> and <skill2></skill2>"
+	},
+	"experience": {
+		"title": "Experience",
+		"items": {
+			"uppakra": {
+				"title": "Web developer (APL)",
+				"liveDemo": "https://uppakra.se",
+				"bullets": [
+					"Conducted Lighthouse audits achieving 95+ performance and 100/100 in Accessibility, Best Practices and SEO",
+					"Diagnosed and resolved User-Agent crawl restrictions in Google Search Console, restoring live search visibility",
+					"Configured advanced custom event tracking in GA4, converting single metrics into multi-event analytics pipelines"
+				]
+			},
+			"newSplitter": {
+				"title": "Frontend developer (internship)",
+				"bullets": [
+					"Developed and delivered responsive UI improvements in React Native (mobile) and React + TypeScript (web) with pixel-perfect precision based on Figma specifications",
+					"Independently analyzed existing Node.js backend code to understand data flow and implement a new feature — without access to a backend developer",
+					"Diagnosed and resolved crash issues and bugs causing incorrect data display for end users, improving overall application stability",
+					"Collaborated in an agile team via Git with pull requests and code reviews"
+				]
+			}
+		}
+	},
+	"projects": {
+		"title": "my projects",
+		"text": "<challengesLink>Read more about some of the challenges</challengesLink> I faced while working on my projects and how I solved them",
+
+		"subtitle": "A selection of projects that showcase my skills and experience",
+		"viewDemo": "Live Demo",
+		"viewCode": "Source Code",
+		"builtWith": "Built with",
+		"items": {
+			"recipes": {
+				"title": "Fullstack Recipes App",
+				"description": "A fullstack recipes app designed for content creators who share recipes on social media but lack a dedicated platform. Registered users can create recipes and other users can search for and view recipes by category or cuisine. Features include global search with dropdown results, user reviews and ratings, PDF download, and AI-powered PDF upload that auto-populates recipe details by extracting and parsing text — eliminating manual data entry."
+			},
+			"inventory": {
+				"title": "Product & Inventory Management App",
+				"description": "A fullstack app developed as Lexicon's final project. Registered users can create groups, add members with role assignment, create categories and items within each group. Supports full CRUD for all entities based on the user's role in the group."
+			},
+			"shopzone": {
+				"title": "Shopzone — MERN Stack E-commerce",
+				"description": "A frontend React project converted to a fullstack e-commerce application with authentication. Users can add items to favorites, manage a cart, and update quantities. Migrated from Context API to Redux Toolkit for scalable state management."
+			},
+			"expenseTracker": {
+				"title": "React Native Expense Tracker",
+				"description": "A mobile expense tracking app where users can create, read, update and delete expenses, set a maximum expense limit and receive a notification when the limit is exceeded."
+			}
+		}
+	},
+	"testimonials": {
+		"title": "what others say about me",
+		"note": "Testimonials are shown in their original language"
+	},
+	"contact": {
+		"title": "contact me",
+		"text": "Sparked your interest? Please don't hesitate to contact me!"
+	}
+}
