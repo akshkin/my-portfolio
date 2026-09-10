@@ -26,12 +26,12 @@ function LanguageToggle() {
 		>
 			{iscurrentLangEng ? (
 				<span className="flex gap-2">
-					🇬🇧
+					EN
 					<EnglishFlag />
 				</span>
 			) : (
 				<span className="flex gap-2">
-					🇸🇪
+					SE
 					<SwedishFlag />
 				</span>
 			)}
