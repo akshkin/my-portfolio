@@ -18,7 +18,7 @@ function MobileNav() {
 				className="border-none mx-auto bg-black/90 text-white p-4 pt-16"
 			>
 				{/* <div className="flex flex-col gap-6 mt-16"> */}
-				<SheetClose asChild></SheetClose>
+
 				<SheetClose asChild>
 					<AppNavLink hash="about" text="about" />
 				</SheetClose>

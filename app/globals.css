@@ -32,7 +32,11 @@ p {
 }
 
 a {
-	@apply hover:text-pink-200 transition-colors duration-300;
+	@apply cursor-pointer hover:text-pink-200 transition-colors duration-300;
+}
+
+button {
+	@apply cursor-pointer;
 }
 
 .full-screen-width {
