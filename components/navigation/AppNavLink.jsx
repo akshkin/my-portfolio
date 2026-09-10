@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useSelectedLayoutSegment } from "next/navigation";
 import { useEffect, useState } from "react";
 
-function AppNavLink({ hash, text }) {
+function AppNavLink({ hash, text, ...props }) {
 	const t = useTranslations("nav");
 	const locale = useLocale();
 	const [activeHash, setActiveHash] = useState("");
@@ -22,6 +22,7 @@ function AppNavLink({ hash, text }) {
 	return (
 		<Link
 			href={{ pathname: `/${locale}`, hash: `${hash}` }}
+			{...props}
 			className={`link text-2xl [&.active]:text-indigo-200 ${activeLink(hash) ? "active" : ""}`}
 		>
 			{t(`${text}`)}

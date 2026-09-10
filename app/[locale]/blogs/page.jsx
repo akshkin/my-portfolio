@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { posts } from "@/lib/files";
 import { notes } from "@/lib/notes";
 
 export default function BlogPage() {
@@ -13,7 +12,7 @@ export default function BlogPage() {
 				{notes.map((post) => (
 					<Link
 						key={post.slug}
-						href={`/blog/${post.slug}`}
+						href={`/blogs/${post.slug}`}
 						className="max-w-lg block"
 					>
 						<div className="p-2 border rounded-lg hover:border-pink-300 transition-colors duration-300 h-full">

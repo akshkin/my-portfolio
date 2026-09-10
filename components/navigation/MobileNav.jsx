@@ -1,10 +1,8 @@
-import Link from "next/link";
 import React from "react";
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "../ui/sheet";
 import { TextAlignJustify } from "lucide-react";
 import { useTranslations } from "next-intl";
 import AppNavLink from "./AppNavLink";
-import LanguageToggle from "../LanguageToggle";
 
 function MobileNav() {
 	const t = useTranslations("nav");
@@ -17,8 +15,6 @@ function MobileNav() {
 				title="Navigation"
 				className="border-none mx-auto bg-black/90 text-white p-4 pt-16"
 			>
-				{/* <div className="flex flex-col gap-6 mt-16"> */}
-				<SheetClose asChild></SheetClose>
 				<SheetClose asChild>
 					<AppNavLink hash="about" text="about" />
 				</SheetClose>
@@ -31,12 +27,10 @@ function MobileNav() {
 				<SheetClose asChild>
 					<AppNavLink hash="projects" text="projects" />
 				</SheetClose>
-				{/* <SheetClose asChild>
-						<Link href={"/#contact"}>
-							<span className="text-xl uppercase">{t("contact")}</span>
-						</Link>
-					</SheetClose> */}
-				{/* </div> */}
+
+				<SheetClose asChild>
+					<AppNavLink hash="contact" text="contact" />
+				</SheetClose>
 			</SheetContent>
 		</Sheet>
 	);

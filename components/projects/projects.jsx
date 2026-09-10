@@ -21,7 +21,7 @@ function Projects() {
 				{t.rich("text", {
 					challengesLink: (chunks) => (
 						<Link
-							href="/blog"
+							href="/blogs"
 							className="text-purple-200 hover:filter hover:brightness-125 transition+colors duration-300"
 						>
 							{chunks}

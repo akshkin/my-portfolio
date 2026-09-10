@@ -1,5 +1,5 @@
+import BackButton from "@/components/BackButton";
 import fs from "fs";
-import { ArrowLeft } from "lucide-react";
 import path from "path";
 import ReactMarkdown from "react-markdown";
 
@@ -20,10 +20,7 @@ export default async function BlogPost({ params }) {
 
 	return (
 		<main className="p-6 max-w-3xl mx-auto mt-20">
-			<ArrowLeft /> Back to{" "}
-			<a href="/blog" className="underline">
-				all tech notes
-			</a>
+			<BackButton />
 			<article
 				className="mt-4 prose prose-invert prose-lg prose-headings:text-white prose-h1:text-5xl
                 prose-p:text-gray-300
